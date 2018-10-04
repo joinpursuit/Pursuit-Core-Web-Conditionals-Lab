@@ -110,11 +110,11 @@ if (thisOddNum % 2 === 0){
 
 8. Do question 7 again but use a ternary.
 
-let thisOddNum = 22
-thisOddNum > 0 ? "This is a Even Number" : " This is A ODD NUMBER"
+*let thisOddNum = 22
+thisOddNum > 0 ? "This is a Even Number" : " This is A ODD NUMBER"*
 
 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
-let checkNum = -000
+***let checkNum = -000
 if (checkNum > 0 ){
   console.log ("This is a positive number")}
 	else if (checkNum < 0){
@@ -122,5 +122,4 @@ if (checkNum > 0 ){
   }
   else  {
     console.log ("This is a ZEEEERO?")
-  }
-  
+  }***
