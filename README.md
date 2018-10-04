@@ -1,7 +1,8 @@
 # Conditional Exercises
-js ```
+
 //Conditional Exercises - Rinat Tregerman
 //1
+``` js
 let var1 = "hi"
 let var2 = "hello"
 if (var1===var2) {
@@ -9,7 +10,9 @@ if (var1===var2) {
 } else {
   console.log("variables are not equal")
 }
+``` 
 //2
+``` js
 let num1 = 4
 let num2 = 5
 if (num1>num2) {
@@ -19,7 +22,9 @@ if (num1>num2) {
 } else {
   console.log("The numbers are equal")
 }
+``` 
 //3
+``` js
 let language = "Spanish";
 if (language==="Spanish") {
   console.log("Hola Mundo");
@@ -30,7 +35,9 @@ if (language==="Spanish") {
 } else {
   console.log("Hello World")
 }
+``` 
 //4
+``` js
 let language2 = "spanish";
 switch (language2) {
   case "spanish":
@@ -45,7 +52,9 @@ switch (language2) {
   default:
   console.log("Hello World")
 }
+``` 
 //5
+``` js
 let numGrade = 85;
 let letterGrade = "";
 if (numGrade >= 90) {
@@ -60,7 +69,9 @@ if (numGrade >= 90) {
   letterGrade = "F"
 }
 console.log(letterGrade)
+``` 
 //6 - assuming you don't have a negative number of animals.... hopefully.
+``` js
 let animalName = "cat";
 let numberOfAnimals = 0;
 if (numberOfAnimals > 1 || numberOfAnimals === 0) {
@@ -68,17 +79,23 @@ if (numberOfAnimals > 1 || numberOfAnimals === 0) {
 } else {
   console.log(numberOfAnimals +" "+ animalName)
 }
+``` 
 //7
+``` js
 let myNum = -4;
 if (myNum%2 === 0) {
   console.log(myNum+" is even");
 } else {
   console.log(myNum+" is odd");
 }
-//8
+```
+//8 
+``` js
 let isEven = 4;
 isEven%2===0 ? console.log(isEven+" is even"):console.log(isEven+" is odd")
+```
 //9
+``` js
 let givenNum = -2;
 if (givenNum>0) {
   console.log(givenNum+" is positive");
