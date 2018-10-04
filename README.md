@@ -1,32 +1,90 @@
 # Conditional Exercises
-
-1. Write a block of code that checks and logs whether variables are equal or not.
-
-2. Write a block of code that logs which of two number variables is larger.
-  * Your output should look like this (in this example for the numbers x = 5 and y = 10): 'The greater number of 5 and 10 is 10'
-  * If the two numbers are equal, log: 'The numbers are equal.'
- 
-3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
-Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
-It should default to logging English.
-
-4. Do question 3 again but this time use a `switch` statement. 
-
-5. Create a variable numGrade that will contain a numeric grade (out of 100). 
-Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
-
-6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
-
-Use an if - else statement to log:
-
-  * the number
-
-  * either in single or plural form. Exp: "5 cats" or "1 dog".
-
-Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-
-7. Write a block of code that logs whether a given number is even or odd.
-
-8. Do question 7 again but use a ternary. 
-
-9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
+js ```
+//Conditional Exercises - Rinat Tregerman
+//1
+let var1 = "hi"
+let var2 = "hello"
+if (var1===var2) {
+  console.log(var1+" equals "+var2)
+} else {
+  console.log("variables are not equal")
+}
+//2
+let num1 = 4
+let num2 = 5
+if (num1>num2) {
+  console.log("The greater number of "+num1+" and "+num2+" is "+num1)
+} else if (num2>num1) {
+  console.log("The greater number of "+num1+" and "+num2+" is "+num2)
+} else {
+  console.log("The numbers are equal")
+}
+//3
+let language = "Spanish";
+if (language==="Spanish") {
+  console.log("Hola Mundo");
+} else if (language==="Italian") {
+  console.log("Ciao Mondo");
+} else if (language==="Russian") {
+  console.log("Привет мир");
+} else {
+  console.log("Hello World")
+}
+//4
+let language2 = "spanish";
+switch (language2) {
+  case "spanish":
+    console.log("Hola Mundo");
+    break;
+  case "Italian":
+    console.log("Ciao Mondo");
+    break;
+  case "Russian":
+    console.log("Привет мир");
+    break;
+  default:
+  console.log("Hello World")
+}
+//5
+let numGrade = 85;
+let letterGrade = "";
+if (numGrade >= 90) {
+  letterGrade = "A";
+} else if (numGrade >= 80) {
+  letterGrade = "B";
+} else if (numGrade >= 70) {
+  letterGrade = "C";
+} else if (numGrade >= 60) {
+  letterGrade = "D";
+} else {
+  letterGrade = "F"
+}
+console.log(letterGrade)
+//6 - assuming you don't have a negative number of animals.... hopefully.
+let animalName = "cat";
+let numberOfAnimals = 0;
+if (numberOfAnimals > 1 || numberOfAnimals === 0) {
+  console.log(numberOfAnimals +" "+ animalName + "s")
+} else {
+  console.log(numberOfAnimals +" "+ animalName)
+}
+//7
+let myNum = -4;
+if (myNum%2 === 0) {
+  console.log(myNum+" is even");
+} else {
+  console.log(myNum+" is odd");
+}
+//8
+let isEven = 4;
+isEven%2===0 ? console.log(isEven+" is even"):console.log(isEven+" is odd")
+//9
+let givenNum = -2;
+if (givenNum>0) {
+  console.log(givenNum+" is positive");
+} else if (givenNum<0) {
+  console.log(givenNum+" is negative");
+} else {
+  console.log(givenNum+"is 0");
+}
+```
