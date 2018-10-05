@@ -84,3 +84,37 @@
 //}else{
 //console.log('There are ' + numberOfAnimals + animalName + 's')
 //}
+
+
+
+7.
+
+//let num = 0;
+//while (num <= 10){
+//  if(num % 2 === 0){
+//  console.log('the number ' + num + ' is even')
+//}else{
+//  console.log('the number ' + num + ' is odd')
+//  }num++
+//}
+
+
+
+8.
+
+let num =34;
+num <= 10 ? console.log('the number ' + num + ' is even') : console.log('the number ' + num + ' is odd')
+num++
+
+
+
+9.
+
+let num = -10;
+if ( num > 0){
+  console.log('this number is positive')
+}else if (num < 0){
+  console.log('this number is negative')
+}else {
+  console.log('this number is equal to 0')
+}
