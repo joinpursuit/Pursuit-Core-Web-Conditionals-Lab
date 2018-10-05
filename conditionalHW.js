@@ -83,5 +83,12 @@
 
 // 8.
 // let num = 15
-// 15 % 2 == 0 ? "even" : "odd" ;
-//
+// num % 2 === 0 ? console.log (" this number is even.") : console.log ("odd".) ;
+
+
+// let num = 12
+// num % 2 === 0 ? console.log(num + " is even.") : console.log(num + " is odd.");
+
+// 9
+let num = 0;
+num < 0 ? console.log(num + " is negative.") : num > 0 ? console.log(num + " is positive.") : console.log(num + " is equal to 0.");
