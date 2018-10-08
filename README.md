@@ -90,14 +90,15 @@ Use an if - else statement to log:
 
 Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
-let animalName = "sheep"
-let numOfAnimal = 3
+let animalName = "dog";
+let numOfAnl = 1;
 
-
-if (animalName && numOfAnimal === 1 || animalName=== "sheep", "geese"){
-  console.log(numOfAnimal + " " + animalName)
+if (animalName === "sheep" || animalName === "geese"){
+  console.log(numOfAnl + " " + animalName)
+} else if (numOfAnl === 1){
+  console.log(numOfAnl + " " + animalName)
 } else {
-  console.log(numOfAnimal + " " + animalName + "s")
+  console.log(numOfAnl + " " + animalName + "s")
 }
 
 
