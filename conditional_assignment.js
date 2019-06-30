@@ -44,7 +44,7 @@ if (c > d){
 let spanish = 'hola';
 let german = 'halo';
 let english = 'hello';
-let language = english
+let language = english;
 
 if (language === spanish){
   console.log(spanish)
@@ -89,17 +89,17 @@ if (numGrade <= 65) {
 let animalName = "cat"
 let numberOfAnimals = 5
 
-if (numberOfAnimals > 1){
-  console.log("Then I have a lot's of " + animalName)
-} else if (numberOfAnimals = 5 ){
-  console.log("I have" + numberOfAnimals + animalName +'s.')
+if (numberOfAnimals === 1){
+  console.log("I have " + numberOfAnimals + ' ' + animalName)
+} else {
+  console.log("I have " + numberOfAnimals + ' ' + animalName +'s.')
 }
 
 
 //
 // // 7. Write a block of code that logs whether a given number is even or odd.
 // //
-let num1 = 40
+let num1 = 60
 if(num1 % 2 === 0){
   console.log ('even')
 }else {
@@ -111,7 +111,7 @@ num1 % 2 === 0 ? console.log("Even") : console.log("odd")
 
 // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
 
-let number = 854
+let number = 89808
 if (number <0 ){
   console.log ("negative")
 }else if (number > 0){
