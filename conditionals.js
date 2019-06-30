@@ -96,14 +96,39 @@ Use an if - else statement to log:
 Bonus: Make it handle a few collective nouns like "sheep" and "geese".*/
 
 
-/*let animalName = 'Horse'
-let numberOfAnimals = '1'
+// let animalName = 'horse'
+//
+// let numberOfAnimals = 2
+// if (numberOfAnimals > 1) {
+//   console.log(numberOfAnimals + ' ' + animalName + 's')
+// }else {
+//   console.log(numberOfAnimals + ' '+ animalName)
+// }
+// BONUS Answer
+let animalName = 'goose'
+let numberOfAnimals = 2
+if(numberOfAnimals > 1) {
+    if(animalName === 'goose')
+    console.log(numberOfAnimals + ' geese')
+  }else {
+  console.log(numberOfAnimals + ' ' + animalName)
+}
 
-if (numberOfAnimals > 1) {
-  console.log(numberOfAnimals + ' ' + animalName + 's')
-}else {
-  console.log(numberOfAnimals + ' '+ animalName)
-}*/
+
+//**********DO NOT CHECK THIS .....PERSONAL PROJECT*******************//
+// let animalName = 'goose'
+// let numberOfAnimals = 3
+// if(numberOfAnimals > 1){
+//   console.log(numberOfAnimals + ' ' + animalName + 's')
+// }else if(numberOfAnimals > 1) {
+//   if(animalName === 'goose')
+//   console.log(numberOfAnimals + ' geese')
+//   }else {
+//   console.log(numberOfAnimals + ' ' + animalName)
+// }
+
+
+
 
 
 
