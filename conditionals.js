@@ -101,3 +101,11 @@ if (myNumber % 2 === 0) {
 myNumber % 2 === 0 ? console.log("This number is even.") : console.log("This number is odd.");
 
 // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
+let givenNumber = -12;
+if (givenNumber === 0) {
+  console.log("This number is equal to zero.");
+} else if (givenNumber > 0) {
+  console.log("This is a positive number.");
+} else {
+  console.log("This is a negative number.")
+}
