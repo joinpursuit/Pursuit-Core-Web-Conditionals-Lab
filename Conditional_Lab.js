@@ -92,11 +92,11 @@ Use an if - else statement to log:
 
   * either in single or plural form. Exp: "5 cats" or "1 dog".
 */
-let animalName = "Goose";
-let numberOfAnimals = 0;
+let animalName = "Fish";
+let numberOfAnimals = 10;
 
 if (numberOfAnimals > 1){
-    if (animalName === "Sheep"){
+    if (animalName === "Sheep" || animalName === "Fish"){
       console.log("\n I have " + numberOfAnimals + " " + animalName);
     } else if (animalName === "Goose"){
       console.log("\n I have " + numberOfAnimals + " Geese");
