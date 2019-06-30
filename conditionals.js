@@ -69,43 +69,20 @@ if (numGrade >= 90) {
 }
 
 //6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
-let creature1 = 'Dog';
-let numberOfCreature1 = 0;
-let creature2 = 'Dragon';
-let numberOfCreature2 = 0;
-let creature3 = 'Sheep';
-let numberOfCreature3 = 0;
-let creature4 = 'Geese';
-let numberOfCreature4 = 0;
 
-if (creature1 === 'Dog') {
-  numberOfCreature1 += 1;
-  console.log('There is ' + numberOfCreature1 + ' Dog');
-} else {
-  console.log('We do not collect that creature');
-}
+let creatureName = 'Dragon';
+let creatureNumber = 4;
 
-if (creature2 === 'Dragon') {
-  numberOfCreature2 += 1;
-  console.log('There is ' + numberOfCreature2 + ' Dragon');
-} else {
-  console.log('We do not collect that creature');
-}
-
-if (creature3 === 'Sheep') {
-  numberOfCreature3 += 100;
-  console.log('There are ' + numberOfCreature3 + ' Sheep');
-} else {
-  console.log('We do not collect that creature');
-}
-
-if (creature4 === 'Geese') {
-  numberOfCreature4 += 1;
-  if (numberOfCreature4 > 1 || numberOfCreature4 < 1) {
-    console.log('There are ' + numberOfCreature4 + ' Geese');
+if (creatureNumber === 1 && creatureName !== 'Geese') {
+  console.log('There is ' + creatureNumber + creatureName);
+} else if (creatureNumber > 1 && creatureName !== 'Goose') {
+  if (creatureName === 'Sheep' || creatureName === 'Geese') {
+    console.log('There are ' + creatureNumber + ' ' + creatureName);
   } else {
-    console.log('There is ' + numberOfCreature4 + ' Goose');
+    console.log('There are ' + creatureNumber + ' ' + creatureName + 's');
   }
+} else {
+  console.log('The number does not work, change the amount.');
 }
 
 //7. Write a block of code that logs whether a given number is even or odd.
