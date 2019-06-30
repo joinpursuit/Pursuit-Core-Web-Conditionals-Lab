@@ -93,7 +93,7 @@ Use an if - else statement to log:
   * either in single or plural form. Exp: "5 cats" or "1 dog".
 */
 let animalName = "Goose";
-let numberOfAnimals = 5;
+let numberOfAnimals = 3;
 
 if (numberOfAnimals > 1){
     if (animalName === "sheep"){
@@ -101,8 +101,9 @@ if (numberOfAnimals > 1){
     } else if (animalName === "Goose"){
       console.log("\n I have " + numberOfAnimals + " geese");
     } else console.log("\n I have " + numberOfAnimals + " " + animalName + "s");
-} else console.log("\n I have " + numberOfAnimals + " " + animalName);
-
+} else if (numberOfAnimals === 1 ){
+  console.log("\n I have " + numberOfAnimals + " " + animalName);
+} else console.log("\n I have no animal")
 /*
 Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 */
