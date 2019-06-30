@@ -74,9 +74,14 @@ if (numGrade >= 90 && numGrade <= 100) {
 //
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+
 let animalName = "alpaca";
-let numberOfAnimals = 4;
-if (animalName === "alpaca" && numberOfAnimals != 1) {
+let numberOfAnimals = 0;
+if (numberOfAnimals != 1 && animalName === 'sheep') {
+  console.log('There are ' + numberOfAnimals + ' ' + animalName + '.');
+} else if (numberOfAnimals === 1 && animalName === 'sheep') {
+  console.log('There is ' + numberOfAnimals + ' ' + animalName + '.');
+} else if (numberOfAnimals != 1 && animalName != "sheep") {
   console.log('There are ' + numberOfAnimals + ' ' + animalName + 's.');
 } else {
   console.log('There is ' + numberOfAnimals + ' ' + animalName + '.');
