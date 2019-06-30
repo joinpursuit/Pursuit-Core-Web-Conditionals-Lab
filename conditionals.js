@@ -70,11 +70,11 @@ if (numGrade >= 90) {
 
 //6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
 
-let creatureName = 'Dragon';
-let creatureNumber = 4;
+let creatureName = 'Deer';
+let creatureNumber = 1;
 
 if (creatureNumber === 1 && creatureName !== 'Geese') {
-  console.log('There is ' + creatureNumber + creatureName);
+  console.log('There is ' + creatureNumber + ' ' + creatureName);
 } else if (creatureNumber > 1 && creatureName !== 'Goose') {
   if (creatureName === 'Sheep' || creatureName === 'Geese') {
     console.log('There are ' + creatureNumber + ' ' + creatureName);
