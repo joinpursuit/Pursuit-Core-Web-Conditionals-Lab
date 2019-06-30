@@ -82,7 +82,7 @@ if (grade >= 90) {
 //
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
-let animalName = "geese";
+let animalName = "cat";
 let numberOfAnimals = 50;
 const result = "There are ";
 const result1 = "There is only 1 ";
@@ -93,10 +93,9 @@ const result2 = "There aren't any ";
 if (numberOfAnimals > 1) {
     if (animalName === "sheep") {
         console.log(result + numberOfAnimals + " " + animalName + ".");
-    } else if (animalName === "goose" || "geese"){
+    } else if (animalName === "goose" || animalName === "geese"){
         console.log(result + numberOfAnimals + " geese.");
-    }
-    else {
+    } else {
         console.log(result + numberOfAnimals + " " + animalName + "s.");
 }}  else if (numberOfAnimals === 1){
       if (animalName === "geese"){
@@ -104,7 +103,7 @@ if (numberOfAnimals > 1) {
     } else {
         console.log(result1 + animalName + ".");
 }} else if (numberOfAnimals === 0 ){
-      if (animalName === "goose" || "geese") {
+      if (animalName === "goose" || animalName === "geese") {
         console.log(result2 + "geese.");
   }   else if (animalName === "sheep") {
         console.log(result2 + animalName + ".");
