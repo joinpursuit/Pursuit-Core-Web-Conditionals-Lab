@@ -73,20 +73,14 @@ if (numGrade >= 90 && numGrade <= 100) {
 //   * the number
 //
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
-
-// let animalName = "alpaca";
-// let numberOfAnimals = 4;
-// if (animalName === "alpaca") {
-//   console.log("There are " + numberOfAnimals + " " + animalName + "s on the farm.");
-// } else if (true) {
-//
-// }
-//
-// } else {
-//   console.log("I'm not sure how many of that animal we have on the farm.")
-// }
-
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+let animalName = "alpaca";
+let numberOfAnimals = 4;
+if (animalName === "alpaca" && numberOfAnimals != 1) {
+  console.log('There are ' + numberOfAnimals + ' ' + animalName + 's.');
+} else {
+  console.log('There is ' + numberOfAnimals + ' ' + animalName + '.');
+}
 
 // 7. Write a block of code that logs whether a given number is even or odd.
 let myNumber = 15;
