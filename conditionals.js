@@ -169,7 +169,7 @@ switch (num % 2) {
 
 num % 2 === 1 ? console.log(num + ' is odd') : console.log(num + ' is even');
 
-//!!(num % 2) ? console.log(num + ' is odd') : console.log(num + ' is even');
+// !!(num % 2) ? console.log(num + ' is odd') : console.log(num + ' is even');
 //!(num % 2) ? console.log(num + ' is even') : console.log(num + ' is odd');
 
 // 9. Write a block of code that checks and logs whether a given number is
