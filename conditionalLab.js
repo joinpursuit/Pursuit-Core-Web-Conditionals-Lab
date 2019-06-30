@@ -1,7 +1,7 @@
 //1. Write a block of code that checks and logs whether variables are equal or not.
 let x1 = 50;
 let x2 = 100;
-if(num1 === num2) {
+if(x1 === x2) {
   console.log("The variables are equal.");
 } else {
   console.log("The variables are not equal.");
@@ -13,7 +13,7 @@ if(num1 === num2) {
 //   * If the two numbers are equal, log: 'The numbers are equal.'
 let x3 = 25;
 let x4 = 30;
-if(num3 > num4) {
+if(x3 > x4) {
   console.log("Variable 3 is lager than variable.")
 } else {
   console.log("Variable 4 is larger than variable 3.")
@@ -77,20 +77,24 @@ if(numGrade === "A") {
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 //
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-let cat = 5;
-let dog = 15;
-let numberOfAnimals;
-if(cat === 1) {
-  console.log("1 cat");
-} else if(dog === 1) {
-  console.log("1 dog");
-} else if(cat > 1) {
-  console.log(cat + " cats");
-} else if(dog > 1) {
-  console.log(dog + " dogs")
-} else {
-  console.log("Error");
-}
+let animalName = "sheep";
+let numberOfAnimals = 1;
+  if(numberOfAnimals > 1) {
+    if(animalName === "sheep") {
+      console.log(numberOfAnimals + " " + animalName);
+    } else if(animalName === "goose") {
+      console.log(numberOfAnimals + " geese");
+    }  else if(numberOfAnimals > 1) {
+      console.log(numberOfAnimals + " " + animalName + "s"); }
+  } else if (numberOfAnimals === 1) {
+     if(animalName === "sheep") {
+      console.log("1 " + animalName)}
+     else if(animalName === "goose") {
+      console.log(numberOfAnimals + " goose");
+  } else {
+      console.log("1 " + animalName);
+    }
+  }
 
 
 
@@ -113,7 +117,7 @@ let positiveOrNegative = 42;
 if(positiveOrNegative > 0) {
   console.log("It's positive");
 } else if(positiveOrNegative < 0) {
-  console.log(It's negative)
+  console.log("It's negative")
 } else {
   console.log("Idk");
 }
