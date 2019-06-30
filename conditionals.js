@@ -1,9 +1,26 @@
 // 1. Write a block of code that checks and logs whether variables are equal or not.
+let myFirstVariable = 2;
+let myNewVariable = "lunch";
+if (myFirstVariable === myNewVariable) {
+  console.log("These things are totally alike!");
+} else {
+  console.log("These are not alike actually.")
+}
 //
 // 2. Write a block of code that logs which of two number variables is larger.
 //   * Your output should look like this (in this example for the numbers x = 5 and y = 10): 'The greater number of 5 and 10 is 10'
 //   * If the two numbers are equal, log: 'The numbers are equal.'
-//
+
+let num1 = 12;
+let num2 = 30;
+if (num1 > num2) {
+  console.log("The greater number of " + num1 + " and " + num2 + " is " + num1 + ".");
+  } else if (num2 > num1) {
+  console.log("The greater number of " + num1 + " and " + num2 + " is " + num2 + ".");
+} else {
+  console.log("The nuumbers are equal.")
+}
+
 // 3. Create a string variable with a language code (e.g. "english", "spanish", "german").
 // Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages.
 // It should default to logging English.
@@ -20,13 +37,17 @@
 //
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 
-let animalName = "alpaca";
-let numberOfAnimals = 4;
-if (animalName === "alpaca") {
-  console.log("There are " + numberOfAnimals + " " + animalName + "s on the farm.");
-} else {
-  console.log("I'm not sure how many of that animal we have on the farm.")
-}
+// let animalName = "alpaca";
+// let numberOfAnimals = 4;
+// if (animalName === "alpaca") {
+//   console.log("There are " + numberOfAnimals + " " + animalName + "s on the farm.");
+// } else if (true) {
+//
+// }
+//
+// } else {
+//   console.log("I'm not sure how many of that animal we have on the farm.")
+// }
 
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
