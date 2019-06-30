@@ -81,7 +81,7 @@ if (numGrade >= 90){
 } else if (numGrade >= 60 && numGrade < 69){
   console.log("\n Your grade is D");
 } else {
-  console.log("\n Your grade is F")
+  console.log("\n Your grade is F");
 }
 
 /*6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
