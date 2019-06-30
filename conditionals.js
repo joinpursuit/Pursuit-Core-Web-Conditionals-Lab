@@ -119,7 +119,7 @@ let animalName;
 let numberOfAnimals;
 
 animalName = 'goose';
-numberOfAnimals = '5';
+numberOfAnimals = 5;
 
 if (numberOfAnimals === 1) {
   console.log(numberOfAnimals + ' ' + animalName);
@@ -140,8 +140,8 @@ if (numberOfAnimals === 1) {
     case 'elk':
       console.log(numberOfAnimals + ' ' + animalName);
       break;
-    case '':
-      console.log(numberOfAnimals + ' ' + animalName);
+    case 'fox':
+      console.log(numberOfAnimals + ' ' + 'foxes');
       break;
     default:
       console.log(numberOfAnimals + ' ' + animalName + 's');
