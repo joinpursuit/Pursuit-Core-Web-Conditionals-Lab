@@ -92,7 +92,7 @@ Use an if - else statement to log:
 
   * either in single or plural form. Exp: "5 cats" or "1 dog".
 */
-let animalName = "Fish";
+let animalName = "Dove";
 let numberOfAnimals = 10;
 
 if (numberOfAnimals > 1){
@@ -108,9 +108,27 @@ if (numberOfAnimals > 1){
 } else console.log("\n I have no animal")
 /*
 Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+
+// Same problem using switch
 */
-
-
+if (numberOfAnimals > 1){
+  switch (animalName){
+  case "Sheep":
+    console.log("\n I have " + numberOfAnimals + " " + animalName);
+    break;
+  case "Fish":
+    console.log("\n I have " + numberOfAnimals + " " + animalName);
+    break;
+  case "Goose":
+    console.log("\n I have " + numberOfAnimals + " Geese");
+    break;
+    default: console.log("\n I have " + numberOfAnimals + " " + animalName + "s");
+}
+} else if (numberOfAnimals === 1 ){
+    if (animalName === "Geese"){
+      console.log("\n I have " + numberOfAnimals + " Goose");
+    } else console.log("\n I have " + numberOfAnimals + " " + animalName);
+} else console.log("\n I have no animal")
 
 /*
 7. Write a block of code that logs whether a given number is even or odd.
