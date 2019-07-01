@@ -107,6 +107,9 @@ if (numOfAnimal === 1) {
     case ('sheep'):
       console.log(numOfAnimal + ' ' + animal);
     break;
+    case ('shrimp'):
+      console.log(numOfAnimal + ' ' + animal);
+    break;
     default:
       console.log(numOfAnimal + ' ' + animal + 's');
   }
