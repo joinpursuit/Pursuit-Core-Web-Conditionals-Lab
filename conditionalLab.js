@@ -109,12 +109,19 @@
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 //
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-let animalName = "cat"
-let numberOfAnimals = 200
+let animalName = "dog"
+let numberOfAnimals = 2
 if (numberOfAnimals < 2) {
-  console.log("cat");
+  console.log(numberOfAnimals + " " + animalName);
 } else {
-    console.log("cats")
+    // console.log(numberOfAnimals + " " + animalName + "s")
+    if (animalName === "sheep") {
+      console.log(numberOfAnimals + " " + "sheep")
+    } else if(animalName === "goose") {
+      console.log(numberOfAnimals + " " + "geese")
+    } else {
+      console.log(numberOfAnimals + " " + animalName + "s")
+    }
   }
 //
 // 7. Write a block of code that logs whether a given number is even or odd.
