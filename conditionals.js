@@ -127,7 +127,7 @@ console.log("");
 
 
 console.log("6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.");
-let animalName = "horse";
+let animalName = "horse"; // HAS TO BE SINGULAR FORM INPUTED HERE
 let numberOfAnimals = 1;
 //
 if (animalName === "cat" || animalName === "dog" || animalName === "goose" || animalName === "sheep") {
@@ -143,7 +143,7 @@ if (animalName === "cat" || animalName === "dog" || animalName === "goose" || an
     }
   }
 } else {
-  console.log("Sorry, I only accept cats, dogs, geese, and sheep.");
+  console.log("Sorry, I'll only accept the [cat], the [dog], the [goose], or the [sheep].");
 }
 //
 console.log("");
