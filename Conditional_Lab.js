@@ -92,43 +92,45 @@ Use an if - else statement to log:
 
   * either in single or plural form. Exp: "5 cats" or "1 dog".
 */
-let animalName = "Dove";
+let animalName = "FISH";
 let numberOfAnimals = 10;
+let lowCaseAnimal = animalName.toLowerCase();
 
 if (numberOfAnimals > 1){
-    if (animalName === "Sheep" || animalName === "Fish"){
+    if (lowCaseAnimal === "sheep" || lowCaseAnimal=== "fish"){
       console.log("\n I have " + numberOfAnimals + " " + animalName);
-    } else if (animalName === "Goose"){
+    } else if (lowCaseAnimal === "goose"){
       console.log("\n I have " + numberOfAnimals + " Geese");
     } else console.log("\n I have " + numberOfAnimals + " " + animalName + "s");
 } else if (numberOfAnimals === 1 ){
-    if (animalName === "Geese"){
+    if (lowCaseAnimal === "geese"){
       console.log("\n I have " + numberOfAnimals + " Goose");
     } else console.log("\n I have " + numberOfAnimals + " " + animalName);
-} else console.log("\n I have no animal")
+} else console.log("\n I have no animal");
 /*
 Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
 // Same problem using switch
 */
 if (numberOfAnimals > 1){
-  switch (animalName){
-  case "Sheep":
+  switch (lowCaseAnimal){
+  case ("sheep"):
+    //console.log("\n I have " + numberOfAnimals + " " + animalName);
+    //break;
+  case ("fish"):
     console.log("\n I have " + numberOfAnimals + " " + animalName);
     break;
-  case "Fish":
-    console.log("\n I have " + numberOfAnimals + " " + animalName);
-    break;
-  case "Goose":
+  case ("goose"):
     console.log("\n I have " + numberOfAnimals + " Geese");
     break;
-    default: console.log("\n I have " + numberOfAnimals + " " + animalName + "s");
+  default: console.log("\n I have " + numberOfAnimals + " " + animalName + "s");
 }
 } else if (numberOfAnimals === 1 ){
-    if (animalName === "Geese"){
+    if (lowCaseAnimal === "geese"){
       console.log("\n I have " + numberOfAnimals + " Goose");
     } else console.log("\n I have " + numberOfAnimals + " " + animalName);
-} else console.log("\n I have no animal")
+} else console.log("\n I have no animal");
+
 
 /*
 7. Write a block of code that logs whether a given number is even or odd.
