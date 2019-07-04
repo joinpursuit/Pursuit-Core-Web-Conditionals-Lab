@@ -5,13 +5,13 @@
 
 //1. Write a block of code that checks and logs whether variables are equal or not.
 
-/*let car1 = 'lexus'
-let car2 = 'lexus'
-if (car1 = car2){
-  console.log('These cars are the same')
-}else{
-  console.log('We do not have the same car')
-}*/
+// let car1 = 'lexus'
+// let car2 = 'honda'
+// if (car1 === car2){
+//   console.log('These cars are the same')
+// }else{
+//   console.log('We do not have the same car')
+// }
 
 
 
@@ -106,7 +106,7 @@ Bonus: Make it handle a few collective nouns like "sheep" and "geese".*/
 // }
 // BONUS Answer
 let animalName = 'goose'
-let numberOfAnimals = 2
+let numberOfAnimals = 1
 if(numberOfAnimals > 1) {
     if(animalName === 'goose')
     console.log(numberOfAnimals + ' geese')
