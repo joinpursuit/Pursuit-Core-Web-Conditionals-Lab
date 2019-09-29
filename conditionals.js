@@ -21,3 +21,15 @@ if(c > d){
     console.log("The numbers are equal to eachother!");
 }
 
+let english = "Hello World"
+let spanish = "Hola Mundo"
+let german = "Hallo Welt"
+let givenLanguage = "German"
+
+if(givenLanguage === "Spanish"){
+    console.log(spanish);
+} else if(givenLanguage === "German"){
+    console.log(german);
+} else {
+    console.log(english);
+}
