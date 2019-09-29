@@ -62,5 +62,39 @@ if (numGrade >= 0 && numGrade <= 60) {
     console.log("You're making up grades");
 }
 
+/*6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
 
+Use an if - else statement to log:
 
+  * the number
+
+  * either in single or plural form. Exp: "5 cats" or "1 dog".
+
+Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+*/
+
+let animalName = "cat";
+let numberOfAnimals = 1;
+if (numberOfAnimals === 1) {
+    console.log("you have " + numberOfAnimals + " " + animalName);
+} else {
+    animalName = "cats";
+    console.log("you have " + numberOfAnimals + " " + animalName);
+}
+
+/* 7. Write a block of code that logs whether a given number is even or odd.*/
+
+let someThing = 12;
+if (someThing % 2 === 0 ) {
+ console.log("Number is even")
+} else {
+console.log("Number is odd");
+}
+
+/*8. Do question 7 again but use a ternary. */
+// condition ? true : false ;
+
+someThing = 7;
+someThing % 2 === 0 ? 
+    console.log("number is even") :
+    console.log("number is odd") 
