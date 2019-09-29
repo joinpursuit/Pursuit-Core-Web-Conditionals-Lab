@@ -69,12 +69,13 @@
 //     console.log(numberOfAnimals + ' ' + animalName)
 // }
 // 7. Write a block of code that logs whether a given number is even or odd.
-let number = 8;
-if (number % 2 === 0) {
-    console.log(number + " is even.");
-} else if(number % 2 === 1) {
-    console.log(number + " is odd.");
-}
+// let number = 8;
+// if (number % 2 === 0) {
+//     console.log(number + " is even.");
+// } else if(number % 2 === 1) {
+//     console.log(number + " is odd.");
+// }
 // 8. Do question 7 again but use a ternary. 
-
+let number = 8;
+number % 2 === 0 ? console.log(number + " is even.") : console.log(number + " is odd.");
 // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
