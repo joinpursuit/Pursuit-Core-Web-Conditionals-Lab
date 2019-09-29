@@ -81,4 +81,9 @@ if (numberOfAnimals >= 2) {
 }
 
 //7. Write a block of code that logs whether a given number is even or odd.
-let evenNumber = 
+let num = [Infinity]
+if ( num % 2 == 0) {
+	console.log('Even Number');
+}else{
+	console.log('Odd Number');
+}
