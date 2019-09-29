@@ -16,8 +16,8 @@ It should default to logging English.
 
 4. Do question 3 again but this time use a `switch` statement. 
 
-5. Create a variable numGrade that will contain a numeric grade (out of 100). 
-Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
+5. . Use an if - eCreate a variable numGrade that will contain a numeric grade (out of 100)
+if , else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
 
 6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
 
