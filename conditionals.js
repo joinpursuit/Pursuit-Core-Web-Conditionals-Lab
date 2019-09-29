@@ -75,7 +75,7 @@ switch(animalName === "goose" && numberOfAnimals > 1){
     animalName = "sheep";
     break;
 }
-  if(animalName === "goose" && numberOfAnimals >1) {
+    if(animalName === "goose" && numberOfAnimals >1) {
     console.log("There are " + numberOfAnimals + " " + animalName);
 } else if (numberOfAnimals >1) {
     console.log("There are " + animalName + "s");
