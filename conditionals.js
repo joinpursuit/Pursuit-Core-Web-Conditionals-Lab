@@ -85,3 +85,9 @@ if (num % 2 === 0){
 else { 
     console.log("number is odd");
 }
+
+
+
+// problem 8
+let num1 = 8
+num1 % 2 ? console.log("odd") : console.log("even");
