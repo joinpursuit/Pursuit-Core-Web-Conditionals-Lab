@@ -23,13 +23,30 @@ console.log ("The greater number of " + numX +" and " + numY +" is " +numY)
 console.log ("The numbers are equal")
 }
 
-//Problem 3
+//Problem 3a
 
 let language = "English"
+
 if (language === "Spanish"){
     console.log("Hola al mundo")
 } else if (language === "German"){
     console.log("Hallo Welt")
 } else {
     console.log("Hello World")
+}
+
+// Problem 5
+
+let numGrade = 70
+
+if ( numGrade >= 90){
+console.log ("A")
+} else if ( numGrade >= 80){
+console.log ("B")
+}else if (numGrade >=70) {
+console.log ("C")
+}else if (numGrade >= 65){
+console.log ("D")
+}else{
+console.log ("F")
 }
