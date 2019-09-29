@@ -36,6 +36,22 @@ if (code === 'spanish') {
   console.log('Hello, World')
 }
 
+
+//Problem Four
+
+let code = 'spanish'
+
+switch(code) {
+  case 'spanish':
+  console.log('Hola, Mundo')
+    break;
+  case'german':
+   console.log('Hallo, Welt')
+  break;
+  default:
+   console.log('Hello, World')
+}
+
 //Problem Five
 let numGrade = 96
 
@@ -76,3 +92,18 @@ if (number % 2 === 0) {
 //Problem Eight
 
 let twoNum = 4; (twoNum %2===0) ? console.log(twoNum + " is even"): console.log(twoNum  + ' is odd')
+
+
+
+//Problem Nine
+
+let number = -4
+
+
+if (number === 0){
+  console.log(number + " is equal to zero")
+} else if(number > 0){
+  console.log(number + " is positive")
+} else {
+  console.log(number + " is negative")
+}
