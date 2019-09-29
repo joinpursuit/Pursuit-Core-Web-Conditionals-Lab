@@ -68,3 +68,18 @@ console.log(numberOfAnimals + " " + animalName + "s")
 } else {
 console.log(numberOfAnimals + " " + animalName)
 } 
+
+//Problem 7
+
+let numberA = 9
+
+if (numberA%2 === 0){
+    console.log("Number is even")
+}
+else{
+    console.log("Number is odd")
+}
+
+//Problem 8
+let numberB = 11
+numberB%2 === 0 ? console.log("Number is even") : console.log("Number is odd")
