@@ -63,3 +63,22 @@ if(numGrade >=90 && numGrade <= 100){
 }else if(numGrade <= 59){
     console.log("The student receives a F");
 }
+
+let animalName = "goose"
+let numberOfAnimals = 10
+
+switch(animalName === "goose" && numberOfAnimals > 1){
+    case "goose":
+    animalName = "geese";
+    break;
+    case "sheep":
+    animalName = "sheep";
+    break;
+}
+  if(animalName === "goose" && numberOfAnimals >1) {
+    console.log("There are " + numberOfAnimals + " " + animalName);
+} else if (numberOfAnimals >1) {
+    console.log("There are " + animalName + "s");
+} else if (numberOfAnimals =1) {
+    console.log("There is " + numberOfAnimals + " " + animalName);
+}
