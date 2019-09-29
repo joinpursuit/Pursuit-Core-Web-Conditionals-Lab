@@ -81,6 +81,3 @@ if(number < 0){
     console.log("equal to 0");
     
 }else console.log("Positive");
-
-
-
