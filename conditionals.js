@@ -59,11 +59,15 @@
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-let animalName = 'cat'
-let numberOfAnimals = 3
+let animalName = 'rabbit'
+let numberOfAnimals = 1
 let plural = 's'
 
-
+if (numberOfAnimals > 1){
+    console.log(numberOfAnimals + ' ' + animalName + plural);
+} else{
+    console.log(numberOfAnimals + ' ' + animalName)
+}
 // 7. Write a block of code that logs whether a given number is even or odd.
 
 // 8. Do question 7 again but use a ternary. 
