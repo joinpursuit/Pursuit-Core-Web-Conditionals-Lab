@@ -6,6 +6,7 @@
 // } else {
 //     console.log("The numbers are not equal");
 // }
+
 // 2. Write a block of code that logs which of two number variables is larger.
 //   * Your output should look like this (in this example for the numbers x = 5 and y = 10): 'The greater number of 5 and 10 is 10'
 //   * If the two numbers are equal, log: 'The numbers are equal.'
@@ -18,6 +19,7 @@
 // } else {
 //     console.log('The numbers are equal.');
 // }
+
 // 3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
 // Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
 // It should default to logging English.
@@ -32,6 +34,10 @@
 // } else {
 //     console.log("Hello World")
 // }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f98519d2a285fc6e4eb772ec8230dd2b2f71ae09
 // 4. Do question 3 again but this time use a `switch` statement. 
 // let english = "english";
 // let spanish = "spanish";
@@ -49,6 +55,7 @@
 //         console.log("Hola Mundo")
 //         break
 // }
+
 // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
 // Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
 // let numGrade = 4;
@@ -73,15 +80,25 @@
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-// let animalName = 'rabbit'
-// let numberOfAnimals = 1
+// let animalName = 'goose'
+// let numberOfAnimals = 5
 // let plural = 's'
 
-// if (numberOfAnimals > 1){
-//     console.log(numberOfAnimals + ' ' + animalName + plural);
-// } else{
-//     console.log(numberOfAnimals + ' ' + animalName)
+// if (numberOfAnimals > 1 && animalName === 'goose') {
+//     console.log(numberOfAnimals + ' geese');
+// } else if (numberOfAnimals > 1 && animalName === 'sheep') {
+//     console.log(numberOfAnimals + ' sheep')
+// } else if (numberOfAnimals > 1 && animalName === 'fish') {
+//     console.log(numberOfAnimals + ' fish');
+// } else if (numberOfAnimals > 1 && animalName == 'ox') {
+//     console.log(numberOfAnimals + ' oxen');
+// } else if (numberOfAnimals > 1) {
+//     console.log(numberOfAnimals + " " + animalName + plural);
+// } else {
+//     console.log(numberOfAnimals + " " + animalName);
 // }
+    
+
 // 7. Write a block of code that logs whether a given number is even or odd.
 // let number = 8;
 // if (number % 2 === 0) {
@@ -89,9 +106,11 @@
 // } else if(number % 2 === 1) {
 //     console.log(number + " is odd.");
 // }
+
 // 8. Do question 7 again but use a ternary. 
 // let number = 8;
 // number % 2 === 0 ? console.log(number + " is even.") : console.log(number + " is odd.");
+
 // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
 // let givNum = -10
 // if (givNum > 0){
