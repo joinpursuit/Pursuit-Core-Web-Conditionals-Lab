@@ -74,3 +74,14 @@ if (numberOfAnimals > 7) {
 } else {
     console.log("5 cats")
 }
+
+
+
+// problem 7
+let num = 4
+if (num % 2 === 0){
+    console.log("number is even");
+}
+else { 
+    console.log("number is odd");
+}
