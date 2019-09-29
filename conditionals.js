@@ -67,9 +67,10 @@ if(numGrade >=90 && numGrade <= 100){
 
 let animalName = "goose"
 let numberOfAnimals = 10
+let pluralAnimal  
 
 switch(numberOfAnimals > 1){
-    case "goose":
+    case animalName==="goose":
     animalName = "geese";
     break;
     case "sheep":
@@ -81,7 +82,7 @@ switch(numberOfAnimals > 1){
     if(animalName === "goose" && numberOfAnimals >1) {
     console.log("There are " + numberOfAnimals + " " + animalName);
 } else if (numberOfAnimals >1) {
-    console.log("There are " + animalName + "s");
+    console.log("There are " + numberOfAnimals + " " + animalName + "s");
 } else if (numberOfAnimals =1) {
     console.log("There is " + numberOfAnimals + " " + animalName);
 }
@@ -97,4 +98,23 @@ if(number % 2 === 0){
 }
 
 //Problem 8
+
 number %2 === 0 ? console.log("The number " + number + " is even.") : console.log("The number " + number + " is odd.")
+
+//Problem 9
+
+let num2 = 'cat'
+
+switch(num2){
+    case num2 === 0:
+        console.log("The number " + num2 + " is equal to zero.");
+    break;
+    case num2 < 0:
+        console.log("The number " + num2 + " is a negative number.");
+    break;
+    case num2 > 0:
+        console.log("The number " + num2 + " is a positive number.");
+    break;
+    default:
+        console.log("This is not a number!!!!!!!");
+}
