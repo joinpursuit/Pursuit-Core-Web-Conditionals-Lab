@@ -23,10 +23,60 @@ let english = 'Hello world'
 let spanish = 'Hola mundo'
 let german = 'Hallo welt'
 let greeting = ""
-if (greeting = english) {
+if (greeting === english) {
     console.log (english)
 }
 else if (greeting !== english) {
     console.log(spanish)
 }
 else (german)
+//Do question 3 again but this time use a `switch` statement. 
+
+//let greeting = 'hello world';
+switch (greeting) {
+  case 'spanish':
+    console.log('hola, mundo');
+    break;
+  case 'german':
+      console.log("hallo, Welt");
+      break
+  case 'french':
+    console.log('bonjour le monde');
+    break;
+    default:
+        console.log("i cant speak another language")
+}
+
+//5. . Use an if - eCreate a variable numGrade that will contain a numeric grade (out of 100)
+//if , else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
+let numGrade = 90
+ if ('a' >= numGrade) {
+    console.log("grade A is 90 or more");
+ } else if ('b'< numGrade || 'b' > 80) {
+     console.log("Grade B is between 90 or 80")
+ } else if ('c'< numGrade || 'c' >= 70 || 'c' <= 79){
+     console.log("Grade C is between 70 and 80");
+ } else if ('d'< numGrade || 'd' >= 69 || 'd' <= 50){
+     console.log("grade d is between 60 and 50")
+ } else {
+     console.log("anything else is F")
+ }
+
+//  6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
+
+// Use an if - else statement to log:
+
+//   * the number
+
+//   * either in single or plural form. Exp: "5 cats" or "1 dog".
+
+// Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+
+let animalName = ('cat')
+let numberOfAnimals = 2
+if (numberOfAnimals >= 2) {
+    console.log("Two cats")
+} else {
+    console.log('One cat')
+}
+
