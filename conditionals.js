@@ -89,3 +89,25 @@ if ([givenNumber % 2] > 0){
 }else{
     console.log ("The number is even.")
 }
+
+
+// 8. Do question 7 again but use a ternary.
+let givenNumberx = 2;
+( givenNumberx % 2) > 0 ? console.log ("The number is odd.") : console.log ("The number is even.")
+
+
+
+
+// 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
+
+let numberx = 0.0001
+if (numberx > 0 ) {
+    console.log("This number is positive");
+} else if (numberx < 0) {
+    console.log("This number is negative");
+} else {
+    console.log("This number is Zero");
+}
+
+
+
