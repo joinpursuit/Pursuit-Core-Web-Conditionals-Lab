@@ -89,13 +89,27 @@ switch (language) {
 
 // This is Problem # 7
 
-let number = 50009000
-// yer
-// sup
-if (number % 2 === 0) {
-    console.log("Even")
-} else {
-    console.log("odd")
-}
+// let number = 17
 
+// if (number % 2 === 0) {
+//     console.log("Even")
+// } else {
+//     console.log("odd")
+// }
+
+// // this is Problem # 8
+
+// number ? number % 2 === 0 : number % 3;
+
+// this is problem # 9
+
+let n = 0
+
+if (n < 0 ) {
+    console.log("Negative Number")
+} else if (n === 0) {
+    console.log("Number is equal to Zero")
+} else {
+    console.log("This is a positive number")
+}
 
