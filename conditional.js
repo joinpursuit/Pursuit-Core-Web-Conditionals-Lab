@@ -83,7 +83,18 @@ if (numberOfAnimals > 1) {
 
 // 7. Write a block of code that logs whether a given number is even or odd.
 
+let num1 = 6
+if (num1 %2 === 0) {
+    console.log("even")
+} else {
+    console.log("odd")
+}
+
+
 // 8. Do question 7 again but use a ternary. 
+let num2 = 5
+num2 %2 === 0? console.log("even") : console.log ("odd")
+
 
 // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
 
