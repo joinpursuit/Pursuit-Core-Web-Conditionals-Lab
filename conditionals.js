@@ -25,16 +25,29 @@ if (number > number2) {
     }
 
 //Problem 3
-let lang1 = "German"
-    
+let lang1 = "Spanish"
 if (lang1 === "English") {
     console.log("Hello, world")
 } else if (lang1 === "Spanish") {
     console.log("Hola, Mundo")
 } else if (lang1 === "German") {
-    console.log("Hallo Welt")
+    console.log("Hallo, Welt")
 } else {
     console.log("Hello, wolrd")
+}
+
+switch ("English") {
+    case "English":
+        console.log("Hello, World!");
+    break;
+    case "Spanish":
+        console.log("Hola, Mundo")
+    break;
+    case "German":
+        console.log("Hello, Welt")
+    break;
+    default:
+        console.log("no Lang");
 }
 
 //Problem 4
