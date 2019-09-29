@@ -91,7 +91,7 @@ switch (language) {
 
 let number = 50009000
 // yer
-
+// sup
 if (number % 2 === 0) {
     console.log("Even")
 } else {
