@@ -98,3 +98,14 @@ someThing = 7;
 someThing % 2 === 0 ? 
     console.log("number is even") :
     console.log("number is odd") 
+
+/*9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.*/
+
+let givenNumber = 0;
+if (givenNumber > 0) {
+    console.log("Number is Positive");
+} else if (givenNumber === 0) {
+    console.log("Number is equal to 0");
+} else {
+    console.log("Number is Negative");
+}
