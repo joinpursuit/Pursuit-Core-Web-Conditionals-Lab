@@ -77,4 +77,29 @@ if (numberOfAnimals > 1) {
     console.log("I have " + numberOfAnimals + " " + animalName)
 }
 
+//Problem 7
 
+let rnum = 7
+
+if (rnum % 2 !== 0) {
+    console.log('its odd');
+}    else {console.log('its even');
+}
+
+//Problem 8
+
+(rnum%2 !== 0) ? console.log('its odd') :console.log('its even')
+
+//Problem 9
+
+let newnum = "what's up"
+
+if (newnum > 0) {
+    console.log("It's positive!")
+} else if (newnum < 0) {
+    console.log("It's negative!")
+} else if (newnum === 0) {
+    console.log("It's equal to 0!")
+} else {
+    console.log("It's not a number!")
+}
