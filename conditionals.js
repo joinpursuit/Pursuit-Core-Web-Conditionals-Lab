@@ -34,3 +34,27 @@ if(givenLanguage === "Spanish"){
     console.log(english);
 }
 
+var givenLanguage2 = "German"
+switch(givenLanguage2){
+    case "Spanish" :
+    console.log("Hola Mundo");
+    break;
+    case "German":
+    console.log("Hallo Welt");
+    break;
+    default:
+        console.log("Hello World");
+}
+
+
+// 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
+// Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
+
+// numGrade = 96
+
+
+
+
+// if(numGrade >=90 && numGrade <=100){
+//     console.log("The student receives an A")
+// } else if(numGrade >=80 && <=89)
