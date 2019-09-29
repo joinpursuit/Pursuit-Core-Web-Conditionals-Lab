@@ -80,3 +80,5 @@ if (numberOfAnimals >= 2) {
     console.log('One cat')
 }
 
+//7. Write a block of code that logs whether a given number is even or odd.
+let evenNumber = 
