@@ -24,15 +24,76 @@ if (string !=  "hello world"){
 
 apples
 
-//  switch (new language().getlanguage()) {
-//     case 0:
-//       language = "Привет, мир";
-//       break;
-//     case 1:
-//       language = "Hola Mundo";
-//       break;
-//     case 2:
-//        language= "hello world";
-//       break;
+ switch (new language().getlanguage()) {
+    case 0:
+      language = "Привет, мир";
+      break;
+    case 1:
+      language = "Hola Mundo";
+      break;
+    case 2:
+       language= "hello world";
+      break;
     
-//   }
+  }
+
+
+
+let numGrade = 50
+
+if (100<= numGrade >=90 ){
+    console.log("A")
+} else if(89<= numGrade >=80){
+    console.log("B")
+}else if(79<= numGrade >=70){
+    console.log("C")
+} else if(69<= numGrade >=65){
+    console.log("D")
+} else console.log("F")
+
+
+
+let animalName = ("dog", "cat", "duck", "bird")
+let numberOfAnimals = 7
+
+if (numberOfAnimals > 1){
+    console.log(animalName + "s")
+} console.log(animalName)
+
+let animalName = ["dog", "cat", "duck", "bird"]
+animalName[0]= "5 dogs"
+animalName[1]= "2 cats"
+animalName[2]= "4 ducks"
+animalName[3]= "6 birds"
+
+let numberOfAnimals = 0
+
+if (numberOfAnimals > 1){
+    console.log(numberOfAnimals  + " " + animalName + "s")
+} 
+console.log(animalName)
+
+let  num = 3;
+if(num % 4 == 0){
+  console.log("even");
+}else{
+  console.log("odd");
+}
+
+let num = 3
+
+ num % 2 == 0 ?  console.log( "even") : console.log("odd");
+
+
+let  num = 0;
+
+if ( num * -1 > 0){
+    console.log("negative")
+} else if( num * -1 < 0){
+    console.log("positive")
+}else{
+    console.log("equal to 0")
+}
+
+
+
