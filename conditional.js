@@ -50,3 +50,26 @@ if (numGrade<=65){
 } else {
     console.log("A")
 }
+
+
+//Problem Six
+
+let animalName = 'dog'
+let numberofAnimals = 4
+
+if (numberofAnimals === 1) {
+  console.log(numberofAnimals + " " + animalName)
+} else {
+   console.log(numberofAnimals + " " + animalName +'s')
+}
+
+//Problem Seven
+ 
+let number = 4
+
+if (number % 2 === 0) {
+    console.log(number + " is even")
+} else {
+    console.log(number + 'is odd')
+}
+
