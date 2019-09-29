@@ -39,7 +39,7 @@ if (lang === "english"){
 
 
 // 4. Do question 3 again but this time use a `switch` statement. 
-let language = "spanish";
+let language = "german";
 switch (language){
     case language = "english" : 
         console.log ("Hello World");
@@ -56,6 +56,20 @@ switch (language){
 
 // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
 // Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
+let numGrade = 101;
+if (numGrade >= 90 && numGrade <= 100){
+    console.log("You got an " + " " + "A");
+} else if(numGrade < 90 && numGrade >= 80){
+    console.log("You got a" + " " + "B");
+} else if(numGrade < 80 && numGrade >= 70){
+    console.log("You got a" + " "+ "C");
+} else if(numGrade < 70 && numGrade >= 65){
+    console.log("You got a" + " "+ "D");
+} else if(numGrade > 100){
+    console.log("You got an A+");
+} else{
+    console.log("You got a F")
+}
 
 // 6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
 
