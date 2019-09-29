@@ -37,11 +37,23 @@ if (language === spanish) {
 
 
 // problem 4
-// let english = "Hello world!" 
-// let spanish = "Hola mundo!"
-// let french = "Bonjour le monde!"
-// let language = english
 
+switch (language) {
+case spanish:
+    console.log("Hola mundo!")
+    // code block
+break;
+case french:
+    console.log("Bonjour le monde!")
+    // code block
+break;
+case english:
+    console.log("Hello world!")
+    //  code block
+break;
+default:
+    console.log("Not a recognized language.")
+}
 
 
 // problem 5
