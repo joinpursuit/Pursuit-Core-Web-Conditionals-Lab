@@ -26,19 +26,37 @@
 // // Problem 3
 
 
-// let language = 'Spanish';
+let language = 'Spanish';
 
-// if (language === 'English') {
-//     console.log('Hello, World')
-// } else if (language === 'Spanish') {
-//     console.log ('Hola, Mundo') 
-// } else if (language === 'German') {
-//     console.log ('Hallo, Welt')
-// } else {
-//     console.log ('Not a recognized language')
-// }
+if (language === 'English') {
+    console.log('Hello, World')
+} else if (language === 'Spanish') {
+    console.log ('Hola, Mundo') 
+} else if (language === 'German') {
+    console.log ('Hallo, Welt')
+} else {
+    console.log ('Not a recognized language')
+}
 
+// Problem 4
 
+switch (language) {
+    case "English":
+        console.log("Hello, World");
+        // code block
+        break;
+        case "Spanish":
+            console.log("Hola, Mundo")
+            //code block
+            break;
+            case "German":
+                console.log("Hallo, Welt")
+                //code block
+                 break;
+                default:
+                    console.log("Not a recognized language")
+                //code block
+}
 
 // // This is Problem #5
 
@@ -56,15 +74,25 @@
 //     console.log("A")
 // }
 
-//THis is Problem # 6
+// THis is Problem # 6
 
-let animalName = "Wolf"
-let numberOfAnimals = 40
+// let animalName = "Wolf"
+// let numberOfAnimals = 40
 
-if (animalName === "Wolf" && numberOfAnimals >= 2) {
-    console.log("There are " + numberOfAnimals + " wolves here. ")
-} else if (animalName === "Wolf" && numberOfAnimals === 1) {
-    console.log("There is " + numberOfAnimals + " Wolf here. ")
-} else if (animalName === "Wolf" && numberOfAnimals === 0) {
-    console.log("The " + animalName + " is extinct. ")
-}
+// if (animalName === "Wolf" && numberOfAnimals >= 2) {
+//     console.log("There are " + numberOfAnimals + " wolves here. ")
+// } else if (animalName === "Wolf" && numberOfAnimals === 1) {
+//     console.log("There is " + numberOfAnimals + " Wolf here. ")
+// } else if (animalName === "Wolf" && numberOfAnimals === 0) {
+//     console.log("The " + animalName + " is extinct. ")
+// }
+
+// This is Problem # 7
+
+// let number = 40
+
+// if (number % 0) {
+//     console.log("Even")
+// }
+
+
