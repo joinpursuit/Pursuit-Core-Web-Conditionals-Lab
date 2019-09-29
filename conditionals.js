@@ -54,3 +54,14 @@ if (numGrade <= 100 && numGrade >= 91 ) {
     console.log("F")
 }
 
+//Problem 6
+let animalName = "dog" 
+let numberOfAnimals = 1
+
+if (numberOfAnimals > 1) {
+    console.log("I have " + numberOfAnimals + " " + animalName + "s")
+} else {
+    console.log("I have " + numberOfAnimals + " " + animalName)
+}
+
+
