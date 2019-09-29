@@ -22,7 +22,7 @@ if (string !=  "hello world"){
     console.log("done");
 }
 
-
+apples
 
 //  switch (new language().getlanguage()) {
 //     case 0:
