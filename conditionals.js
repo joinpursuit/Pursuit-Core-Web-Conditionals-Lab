@@ -10,7 +10,7 @@ if (numOne === numTwo){
 
 // Problem two
 
-let numX = 10
+let numX = 5
 let numY = 10
 
 if (numX > numY){
