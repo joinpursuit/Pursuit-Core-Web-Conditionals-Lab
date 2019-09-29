@@ -66,11 +66,24 @@
 // }
 // x%2 === 0 ? console.log("This number is Even") : console.log("This number is Odd")
 //Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
-let x = 7
-if (x >= 1){
-    console.log("This is a possitive number")
-}else if (x <= -1){
-    console.log("This is a negative number")
-}else {
-    console.log("The Number is 0")
-}
+// let x = 7
+// if (x >= 1){
+//     console.log("This is a possitive number")
+// }else if (x <= -1){
+//     console.log("This is a negative number")
+// }else {
+//     console.log("The Number is 0")
+//} 
+let language = "Spanish"
+switch (language) {
+    case "German":
+        console.log("Hallo Welt")
+      break;
+    case "Spanish":
+        console.log("Hola Mundo")
+      // code block
+      break;  
+    default:
+        console.log("Hello World")
+    // code block
+  }
