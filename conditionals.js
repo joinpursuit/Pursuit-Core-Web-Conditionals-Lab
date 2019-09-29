@@ -82,3 +82,4 @@ switch(animalName === "goose" && numberOfAnimals > 1){
 } else if (numberOfAnimals =1) {
     console.log("There is " + numberOfAnimals + " " + animalName);
 }
+I don't believe it
