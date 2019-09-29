@@ -24,8 +24,35 @@ if(a > b){
 // 3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
 // Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
 // It should default to logging English.
+let lang = "french";
+// let span = "spanish"
+// let germ = "german" 
+if (lang === "english"){
+    console.log("Hello World");
+} else if (lang === "spanish"){
+    console.log("Hola Mundo");
+} else if (lang === "german"){
+    console.log("Hallo Welt");
+} else{
+    console.log("Go to google translate!");
+}
+
 
 // 4. Do question 3 again but this time use a `switch` statement. 
+let language = "spanish";
+switch (language){
+    case language = "english" : 
+        console.log ("Hello World");
+        break;
+    case language = "spanish" :
+        console.log ("Hola Mundo");
+        break;
+    case language = "german":
+        console.log ("Hallo Welt");
+        break;
+    default :
+        console.log("Go to google translate!");
+}
 
 // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
 // Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
