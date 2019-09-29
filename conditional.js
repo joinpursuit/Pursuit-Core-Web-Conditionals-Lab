@@ -34,14 +34,14 @@ let spanish = "Hola Mundo"
 let french = "Bonjour le monde"
 let german = "Hallo welt"
 let english = "Hello world"
-let language = german
+let language = spanish
 if (language === spanish){
     console.log("Hola Mundo")
-}else if (language === french){
+} else if (language === french){
     console.log("Bonjour le monde")
-}else if (language === german){
+} else if (language === german){
     console.log("Hallo welt")
-}else {
+} else {
     console.log("hello world")
 }
 
