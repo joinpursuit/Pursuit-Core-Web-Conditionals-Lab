@@ -82,10 +82,10 @@ if(numGrade >= 90){
 else if (numGrade >= 80){
   console.log("B");
 }
-else if ( numGrade >= 79){
+else if ( numGrade >= 70){
 console.log("C");
 }
-else if ( numGrade >= 69){
+else if ( numGrade >= 65){
   console.log("D");
 }
 else {
