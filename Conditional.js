@@ -58,10 +58,19 @@
 // }else if (numberOfAnimals = 1){
 //     console.log(numberOfAnimals + " " + animalName)
 // }
-let x = 3
+// let x = 3
 // if (x%2 === 0) {
 //     console.log("This number is Even")
 // }else {
 //     console.log("This number is Odd")
 // }
-x%2 === 0 ? console.log("This number is Even") : console.log("This number is Odd")
+// x%2 === 0 ? console.log("This number is Even") : console.log("This number is Odd")
+//Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
+let x = 7
+if (x >= 1){
+    console.log("This is a possitive number")
+}else if (x <= -1){
+    console.log("This is a negative number")
+}else {
+    console.log("The Number is 0")
+}
