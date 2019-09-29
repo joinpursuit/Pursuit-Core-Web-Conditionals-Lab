@@ -89,10 +89,13 @@ switch (language) {
 
 // This is Problem # 7
 
-// let number = 40
+let number = 50009000
 
-// if (number % 0) {
-//     console.log("Even")
-// }
+
+if (number % 2 === 0) {
+    console.log("Even")
+} else {
+    console.log("odd")
+}
 
 
