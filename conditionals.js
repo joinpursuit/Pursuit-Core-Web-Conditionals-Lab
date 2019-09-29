@@ -91,3 +91,16 @@ else {
 // problem 8
 let num1 = 8
 num1 % 2 ? console.log("odd") : console.log("even");
+
+
+
+
+//problem 9
+let numm = 10
+if (numm < 0) {
+    console.log("number is negative");
+} else if (numm > 0){ 
+    console.log("number is positive");
+} else {
+    console.log("equal to 0 ");
+}
