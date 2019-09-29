@@ -9,20 +9,31 @@
 // 2. Write a block of code that logs which of two number variables is larger.
 //   * Your output should look like this (in this example for the numbers x = 5 and y = 10): 'The greater number of 5 and 10 is 10'
 //   * If the two numbers are equal, log: 'The numbers are equal.'
-let x = 5;
-let y = 10;
-if (x > y){
-    console.log('The greater number of ' + x + " and " + y + " is " + x);
-} else if (x < y){
-    console.log('The greater number of ' + x + " and " + y + " is " + y);
-} else {
-    console.log('The numbers are equal.');
-}
+// let x = 5;
+// let y = 10;
+// if (x > y){
+//     console.log('The greater number of ' + x + " and " + y + " is " + x);
+// } else if (x < y){
+//     console.log('The greater number of ' + x + " and " + y + " is " + y);
+// } else {
+//     console.log('The numbers are equal.');
+// }
 // 3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
 // Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
 // It should default to logging English.
-
+// let english = "english";
+// let spanish = "spanish";
+// let german = "german";
+// let language = english;
+// if (language === english) {
+//     console.log("Hello, World");
+// } else if(language === spanish) {
+//     console.log("Hola Mundo");
+// } else if(language === german) {
+//     console.log("Hallo Welt");
+// }
 // 4. Do question 3 again but this time use a `switch` statement. 
+// DO NOT DO
 
 // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
 // Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
