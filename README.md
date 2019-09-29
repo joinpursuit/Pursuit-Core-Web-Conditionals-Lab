@@ -6,6 +6,9 @@ For this exercises we are going to create a file called `conditionals.js`. Copy 
 
 1. Write a block of code that checks and logs whether variables are equal or not.
 
+
+
+
 2. Write a block of code that logs which of two number variables is larger.
   * Your output should look like this (in this example for the numbers x = 5 and y = 10): 'The greater number of 5 and 10 is 10'
   * If the two numbers are equal, log: 'The numbers are equal.'
