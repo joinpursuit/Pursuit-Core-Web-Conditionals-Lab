@@ -37,18 +37,18 @@
 
 // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
 // Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
-let numGrade = 4;
-if (numGrade >= 90) {
-    console.log("A");
-} else if (numGrade >= 80 && numGrade < 90) {
-    console.log("B");
-} else if (numGrade >= 70 && numGrade < 80) {
-    console.log("C");
-} else if (numGrade >= 60 && numGrade < 70) {
-    console.log("D");
-} else {
-    console.log("F");
-}
+// let numGrade = 4;
+// if (numGrade >= 90) {
+//     console.log("A");
+// } else if (numGrade >= 80 && numGrade < 90) {
+//     console.log("B");
+// } else if (numGrade >= 70 && numGrade < 80) {
+//     console.log("C");
+// } else if (numGrade >= 60 && numGrade < 70) {
+//     console.log("D");
+// } else {
+//     console.log("F");
+// }
 
 // 6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
 
@@ -59,6 +59,10 @@ if (numGrade >= 90) {
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+let animalName = 'cat'
+let numberOfAnimals = 3
+let plural = 's'
+
 
 // 7. Write a block of code that logs whether a given number is even or odd.
 
