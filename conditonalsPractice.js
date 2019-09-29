@@ -23,3 +23,44 @@ if (num3 > num4) {
 else {
     console.log("the greater number of " + num3 + " and " + num4 + " is " + num4);
 }
+
+/* 3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
+Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
+It should default to logging English.*/
+
+let str= "english";
+if (str === "spanish"){
+   console.log("Hola, mundo");
+} else if (str === "russian"){
+   console.log("Привет, мир");
+} else if (str === "japanese"){
+   console.log("こんにちは世界");
+} else {
+   console.log("Hello wolrd");
+}
+
+/*4. Do question 3 again but this time use a `switch` statement.*/
+
+
+
+
+/*5. Create a variable numGrade that will contain a numeric grade (out of 100). 
+Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".*/
+
+let numGrade = 74;
+if (numGrade >= 0 && numGrade <= 60) {
+    console.log("You're getting an F");
+} else if (numGrade <= 65) {
+    console.log("You're getting a D");
+} else if (numGrade <= 70) {
+    console.log("You're getting a C");
+} else if (numGrade <= 80) {
+    console.log("You're getting a B");
+} else if (numGrade > 80 && numGrade<=100) {
+    console.log("You're getting an A");
+} else {
+    console.log("You're making up grades");
+}
+
+
+
