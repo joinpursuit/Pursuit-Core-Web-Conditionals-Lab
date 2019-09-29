@@ -41,8 +41,10 @@ if (language === spanish){
     console.log("Bonjour le monde")
 } else if (language === german){
     console.log("Hallo welt")
-} else {
+} else if (language === english) {
     console.log("hello world")
+} else {
+    console.log("error message not found")
 }
 
 
@@ -50,8 +52,23 @@ if (language === spanish){
 
 // 4. Do question 3 again but this time use a `switch` statement. 
 
-// 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
-// Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
+let Language = "German";
+switch (Language){
+   case Language = "English" :
+       console.log ("hello World");
+       break;
+   case Language = "Spanish" :
+       console.log ("hola Mundo");
+       break;
+   case Language = "German":
+       console.log ("hallo Welt");
+       break;
+   default :
+       console.log("Goodbye")
+}
+
+// // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
+// // Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
 
 let grade = "A" || "B" || "C" || "D" || "F"
 let result = 78
@@ -66,7 +83,7 @@ if (result>=90){
 } else{
     console.log("F")
 }
-// 6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
+// // 6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
 
 let animalName = "dog"
 let numberOfAnimals = 5
@@ -79,9 +96,9 @@ if (numberOfAnimals > 1) {
 
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 
-// Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+// // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
-// 7. Write a block of code that logs whether a given number is even or odd.
+// // 7. Write a block of code that logs whether a given number is even or odd.
 
 let num1 = 6
 if (num1 %2 === 0) {
@@ -91,14 +108,19 @@ if (num1 %2 === 0) {
 }
 
 
-// 8. Do question 7 again but use a ternary. 
+// // 8. Do question 7 again but use a ternary. 
 let num2 = 5
-num2 %2 === 0? console.log("even") : console.log ("odd")
+num2 %2 === 0 ? console.log("even") : console.log("odd");
 
 
-// 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
+// // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
 
-
-
-
+let numbervalue = 0
+if (numbervalue>0){
+    console.log("positive")
+} else if (numbervalue<0){
+    console.log("negative")
+} else if (numbervalue === 0){
+    console.log("zero")
+}
 
