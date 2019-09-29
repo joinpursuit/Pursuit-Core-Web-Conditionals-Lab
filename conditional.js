@@ -75,7 +75,4 @@ if (number % 2 === 0) {
 
 //Problem Eight
 
-let numb2 = 4
-
-(numb2 % 2 === 0) ? console.log(numb2 + " is even"): console.log(numb2 + 'is odd')
-
+let twoNum = 4; (twoNum %2===0) ? console.log(twoNum + " is even"): console.log(twoNum  + ' is odd')
