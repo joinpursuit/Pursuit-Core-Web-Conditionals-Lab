@@ -49,13 +49,19 @@
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-let animalName = "cat"
-numberOfAnimals =2
-if(numberOfAnimals > 1 && animalName === "Goose"){
-    console.log(numberOfAnimals + " Geese")
-}else if (numberOfAnimals > 1){
-    console.log(numberOfAnimals + " " + animalName + "s")
-}else if (numberOfAnimals = 1){
-    console.log(numberOfAnimals + " " + animalName)
-}
-
+// let animalName = "cat"
+// numberOfAnimals =2
+// if(numberOfAnimals > 1 && animalName === "Goose"){
+//     console.log(numberOfAnimals + " Geese")
+// }else if (numberOfAnimals > 1){
+//     console.log(numberOfAnimals + " " + animalName + "s")
+// }else if (numberOfAnimals = 1){
+//     console.log(numberOfAnimals + " " + animalName)
+// }
+let x = 3
+// if (x%2 === 0) {
+//     console.log("This number is Even")
+// }else {
+//     console.log("This number is Odd")
+// }
+x%2 === 0 ? console.log("This number is Even") : console.log("This number is Odd")
