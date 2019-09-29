@@ -1,13 +1,19 @@
+Exercise 1
+
 let high = 5
 let low = 2
 
 high === low ? console.log("equals") : console.log("not equals");
 
 
+Exercise 2
+
 let num = 20
 let num2 = 48
 
 num <= num2 ? console.log("10 is the greater number") : console.log("5 is the lower numnber");
+
+Exercise 3
 
 
 let string = "hello world"
@@ -22,22 +28,28 @@ if (string !=  "hello world"){
     console.log("done");
 }
 
-apples
+Exercise 4
 
- switch (new language().getlanguage()) {
-    case 0:
-      language = "Привет, мир";
-      break;
-    case 1:
-      language = "Hola Mundo";
-      break;
-    case 2:
-       language= "hello world";
-      break;
-    
-  }
+    const language = "australia";
 
+    switch (language) {
+      case "english":
+            console.log("hello world");
+            break;
+      case "spanish":
+            console.log("Hola Mundo");
+            break;
+      case "russian":
+        console.log("Привет, мир");
+        break;
+        case "australia":
+                console.log("plɹoʍ ollǝɥ");
+                break;       
+      default:
+        console.log("language not supported");
+    }
 
+Exercise 5
 
 let numGrade = 50
 
@@ -51,7 +63,7 @@ if (100<= numGrade >=90 ){
     console.log("D")
 } else console.log("F")
 
-
+Exercise 6
 
 let animalName = ("dog", "cat", "duck", "bird")
 let numberOfAnimals = 7
@@ -73,6 +85,9 @@ if (numberOfAnimals > 1){
 } 
 console.log(animalName)
 
+
+Exercise 7
+
 let  num = 3;
 if(num % 4 == 0){
   console.log("even");
@@ -80,12 +95,16 @@ if(num % 4 == 0){
   console.log("odd");
 }
 
+Exercise 8
+
 let num = 3
 
  num % 2 == 0 ?  console.log( "even") : console.log("odd");
 
 
 let  num = 0;
+
+Exercise 9
 
 if ( num * -1 > 0){
     console.log("negative")
