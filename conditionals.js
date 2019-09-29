@@ -49,6 +49,9 @@ let numTwo = 20
 let numberx = 5
 let numbery = 10
 if (numberx > numbery) {
-    console.log("the greater number is ")
+    console.log("the greater number is " + numberx) 
+}
+else {
+    console.log("the greater number is " + numbery)
 }
 
