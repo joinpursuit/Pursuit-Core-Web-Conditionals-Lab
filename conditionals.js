@@ -90,7 +90,7 @@ switch (language) {
 // This is Problem # 7
 
 let number = 50009000
-
+// yer
 
 if (number % 2 === 0) {
     console.log("Even")
