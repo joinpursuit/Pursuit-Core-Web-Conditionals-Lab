@@ -1,12 +1,12 @@
 
 // 1. Write a block of code that checks and logs whether variables are equal or not.
-let x = 6
-let y = 5
-if ( x === y) {
-    console.log("the variables are equal")
-} else {
-    console.log("the variables are not equal")
-}
+// let x = 6
+// let y = 5
+// if ( x === y) {
+//     console.log("the variables are equal")
+// } else {
+//     console.log("the variables are not equal")
+// }
 
 
 
@@ -16,13 +16,37 @@ if ( x === y) {
 //   * If the two numbers are equal, log: 'The numbers are equal.'
  
 
-
+let a = 8
+let b = 50
+if (a>b){
+    console.log ("The greater number of" + " " + a + " "+ "and" + " " + b + " "+ "is" + " " + a)
+} else if (a<b){
+    console.log("The greater number of" + " " + a + " "+ "and" + " " + b + " "+ "is" + " " + b)
+}
 
 
 
 // 3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
 // Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
 // It should default to logging English.
+
+let spanish = "Hola Mundo"
+let french = "Bonjour le monde"
+let german = "Hallo welt"
+let english = "Hello world"
+let language = german
+if (language === spanish){
+    console.log("Hola Mundo")
+}else if (language === french){
+    console.log("Bonjour le monde")
+}else if (language === german){
+    console.log("Hallo welt")
+}else {
+    console.log("hello world")
+}
+
+
+
 
 // 4. Do question 3 again but this time use a `switch` statement. 
 
