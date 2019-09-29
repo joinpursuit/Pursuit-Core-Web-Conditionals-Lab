@@ -26,3 +26,36 @@
 // }else{
 //     console.log("Hello World")
 // }
+
+// Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
+// let numGrade = 75
+// if (numGrade>=90) {
+// console.log("A")
+// }else if (numGrade>=79){
+//     console.log("B")
+// }else if (numGrade>=69){
+//     console.log("C")
+// }else if (numGrade>=59){
+//     console.log("D")
+// }else {
+// console.log("F")
+// }
+// Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
+
+// Use an if - else statement to log:
+
+//   * the number
+
+//   * either in single or plural form. Exp: "5 cats" or "1 dog".
+
+// Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+let animalName = "cat"
+numberOfAnimals =2
+if(numberOfAnimals > 1 && animalName === "Goose"){
+    console.log(numberOfAnimals + " Geese")
+}else if (numberOfAnimals > 1){
+    console.log(numberOfAnimals + " " + animalName + "s")
+}else if (numberOfAnimals = 1){
+    console.log(numberOfAnimals + " " + animalName)
+}
+
