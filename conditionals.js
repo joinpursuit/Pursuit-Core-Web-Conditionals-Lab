@@ -1,4 +1,4 @@
-//Problem 1
+//Problem1
 
 
 let x = 2
@@ -13,7 +13,7 @@ if (x > y){
 }
 
 
-//Problem 2 
+//Problem2 
 
 let A = 7
 let B = 3
@@ -26,15 +26,68 @@ if (A > B) {
     console.log("Both numbers are equal");
 }
 
-//Problem 3
+//Problem3
 
-let hey = hello
-let hello = english
+let hey = "Hello";
 
-if (hey = hello){ 
-console.log("Hello World");
-} else if (hey = hola){
+if (hey === "hallo"){ 
+console.log("Hallo Welt");
+} else if (hey === "hola"){
     console.log("Hola, Mundo");
-} else if (hey = hallo) {
-    console.log("Hallo Welt");
+} else {
+    console.log("Hello World");
 }
+
+
+//Problem4
+
+switch ("German") {
+ case "English":
+console.log("Hello");
+// code block 
+break;
+case "Spanish":
+console.log("Hola");
+// code block 
+break;
+case "German":
+console.log("Hallo");
+// code block 
+break; 
+default:
+     console.log("No Language")
+     // code block 
+    }
+
+
+    //Problem5
+
+    let number = 83
+
+    if (number > 90){
+        console.log("A Grade");
+    } else if (number > 79 < 90){
+        console.log("B Grade")
+    } else if (number > 69 < 80){
+        console.log("C Grade");
+    } else if (number > 59 < 70){
+        console.log("D Grade");
+    } else if (number < 60){
+        console.log("F! Fail!");
+    }
+
+
+    //Problem6
+
+    let animalName = "cat"
+    let numberOfAnimals = 0
+    if(numberOfAnimals === 1) {
+        console.log("You have " + numberOfAnimals + " " + animalName + ".");
+    } else if (numberOfAnimals > 1){
+        console.log("You have " + numberOfAnimals + " " + animalName + "s.");
+    } else {
+        console.log("You have no " + animalName);
+    }
+
+
+    //Problem7
