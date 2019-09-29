@@ -50,3 +50,21 @@ console.log ("D")
 }else{
 console.log ("F")
 }
+
+// Problem 6
+let animalName = "goose"
+let numberOfAnimals = 2
+
+
+if (animalName === "sheep") {
+console.log(numberOfAnimals + " " + animalName)
+}
+else if(animalName === "goose" && numberOfAnimals > 1  )
+{
+console.log(numberOfAnimals + " " + "geese")
+}
+else if (numberOfAnimals > 1) {
+console.log(numberOfAnimals + " " + animalName + "s")
+} else (numberOfAnimals === 1 && animalName !== "goose");{
+console.log(numberOfAnimals + " " + animalName)
+} 
