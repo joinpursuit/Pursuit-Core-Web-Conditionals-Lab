@@ -63,17 +63,20 @@ if(numGrade >=90 && numGrade <= 100){
 }else if(numGrade <= 59){
     console.log("The student receives a F");
 }
+// Problem 6
 
 let animalName = "goose"
 let numberOfAnimals = 10
 
-switch(animalName === "goose" && numberOfAnimals > 1){
+switch(numberOfAnimals > 1){
     case "goose":
     animalName = "geese";
     break;
     case "sheep":
     animalName = "sheep";
     break;
+    default:
+        console.log("There are no collective nouns");
 }
     if(animalName === "goose" && numberOfAnimals >1) {
     console.log("There are " + numberOfAnimals + " " + animalName);
@@ -82,4 +85,15 @@ switch(animalName === "goose" && numberOfAnimals > 1){
 } else if (numberOfAnimals =1) {
     console.log("There is " + numberOfAnimals + " " + animalName);
 }
-I don't believe it
+
+//Problem 7
+
+let number = 4
+
+if(number % 2 === 0){
+    console.log("The number " + number + " is even.");
+}else if(number % 2 === 1){
+    console.log("The number " + number + " is odd.");
+}
+
+//Problem 8
