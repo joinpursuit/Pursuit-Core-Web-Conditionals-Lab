@@ -1,6 +1,6 @@
 # Conditional Exercises
 
-For this exercises we are going to create a file called `conditionals.js`. Copy the description of the exercise as a comment into the file and underneath write your JavaScript code.
+For this exercises we are going to create a file called `co`. Copy the description of the exercise as a comment into the file and underneath write your JavaScript code.
 
 > *Note*: Remember to fork this repo, clone your copy, modify `conditionals.js` with your answers. Lastly `git add` your changes, `git commit` and `git push`
 
