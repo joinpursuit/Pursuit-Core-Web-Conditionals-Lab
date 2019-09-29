@@ -7,6 +7,8 @@ if (number === number2) {
     else{ console.log('we are not equal')
 }
 
+// /
+
 //Problem 2
 // if (number > number2) {
 //     console.log('The greater number of ' + number +" and " + number2 + ' is ' + number);
