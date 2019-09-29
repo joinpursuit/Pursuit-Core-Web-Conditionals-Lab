@@ -37,6 +37,10 @@ if (language === spanish) {
 
 
 // problem 4
+// let english = "Hello world!" 
+// let spanish = "Hola mundo!"
+// let french = "Bonjour le monde!"
+// let language = english
 
 
 
@@ -57,4 +61,16 @@ else if (numgrade >= 60 && numgrade< 70){
 }
 else {
     console.log("F");
+}
+
+
+// problem 6
+let animalName = "cat"
+let numberOfAnimals = 5
+if (numberOfAnimals > 7) {
+    console.log("more than 7 cats")
+} else if (numberOfAnimals < 4) {
+    console.log("less 4 cats")
+} else {
+    console.log("5 cats")
 }
