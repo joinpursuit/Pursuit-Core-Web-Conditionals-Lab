@@ -55,3 +55,20 @@ else {
     console.log("the greater number is " + numbery)
 }
 
+//Problem 3
+let language = "english"
+if (language === "spanish") {
+    console.log("Hola al mundo")
+
+}
+else if (language === "German ") {
+    console.log("Hallo Welt")
+}
+else {
+    
+}
+
+
+
+
+
