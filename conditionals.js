@@ -97,3 +97,4 @@ if(number % 2 === 0){
 }
 
 //Problem 8
+number %2 === 0 ? console.log("The number " + number + " is even.") : console.log("The number " + number + " is odd.")
