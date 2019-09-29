@@ -83,3 +83,15 @@ else{
 //Problem 8
 let numberB = 11
 numberB%2 === 0 ? console.log("Number is even") : console.log("Number is odd")
+
+// Problem 9
+
+let numNum = Infinity
+
+if (numNum === 0){
+console.log ("Number is 0")
+} else if (numNum < 0){
+console.log ("Number is Negative")
+} else {
+console.log ("Number is Positive")
+}
