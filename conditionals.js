@@ -93,9 +93,19 @@ let num = 0;
 if(num % 2 === 0){
     console.log("Number is EVEN");
 } else {
-    console.log("Number is ODD")
+    console.log("Number is ODD");
 }
 
 // 8. Do question 7 again but use a ternary. 
+let number = 5;
+number % 2 === 0 ? console.log("Number is EVEN") : console.log("Number is ODD");
 
 // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
+let integer = 0;
+if (integer > 0){
+    console.log("The number" + " " + integer + " " + "is positive");
+} else if(integer < 0){
+    console.log("The number" + " " + integer + " " + "is negative");
+} else{
+    console.log("The number is 0");
+}
