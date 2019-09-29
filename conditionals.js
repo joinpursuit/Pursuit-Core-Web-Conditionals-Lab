@@ -68,12 +68,12 @@ if (numGrade >= 90 && numGrade <= 100){
 } else if(numGrade > 100){
     console.log("You got an A+");
 } else{
-    console.log("You got a F")
+    console.log("You got a F");
 }
 
 // 6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
-let animalName = "owl"
-let numberOfAnimals = 0
+let animalName = "owl";
+let numberOfAnimals = 0;
 // Use an if - else statement to log:
 
 //   * the number
@@ -81,14 +81,20 @@ let numberOfAnimals = 0
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
 if(numberOfAnimals> 1){
-    console.log(numberOfAnimals + " " + animalName + "s.")
+    console.log(numberOfAnimals + " " + animalName + "s.");
 } else if (numberOfAnimals === 1){
     console.log(numberOfAnimals + " " + animalName);
 } else {
-    console.log("!?!?")
+    console.log("!?!?");
 }
 
 // 7. Write a block of code that logs whether a given number is even or odd.
+let num = 0;
+if(num % 2 === 0){
+    console.log("Number is EVEN");
+} else {
+    console.log("Number is ODD")
+}
 
 // 8. Do question 7 again but use a ternary. 
 
