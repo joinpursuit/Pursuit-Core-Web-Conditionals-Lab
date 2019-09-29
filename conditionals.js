@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // # Conditional Exercises
 
 // For this exercises we are going to create a file called `conditionals.js`. Copy the description of the exercise as a comment into the file and underneath write your JavaScript code.
@@ -72,3 +73,30 @@ else {
 
 
 
+=======
+// Problem One
+
+let numOne = 20
+let numTwo = 25
+if (numOne === numTwo){
+    console.log("Variables are equal to each other")
+} else {
+    console.log("Variables are not equal to each other")
+}
+
+// Problem two
+
+let numX = 5
+let numY = 10
+
+if (numX > numY){
+console.log ("The greater number of " + numX +" and " + numY +" is " +numX)
+
+}else if (numY > numX){
+
+console.log ("The greater number of " + numX +" and " + numY +" is " +numY)
+} else {
+console.log ("The numbers are equal")
+
+}
+>>>>>>> 5bdd8656699b5aabd1664476e76e20ff75608cdb
