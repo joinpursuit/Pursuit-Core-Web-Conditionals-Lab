@@ -28,20 +28,31 @@ else {
 Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
 It should default to logging English.*/
 
-let str= "english";
-if (str === "spanish"){
-   console.log("Hola, mundo");
-} else if (str === "russian"){
-   console.log("Привет, мир");
-} else if (str === "japanese"){
-   console.log("こんにちは世界");
-} else {
-   console.log("Hello wolrd");
-}
+// let str= "english";
+// if (str === "spanish"){
+//    console.log("Hola, mundo");
+// } else if (str === "russian"){
+//    console.log("Привет, мир");
+// } else if (str === "japanese"){
+//    console.log("こんにちは世界");
+// } else {
+//    console.log("Hello wolrd");
+// }
 
 /*4. Do question 3 again but this time use a `switch` statement.*/
 
-
+let str = "Japanese";
+switch (str) {
+    case str = "Spanish" :
+    console.log("Hola, mundo");
+    break ; 
+    case str = "Russian" :
+        console.log("Привет, мир");
+        break ;
+    case str = "Japanese" :
+        console.log("こんにちは世界");
+        break ;
+}
 
 
 /*5. Create a variable numGrade that will contain a numeric grade (out of 100). 
