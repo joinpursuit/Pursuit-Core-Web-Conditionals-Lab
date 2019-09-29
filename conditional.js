@@ -73,3 +73,9 @@ if (number % 2 === 0) {
     console.log(number + 'is odd')
 }
 
+//Problem Eight
+
+let numb2 = 4
+
+(numb2 % 2 === 0) ? console.log(numb2 + " is even"): console.log(numb2 + 'is odd')
+
