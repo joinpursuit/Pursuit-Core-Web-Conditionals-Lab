@@ -92,5 +92,29 @@ default:
 
     //Problem7
 
+let k = 28
 
-    
+if (k%2 === 0) {
+    console.log("Even Number!");
+} else {
+        console.log("Odd Number!");
+}
+
+
+
+//Problem8
+
+k%2 === 0 ? console.log("Even Number!") : console.log("Odd Number!")
+
+
+//Problem9
+
+let numbeR = 0
+
+if (numbeR > 0) {
+    console.log("Positive Number!");
+} else if (numbeR < 0) {
+    console.log("Negative Number!"); 
+} else {
+    console.log("Issa 0");
+}
