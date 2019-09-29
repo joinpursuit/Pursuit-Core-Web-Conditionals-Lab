@@ -108,21 +108,15 @@ else {
 7. . Write a block of code that logs whether a given number is even or odd.
 */
 
-let even = 0;
-let odd = 1;
-
-if( even === 10 % 3 ){
-  console.log("Even");
+num = 5
+if(num % 2 === 0){
+    console.log("even");
+    
 }
-else {
-  console.log("Odd");
-}
+else console.log("odd");
 
-/* 8. Do question 7 again but use a ternary.
-*/
-//using same variable from #7
-
-even === 0 ? console.log("Even") : console.log("Odd");
+//8. Do question 7 again but use a ternary.
+num % 2 === 0? console.log("even") : console.log("odd");
 
 /*
 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
