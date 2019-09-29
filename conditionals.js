@@ -21,17 +21,17 @@
 // 3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
 // Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
 // It should default to logging English.
-let english = "english";
-let spanish = "spanish";
-let german = "german";
-let language = english;
-if (language === german) {
-    console.log("Hallo Welt");
-} else if(language === spanish) {
-    console.log("Hola Mundo");
-} else {
-    console.log("Hello World")
-}
+// let english = "english";
+// let spanish = "spanish";
+// let german = "german";
+// let language = english;
+// if (language === german) {
+//     console.log("Hallo Welt");
+// } else if(language === spanish) {
+//     console.log("Hola Mundo");
+// } else {
+//     console.log("Hello World")
+// }
 // 4. Do question 3 again but this time use a `switch` statement. 
 // let english = "english";
 // let spanish = "spanish";
