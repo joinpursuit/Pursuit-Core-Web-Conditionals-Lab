@@ -87,8 +87,6 @@ if (numGrade > 90) {
 }
 
 
-
-
 // Create two variables: animalName('cat', 'dog', etc.), and numberOfAnimals.
 
 // Use an
@@ -99,6 +97,17 @@ if (numGrade > 90) {
 
 // either in single or plural form.Exp: "5 cats"
 // or "1 dog".
+
+let animalName = "dog";
+let numberOfAnimals = 10;
+
+if (numberOfAnimals > 1) {
+    console.log(numberOfAnimals + " " + animalName + "s")
+} else {
+    console.log(numberOfAnimals, animalName)
+}
+
+
 
 // Bonus: Make it handle a few collective nouns like "sheep"
 // and "geese".
