@@ -102,5 +102,18 @@ if (num % 2){
 }
 
 // 8. Do question 7 again but use a ternary. 
+// console.log(`Problem 8`);
+
+(num % 2)? console.log(`${num} is odd number.`) : console.log(`${num} is even number.`)
+
 
 // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
+
+let num2 = 0;
+if(num2 > 0) {
+  console.log(`${num2} is positive number.`);
+} else if (num2 < 0) {
+  console.log(`${num2} is negative number.`);
+} else {
+  console.log(`${num2} is equal to 0.`)
+}
