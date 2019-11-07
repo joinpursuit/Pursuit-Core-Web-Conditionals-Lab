@@ -11,7 +11,6 @@ if (fruitOne === fruitTwo) {
 } else {
     console.log("its not the same")
 }
-
 // Write a block of code that logs which of two number variables is larger.
 // Your output should look like this( in this example
 //     for the numbers x = 5 and y = 10): 'The greater number of 5 and 10 is 10'
