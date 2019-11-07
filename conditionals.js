@@ -92,6 +92,14 @@ if (animalName === "goose" && numberOfAnimals > 1 ){
 }
 
 // 7. Write a block of code that logs whether a given number is even or odd.
+console.log(`Problem 7`)
+
+let num = 4;
+if (num % 2){
+  console.log(`${num} is odd number.`)
+} else {
+  console.log(`${num} is even number.`)
+}
 
 // 8. Do question 7 again but use a ternary. 
 
