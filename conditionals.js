@@ -68,3 +68,24 @@ if (language === "german") {
 } else {
     console.log("Hello, world")
 }
+
+// Do question 3 again but this time use a
+// switch statement.
+
+let switchLanguage = "polish"
+
+switch (switchLanguage) {
+    case "german":
+        console.log("Hallo, Welt")
+        break;
+    case "spanish":
+        console.log("Hola, mundo")
+        break
+    case "polish":
+        console.log("Witaj świecie")
+        break
+    case "italian":
+        console.log("Ciao mondo ")
+    default:
+        "Hello, world"
+}
