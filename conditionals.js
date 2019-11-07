@@ -28,7 +28,16 @@ if(x > y) {
 // It should default to logging English.
 
 console.log(`Problem3`)
-
+let language = "Chinese";
+if(language === "French") {
+  console.log(`Bonjour,  monde`);
+} else if(language === "Spanish") {
+  console.log(`Hola, Mundo`);
+}else if(language === "Chinese") {
+  console.log(`你好，世界: Nǐ hǎo, shìjiè`);
+} else {
+  console.log(`Hello, World`)
+}
 // 4. Do question 3 again but this time use a `switch` statement. 
 
 // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
