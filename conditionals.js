@@ -81,16 +81,27 @@ if(numGrade > 90) {
 
 console.log("Problem 6")
 
-let animalName = "geese";
+// let animalName = "geese";
+// let numberOfAnimals = 1;
+// if (animalName === "goose" && numberOfAnimals > 1 ){
+//   console.log(`${numberOfAnimals} geese.`)
+// } else if (numberOfAnimals > 1) {
+//   console.log(`${numberOfAnimals} ${animalName}s.`)
+// } else {
+//   console.log(`${numberOfAnimals} ${animalName}.`)
+// }
+
+let animalName = "dog";
 let numberOfAnimals = 1;
-if (animalName === "goose" && numberOfAnimals > 1 ){
+if (numberOfAnimals > 1) {
+  if(animalName === "goose"){
   console.log(`${numberOfAnimals} geese.`)
-} else if (numberOfAnimals > 1) {
+  } else {
   console.log(`${numberOfAnimals} ${animalName}s.`)
+  }
 } else {
   console.log(`${numberOfAnimals} ${animalName}.`)
 }
-
 // 7. Write a block of code that logs whether a given number is even or odd.
 console.log(`Problem 7`)
 
