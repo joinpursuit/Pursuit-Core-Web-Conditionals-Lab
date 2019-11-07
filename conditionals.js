@@ -39,6 +39,20 @@ if(language === "French") {
   console.log(`Hello, World`)
 }
 // 4. Do question 3 again but this time use a `switch` statement. 
+console.log("Problem4")
+switch(language){
+  case "French" : 
+    console.log(`Bonjour,  monde`);
+    break;
+  case "Spanish" : 
+    console.log(`Hola, Mundo`);
+    break;
+  case "Chinese" :
+    console.log(`你好，世界: Nǐ hǎo, shìjiè`);
+    break;
+  default : 
+  console.log(`Hello, World`);
+}
 
 // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
 // Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
