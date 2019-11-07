@@ -25,3 +25,46 @@ if (x > y) {
 } else {
     console.log(`${y} is the largest`)
 }
+// Create a string variable with a language code(e.g.
+//     "english", "spanish", "german").Use an
+// if -
+// else if -
+// else statement to log "Hello, World" in the given language,
+//     for at least 3 languages.It should
+// default to logging English.
+
+let language = "spanish"
+
+if (language === "german") {
+    console.log("Hallo, Welt")
+} else if (language === "spanish") {
+    console.log("Hola, mundo")
+} else if (language === "polish") {
+    console.log("Witaj świecie")
+} else if (language === "italian") {
+    console.log("Ciao mondo ")
+} else {
+    console.log("Hello, world")
+}
+
+// Create a string variable with a language code(e.g.
+//     "english", "spanish", "german").Use an
+// if -
+// else if -
+// else statement to log "Hello, World" in the given language,
+//     for at least 3 languages.It should
+// default to logging English.
+
+let language = "spanish"
+
+if (language === "german") {
+    console.log("Hallo, Welt")
+} else if (language === "spanish") {
+    console.log("Hola, mundo")
+} else if (language === "polish") {
+    console.log("Witaj świecie")
+} else if (language === "italian") {
+    console.log("Ciao mondo ")
+} else {
+    console.log("Hello, world")
+}
