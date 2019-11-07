@@ -47,28 +47,6 @@ if (language === "german") {
     console.log("Hello, world")
 }
 
-// Create a string variable with a language code(e.g.
-//     "english", "spanish", "german").Use an
-// if -
-// else if -
-// else statement to log "Hello, World" in the given language,
-//     for at least 3 languages.It should
-// default to logging English.
-
-let language = "spanish"
-
-if (language === "german") {
-    console.log("Hallo, Welt")
-} else if (language === "spanish") {
-    console.log("Hola, mundo")
-} else if (language === "polish") {
-    console.log("Witaj świecie")
-} else if (language === "italian") {
-    console.log("Ciao mondo ")
-} else {
-    console.log("Hello, world")
-}
-
 // Do question 3 again but this time use a
 // switch statement.
 
@@ -89,3 +67,46 @@ switch (switchLanguage) {
     default:
         "Hello, world"
 }
+
+// Create a variable numGrade that will contain a numeric grade(out of 100).Use an
+// if -
+// else if ...-
+// else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
+let numGrade = 90
+
+if (numGrade > 90) {
+    console.log("Your grade is A")
+} else if (numGrade > 80) {
+    console.log("Your grade is B ")
+} else if (numGrade > 70) {
+    console.log("Your grade is C ")
+} else if (numGrade > 65) {
+    console.log("Your grade is D ")
+} else {
+    console.log("Your grade is F")
+}
+
+
+
+
+// Create two variables: animalName('cat', 'dog', etc.), and numberOfAnimals.
+
+// Use an
+// if -
+// else statement to log:
+
+//     the number
+
+// either in single or plural form.Exp: "5 cats"
+// or "1 dog".
+
+// Bonus: Make it handle a few collective nouns like "sheep"
+// and "geese".
+
+// Write a block of code that logs whether a given number is even or odd.
+
+// Do question 7 again but use a ternary.
+
+// Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
+
+// © 2019 GitHub, Inc.
