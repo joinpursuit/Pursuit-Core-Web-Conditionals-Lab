@@ -58,10 +58,24 @@ switch(language1){
         console.log("Hello World")
 }
 
-
-
 // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
 // Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
+
+let numGrade = 91
+
+if(numGrade >= 90){
+    console.log("A")
+} else if (numGrade >= 80 && numGrade <= 89){
+    console.log("B")
+} else if (numGrade >= 70 && numGrade <= 79){
+    console.log("C")
+} else if (numGrade >= 60 && numGrade <= 69){
+    console.log("D")
+} else if (numGrade <= 59){
+    console.log("F")
+} else {
+    console.log("A")
+}
 
 // 6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
 // Use an if - else statement to log:
