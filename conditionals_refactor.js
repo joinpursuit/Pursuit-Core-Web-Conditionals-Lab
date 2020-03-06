@@ -12,6 +12,19 @@ if(firstNumber === secondNumber){
 // 2. Write a block of code that logs which of two number variables is larger.
 //   * Your output should look like this (in this example for the numbers x = 5 and y = 10): 'The greater number of 5 and 10 is 10'
 //   * If the two numbers are equal, log: 'The numbers are equal.'
+
+let num1 = 100
+let num2 = 10
+
+if(num1 < num2){
+    console.log("The greater number of " + num1 + " and " + num2 + " is " + num2)
+} else if (num1 > num2){
+    console.log("The greater number of " + num1 + " and " + num2 + " is " + num1)
+} else {
+    console.log("The numbers are equal.")
+}
+
+
  
 // 3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
 // Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
