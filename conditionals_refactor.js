@@ -23,12 +23,24 @@ if(num1 < num2){
 } else {
     console.log("The numbers are equal.")
 }
-
-
  
 // 3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
 // Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
 // It should default to logging English.
+
+let language1 = "english"
+let language2 = "spanish"
+let language3 = "italian"
+
+if(language1){
+    console.log("Hello World")
+} else if (language2){
+    console.log("Hola Mundo")
+} else if (language3){
+    console.log("Ciao Mondo")
+} else {
+    console.log("Hello World")
+}
 
 // 4. Do question 3 again but this time use a `switch` statement. 
 
