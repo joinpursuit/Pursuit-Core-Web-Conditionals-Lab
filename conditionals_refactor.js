@@ -42,7 +42,23 @@ if(language1){
     console.log("Hello World")
 }
 
-// 4. Do question 3 again but this time use a `switch` statement. 
+// 4. Do question 3 again but this time use a `switch` statement.
+
+switch(language1){
+    case 1: language1
+        console.log("Hello World")
+        break
+    case 2: language2
+        console.log("Hola Mundo")
+        break
+    case 3: language3
+        console.log("Ciao Mondo")
+        break
+    default: 
+        console.log("Hello World")
+}
+
+
 
 // 5. Create a variable numGrade that will contain a numeric grade (out of 100). 
 // Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
