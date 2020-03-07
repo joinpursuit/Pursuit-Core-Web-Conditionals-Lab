@@ -83,6 +83,16 @@ if(numGrade >= 90){
 //   * either in single or plural form. Exp: "5 cats" or "1 dog".
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
+let animal = "cat"
+let pluralAnimal = "cats"
+let numberOfAnimals = 1
+
+if(numberOfAnimals === 1){
+    console.log(numberOfAnimals + " " + animal)
+} else if (numberOfAnimals > 1){
+    console.log(numberOfAnimals + " " + pluralAnimal)
+}
+
 // 7. Write a block of code that logs whether a given number is even or odd.
 
 // 8. Do question 7 again but use a ternary. 
