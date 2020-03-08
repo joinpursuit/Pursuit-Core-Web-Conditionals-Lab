@@ -1,7 +1,7 @@
 // 1. Write a block of code that checks and logs whether variables are equal or not.
 
 let firstNumber = 1
-let secondNumber = 2
+let secondNumber = 5
 
 if(firstNumber === secondNumber){
     console.log("The variables are equal")
@@ -94,6 +94,14 @@ if(numberOfAnimals === 1){
 }
 
 // 7. Write a block of code that logs whether a given number is even or odd.
+
+num = 10
+
+if(num % 2 === 0){
+    console.log("The number is even")
+} else if(num % 2 !== 0){
+    console.log("The number is odd")
+}
 
 // 8. Do question 7 again but use a ternary. 
 
