@@ -110,3 +110,16 @@ num = 7
 num % 2 === 0 ? console.log("The number is even") : console.log("The number is odd")
 
 // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
+
+number = 3
+
+if(number < 0){
+    console.log("The number is negative")
+} else if (number === 0){
+    console.log("The number is equal to 0")
+} else if (number > 0){
+    console.log("The number is positive")
+} else {
+    console.log("The number is negative")
+}
+
