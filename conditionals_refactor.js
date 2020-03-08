@@ -105,4 +105,8 @@ if(num % 2 === 0){
 
 // 8. Do question 7 again but use a ternary. 
 
+num = 7
+
+num % 2 === 0 ? console.log("The number is even") : console.log("The number is odd")
+
 // 9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.
