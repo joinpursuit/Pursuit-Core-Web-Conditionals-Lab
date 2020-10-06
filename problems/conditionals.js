@@ -26,7 +26,7 @@ function findLarger() {
  * @param {number} b - The second number.
  * @returns {number || string } - The larger number or string "tie" 
  */
-function findLarger() {
+function findLargerOrTie() {
 
 }
 /**
@@ -119,5 +119,29 @@ function evenOrOdd() {
 function evenOrOddWithTernary() {
 
 }
-/**
  
+/**
+ * Takes in two numbers and returns the larger number (numbers guaranteed to be of different value)
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @returns {number} - The larger number. 
+ */
+function findLargerTernary() {
+
+}
+ 
+
+
+module.exports = {
+  isEqual,
+  findLarger,
+  findLargerOrTie,
+  positiveNegativeOrZero,
+  aroundTheWorldGreeting,
+  aroundTheWorldGreetingWithSwitch,
+  calculateLetterGrade,
+  animalCounts,
+  evenOrOdd,
+  evenOrOddWithTernary,
+  findLargerTernary,
+};
