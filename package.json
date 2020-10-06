@@ -1,0 +1,22 @@
+{
+  "name": "conditional_assignment",
+  "version": "1.0.0",
+  "description": "Practice control flow and conditional logic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joinpursuit/conditional_assignment.git"
+  },
+  "author": "corey ladovsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joinpursuit/conditional_assignment/issues"
+  },
+  "homepage": "https://github.com/joinpursuit/conditional_assignment#readme",
+  "dependencies": {
+    "jest": "^26.5.2"
+  }
+}

@@ -1,36 +1,30 @@
-# Conditional Exercises
+[![Pursuit Logo](https://avatars1.githubusercontent.com/u/5825944?s=200&v=4)](https://pursuit.org)
 
-For this exercises we are going to create a file called `conditionals.js`. Copy the description of the exercise as a comment into the file and underneath write your JavaScript code.
 
-> *Note*: Remember to fork this repo, clone your copy, modify `conditionals.js` with your answers. Lastly `git add` your changes, `git commit` and `git push`
+# Conditional Lab
+Let's practice control flow with conditionals. 
 
-1. Write a block of code that checks and logs whether variables are equal or not.
+## Learning Objectives
+* Be familiar with key control flow concepts
+* Be able to write `if` `else` and `else if` statements 
 
-2. Write a block of code that logs which of two number variables is larger.
-  * Your output should look like this (in this example for the numbers x = 5 and y = 10): 'The greater number of 5 and 10 is 10'
-  * If the two numbers are equal, log: 'The numbers are equal.'
- 
-3. Create a string variable with a language code (e.g. "english", "spanish", "german"). 
-Use an if - else if - else statement to log "Hello, World" in the given language, for at least 3 languages. 
-It should default to logging English.
+## Standards
+* LF.1
+* LF.4
 
-4. Do question 3 again but this time use a `switch` statement. 
+## Prerequisites 
+* Exerperience with values types and operators 
 
-5. Create a variable numGrade that will contain a numeric grade (out of 100). 
-Use an if - else if ... - else statement to log the corresponding letter grade, either "A", "B", "C", "D", or "F".
+___
 
-6. Create two variables: animalName ('cat', 'dog', etc.) , and numberOfAnimals.
+## Getting Started 
+* Fork this repo
+* Clone the forked repository
+* `cd` to the directory where you cloned it
+* `npm install` to install dependencies
+* `npm test` to run the tests
 
-Use an if - else statement to log:
 
-  * the number
 
-  * either in single or plural form. Exp: "5 cats" or "1 dog".
+> *Note*: Remember to `git add`, `git commit` and `git push` regularly
 
-Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-
-7. Write a block of code that logs whether a given number is even or odd.
-
-8. Do question 7 again but use a ternary. 
-
-9. Write a block of code that checks and logs whether a given number is positive, negative, or equal to 0.

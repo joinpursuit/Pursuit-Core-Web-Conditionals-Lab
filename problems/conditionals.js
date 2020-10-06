@@ -1,0 +1,123 @@
+/**
+ * Takes in two values and returns if they are equal or not
+ * @param {any} a - The first element.
+ * @param {any} b - The second element.
+ * @returns {boolean} - Is a equal to b.
+ */
+function isEqual() {
+
+}
+/**
+ 
+/**
+ * Takes in two numbers and returns the larger number (numbers guaranteed to be of different value)
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @returns {number} - The larger number. 
+ */
+function findLarger() {
+
+}
+/**
+ 
+/**
+ * Takes in two numbers and returns the larger number or the string "tie" in the event that the numbers are the same size.
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @returns {number || string } - The larger number or string "tie" 
+ */
+function findLarger() {
+
+}
+/**
+ 
+/**
+ * Takes in a number and returns whether that number is positive,
+ * negative, or equal to 0.
+ * @param {number} a - The number.
+ * @returns {string} - "Positive, Negative, "Zero"" 
+ */
+function positiveNegativeOrZero() {
+
+}
+/**
+ 
+ 
+ 
+/**
+ * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
+ * Must work for at least english, spanish, and german.
+ *  It should default to English if no argument is passed in.
+ * @param {string} language - The language.
+ * @returns {string} - "Hello World" in the desired language
+ */
+function aroundTheWorldGreeting() {
+
+}
+/**
+ 
+
+/**
+ * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
+ * Must work for at least english, spanish, and german.
+ *  It should default to English if no argument is passed in.
+ * Must be written using a SWITCH statement
+ * @param {string} language - The language.
+ * @returns {string} - "Hello World" in the desired language
+ */
+function aroundTheWorldGreetingWithSwitch() {
+
+}
+/**
+
+
+/**
+ * Takes in a number and returns the letter grade corresponding to that number.
+ * Letter grades consist of "A", "B", "C", "D", or "F"
+ * 90 and above is an A, 80 and above is a B, etc...
+ * @param {number} grade - The numeric grade.
+ * @returns {string} - The letter grade corresponding to the numeric grade.
+ */
+function calculateLetterGrade() {
+
+}
+/**
+ 
+
+/**
+ * Takes in two variables: animal ('cat', 'dog', etc.) , and numberOfAnimals.
+ * Use an if - else to statement to return the 
+ * number and animal (in either single or plural form)
+ * Exp: "5 cats" or "1 dog"
+ * Bonus: Make it handle a few collecting nouns like "sheep" and "geese"
+ * @param {string} animal - The type of animal.
+ * @param {number} numberOfAnimals - The number of animals.
+ * @returns {string} - the number and animal (in either single or plural form)
+ */
+function animalCounts() {
+
+}
+/**
+ 
+
+/**
+ * Takes in a number and returns whether that number is even or odd
+ * @param {number} a - The number.
+ * @returns {string} - "Even or Odd" 
+ */
+function evenOrOdd() {
+
+}
+/**
+ 
+/**
+ * Takes in a number and returns whether that number is even or odd
+ * Must use a ternary
+ * @param {number} a - The number.
+ * @returns {string} - "Even or Odd" 
+ */
+function evenOrOddWithTernary() {
+
+}
+/**
+ 
