@@ -4,7 +4,8 @@
   "description": "Practice control flow and conditional logic",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand",
+    "bonus": "jest --runInBand bonus/bonus.test.js"
   },
   "repository": {
     "type": "git",
