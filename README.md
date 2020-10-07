@@ -23,6 +23,7 @@ ___
 * `cd` to the directory where you cloned it
 * `npm install` to install dependencies
 * `npm test` to run the tests
+* `npm run bonus` to run the bonus tests
 
 
 
