@@ -13,7 +13,7 @@ Let's practice control flow with conditionals.
 * LF.4
 
 ## Prerequisites 
-* Exerperience with values types and operators 
+* Experience with values types and operators 
 
 ___
 
