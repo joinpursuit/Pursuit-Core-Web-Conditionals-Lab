@@ -41,11 +41,11 @@ describe("isPrimaryColorOneIf", () => {
     })
 });
 
-describe("alphabetOrder", () => {
+describe("lexicographicalOrder", () => {
   test("returns the earlier word", () => {
-    expect(alphabetOrder("cat", "dog")).toBe("cat");
-    expect(alphabetOrder("eagle", "east")).toBe("eagle");
-    expect(alphabetOrder("blue", "apple")).toBe("apple");
+    expect(lexicographicalOrder("cat", "dog")).toBe("cat");
+    expect(lexicographicalOrder("eagle", "east")).toBe("eagle");
+    expect(lexicographicalOrder("blue", "apple")).toBe("apple");
   });
 });
 describe("largeOrSmall", () => {
