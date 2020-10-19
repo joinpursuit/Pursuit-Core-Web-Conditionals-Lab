@@ -71,7 +71,7 @@ function aroundTheWorldGreeting(language) {
         return "Hola Mundo"
     }
     if (language === "german") {
-        return "Allo Vorld"
+        return "Hallo Welt"
     }
     return "Hello World"
 }
@@ -94,7 +94,7 @@ function aroundTheWorldGreetingWithSwitch(language) {
         case "spanish":
             return "Hola Mundo"
         case "german":
-            return "Allo Vorld"
+            return "Hallo Welt"
     }
     return "Hello World"
 }
