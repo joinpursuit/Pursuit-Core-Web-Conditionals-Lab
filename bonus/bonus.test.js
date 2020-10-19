@@ -1,7 +1,7 @@
 const {
   isPrimaryColor,
   isPrimaryColorOneIf,
-  alphabetOrder,
+  lexicographicalOrder,
   largeOrSmall,
   longerWord,
   shortestWord,
