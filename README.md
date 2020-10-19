@@ -2,15 +2,12 @@
 
 
 # Conditional Lab
-Let's practice control flow with conditionals. 
+
+Let's practice control flow with conditionals.  [Documentation](https://joinpursuit.github.io/Pursuit-Core-Web-Conditionals-Lab/)
 
 ## Learning Objectives
 * Be familiar with key control flow concepts
 * Be able to write `if` `else` and `else if` statements 
-
-## Standards
-* LF.1
-* LF.4
 
 ## Prerequisites 
 * Experience with values types and operators 
