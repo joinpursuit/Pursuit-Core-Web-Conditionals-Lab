@@ -42,15 +42,15 @@ describe("findLarger", () => {
 });
 describe("findLargerOrTie", () => {
   test("returns the larger of two numbers", () => {
-    expect(findLarger(-1, 5)).toBe(5);
-    expect(findLarger(8, 2)).toBe(8);
-    expect(findLarger(1, 0)).toBe(1);
-    expect(findLarger(-2, -1)).toBe(-1);
+    expect(findLargerOrTie(-1, 5)).toBe(5);
+    expect(findLargerOrTie(8, 2)).toBe(8);
+    expect(findLargerOrTie(1, 0)).toBe(1);
+    expect(findLargerOrTie(-2, -1)).toBe(-1);
   });
   test("returns 'tie' when two numbers are the same", () => {
-    expect(findLarger(-1, -1)).toBe("tie");
-    expect(findLarger(8, 8)).toBe("tie");
-    expect(findLarger(0, 0)).toBe("tie");
+    expect(findLargerOrTie(-1, -1)).toBe("tie");
+    expect(findLargerOrTie(8, 8)).toBe("tie");
+    expect(findLargerOrTie(0, 0)).toBe("tie");
   });
 });
 describe("positiveNegativeOrZero", () => {
@@ -71,7 +71,7 @@ describe("aroundTheWorldGreeting", () => {
   test("returns greetings in english, spanish, and german", () => {
     expect(aroundTheWorldGreeting("english")).toBe("Hello World");
     expect(aroundTheWorldGreeting("spanish")).toBe("Hola Mundo");
-    expect(aroundTheWorldGreeting("english")).toBe("Hallo Welt");
+    expect(aroundTheWorldGreeting("german")).toBe("Hallo Welt");
   });
   test("returns english when no argument is provided", () => {
     expect(aroundTheWorldGreeting()).toBe("Hello World");
@@ -82,7 +82,7 @@ describe("aroundTheWorldGreetingWithSwitch", () => {
   test("returns greetings in english, spanish, and german", () => {
     expect(aroundTheWorldGreetingWithSwitch("english")).toBe("Hello World");
     expect(aroundTheWorldGreetingWithSwitch("spanish")).toBe("Hola Mundo");
-    expect(aroundTheWorldGreetingWithSwitch("english")).toBe("Hallo Welt");
+    expect(aroundTheWorldGreetingWithSwitch("german")).toBe("Hallo Welt");
   });
   test("returns english when no argument is provided", () => {
     expect(aroundTheWorldGreetingWithSwitch()).toBe("Hello World");
@@ -108,7 +108,7 @@ describe("calculateLetterGrade", () => {
 describe("animalCounts", () => {
   test("works for singular animals", () => {
     expect(animalCounts("cat", 1)).toBe("1 cat");
-    expect(animalCounts("1 racoon")).toBe("1 racoon");
+    expect(animalCounts("racoon", 1)).toBe("1 racoon");
   });
   test("works for multiple animals", () => {
     expect(animalCounts("cat", 3)).toBe("3 cats");

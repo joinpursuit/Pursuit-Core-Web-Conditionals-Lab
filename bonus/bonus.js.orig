@@ -1,0 +1,121 @@
+/**
+ * Takes in color and returns whether or not the color is a primary color.
+<<<<<<< HEAD
+=======
+ * The primary colors are "Red", "Yellow", and "Blue"
+>>>>>>> master
+ * @param {string} color - The color.
+ * @returns {boolean} - Whether the color is a primary color
+ */
+<<<<<<< HEAD
+function isPrimaryColor(color) {
+  return color === "red" || color === "yellow" ||  color === "blue"
+}
+/**
+ * Takes in color and returns whether or not the color is a primary color.
+ * Must only use the word if one time
+ * @param {string} color - The color.
+ * @returns {boolean} - If primary color or not
+ */
+function isPrimaryColorOneIf(color) {
+  if (color === "red" || color === "yellow" ||  color === "blue") {
+    return true
+  } else {
+    return false
+  }
+}
+/**
+ * Takes in two words and returns the word that is alphabetically smaller.
+ * @param {string} word1 - The first word.
+ * @param {string} word2 - The second word.
+ * @returns {string}
+ */
+function alphabetOrder(word1, word2) {
+  return word1 < word2 ? word1 : word2
+}
+/**
+ * Takes in a word and returns large if it's length is 5 character or more.
+ * othewise it should return small
+ * You'll need to use the .length propery on the string
+ * @param {string} word
+ * @returns {string}
+ */
+function largeOrSmall(word) {
+  return word.length >= 5 ? "large" : "small"
+}
+=======
+function isPrimaryColor() {}
+
+/**
+ * Takes in color and returns whether or not the color is a primary color.
+ * Uses exactly one if statement in its definition
+ * @param {string} color - The color.
+ * @returns {boolean} - If primary color or not
+ */
+function isPrimaryColorOneIf() {}
+
+/**
+ * Takes in two words and returns the word that comes first in lexicographical order.
+ * @param {string} word1 - The first word.
+ * @param {string} word2 - The second word.
+ * @returns {string} - The word that is smaller in lexicographical order
+ */
+function lexicographicalOrder() {}
+
+/**
+ * Takes in a word and returns "large" if its length is 5 character or more.
+ * Otherwise returns "small"
+ * @param {string} word
+ * @returns {string} - "large" or "small"
+ */
+function largeOrSmall() {}
+>>>>>>> master
+
+/**
+ * Takes in two words and returns the longer word.
+ * @param {string} word1 - The first word.
+ * @param {string} word2 - The second word.
+<<<<<<< HEAD
+ * @returns {string}
+ */
+function longerWord(word1, word2) {
+  return word1.length > word2.length ? word1 : word2
+}
+=======
+ * @returns {string} - The longer word
+ */
+function longerWord() {}
+>>>>>>> master
+
+/**
+ * Takes in three words and returns the shortest word.
+ * @param {string} word1 - The first word.
+ * @param {string} word2 - The second word.
+ * @param {string} word3 - The second word.
+<<<<<<< HEAD
+ * @returns {string}
+ */
+function shortestWord(word1, word2, word3) {
+  let minWord = word1
+  if (word2.length < minWord.length) {
+    minWord = word2
+  }
+  if (word3.length < minWord.length) {
+    minWord = word3
+  }
+  return minWord
+}
+=======
+ * @returns {string} - The shortest word
+ */
+function shortestWord() {}
+>>>>>>> master
+
+module.exports = {
+  isPrimaryColor,
+  isPrimaryColorOneIf,
+  lexicographicalOrder,
+  largeOrSmall,
+  longerWord,
+  shortestWord,
+};
