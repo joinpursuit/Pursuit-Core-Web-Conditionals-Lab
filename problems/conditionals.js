@@ -177,7 +177,9 @@ function evenOrOddWithTernary(a) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+function findLargerTernary(a,b) {
+  return a > b ? a : b
+}
 
 
 
