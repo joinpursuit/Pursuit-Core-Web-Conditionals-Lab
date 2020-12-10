@@ -14,7 +14,9 @@ function isPrimaryColor(color) {
   }else{
     return false;
   }
-  //I spent so much time looking at terminal to find whats wrong an I was reading the wrong function output.
+  //I spent so much time looking at terminal to find whats wrong 
+  //and I was reading the wrong function output.
+  //Both the above and below codes work.
   // switch(color){
   //   case 'red':
   //     return true;
@@ -51,6 +53,7 @@ function isPrimaryColorOneIf(color) {
  * @returns {string} - The word that is smaller in lexicographical order
  */
 function lexicographicalOrder(word1, word2) {
+  //Both the codes work
   // if(word1 < word2){
   //   return word1;
   // }else{
@@ -80,7 +83,7 @@ function largeOrSmall(word) {
  * @returns {string} - The longer word
  */
 function longerWord(word1, word2) {
-  if(word1.length >= word2.length){
+  if(word1.length > word2.length){
     return word1;
   }else{
     return word2;
@@ -96,6 +99,13 @@ function longerWord(word1, word2) {
  */
 function shortestWord(word1, word2, word3) {
   //will do after class
+  if (word1.length < word2.length && word1.length < word3.length){
+    return word1;
+  }else if (word2.length < word1.length && word2.length < word3.length){
+    return word2;
+  }else if (word3.length < word1.length && word3.length < word2.length){
+    return word3;
+  }
 }
 
 module.exports = {

@@ -10,6 +10,7 @@ function isEqual(a, b) {
   }else{
     return false;
   }
+  //this code below also works. tested successfully
   //return a === b ? true : false;
 }
 
@@ -26,6 +27,7 @@ function findLarger(a, b) {
   }else{
     return b;
   }
+  //this code below also works. tested successfully
   //return a > b ? a : b;
 }
 
