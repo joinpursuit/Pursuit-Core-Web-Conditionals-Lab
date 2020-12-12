@@ -86,7 +86,7 @@ function aroundTheWorldGreeting(language = 'english') {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch(language = 'english') {
+function aroundTheWorldGreetingWithSwitch(language) {
   switch(language ){
     case language = 'english':
       return 'Hello World'
@@ -98,7 +98,8 @@ function aroundTheWorldGreetingWithSwitch(language = 'english') {
       return 'Hallo Welt'
       break;
     default:
-      return language = 'english'
+      return 'Hello World'
+      break;
   }
 }
 
