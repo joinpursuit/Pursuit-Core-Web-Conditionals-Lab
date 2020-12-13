@@ -16,7 +16,15 @@ function isEqual(a, b) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+function findLarger(a, b) {
+  if (a > b) {
+    return a
+  }else {
+    return b
+  }
+} 
+console.log(findLarger(2,3))
+
 
 /**
  * Takes in two numbers and returns the larger number
