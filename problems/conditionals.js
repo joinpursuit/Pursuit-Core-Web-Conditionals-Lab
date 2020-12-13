@@ -86,7 +86,14 @@ function aroundTheWorldGreeting(language = "english") {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {
+const aroundTheWorldGreetingWithSwitch = (language) => {
+  switch(language) {
+    case "spanish" : return "Hola Mundo"
+    break;
+    case "german" : return "Hallo Welt"
+    break;
+    default: return "Hello World"
+  }
 
 }
 
@@ -125,7 +132,13 @@ function calculateLetterGrade(grade) {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+function animalCounts(animal, numberOfAnimals) {
+  if( numberOfAnimals > 1 ) {
+    return `${numberOfAnimals} ${animal+"s"}`
+  } else {
+    return `${numberOfAnimals} ${animal}`
+  }
+}
 
 
 /**
@@ -133,7 +146,13 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+function evenOrOdd(a) {
+  if (a % 2 === 0) {
+    return "Even"
+  } else {
+    return "Odd"
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -141,7 +160,7 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+const evenOrOddWithTernary = (a) => { return a % 2 === 0 ? "Even" : "Odd"}
 
 /**
  * Takes in two numbers and returns the larger number
@@ -151,7 +170,7 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+const findLargerTernary = (a, b) => { return a > b ? a : b }
 
 
 
