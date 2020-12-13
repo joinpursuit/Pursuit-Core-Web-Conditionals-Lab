@@ -152,8 +152,7 @@ function animalCounts(animal,numberOfAnimals) {
 }
 
 
-/**
- * Takes in a number and returns whether that number is even or odd
+/**gir is even or odd
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
