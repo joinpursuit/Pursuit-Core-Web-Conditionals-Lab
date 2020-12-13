@@ -132,6 +132,7 @@ function calculateLetterGrade(grade) {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
+
 function animalCounts(animal, numberOfAnimals) {
   if( numberOfAnimals > 1 ) {
     return `${numberOfAnimals} ${animal+"s"}`
@@ -139,7 +140,6 @@ function animalCounts(animal, numberOfAnimals) {
     return `${numberOfAnimals} ${animal}`
   }
 }
-
 
 /**
  * Takes in a number and returns whether that number is even or odd
