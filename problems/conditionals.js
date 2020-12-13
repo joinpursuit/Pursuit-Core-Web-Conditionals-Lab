@@ -3,8 +3,16 @@
  * @param {*} a - The first element.
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
- */
-function isEqual() {}
+ */ const isEqual = (a,b) => {
+      if (a === b){
+        return true;
+      } else {
+        return false;
+      }
+
+
+ }
+
 
 /**
  * Takes in two numbers and returns the larger number
