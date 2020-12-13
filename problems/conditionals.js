@@ -172,8 +172,10 @@ const evenOrOddWithTernary = (a)=> {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
-
+//function findLargerTernary() {}
+const findLargerTernary = (a, b) => {
+  return (a > b) ? a : b
+}
 
 
 module.exports = {
