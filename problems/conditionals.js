@@ -85,7 +85,18 @@ function aroundTheWorldGreeting(language = "english") {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+function aroundTheWorldGreetingWithSwitch(language) {
+    switch (language) {
+      case "english":
+        return "Hello World";
+      case "spanish":
+        return "Hola Mundo";
+      case "german":
+        return "Hallo Welt";
+      default:
+        return "Hello World"
+    }
+}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -98,7 +109,9 @@ function aroundTheWorldGreetingWithSwitch() {}
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+function calculateLetterGrade(grade) {
+  
+}
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
