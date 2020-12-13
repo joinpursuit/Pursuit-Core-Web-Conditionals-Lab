@@ -71,16 +71,18 @@ function positiveNegativeOrZero(a) {
 
 function aroundTheWorldGreeting(language) {
   //language = language.toLowerCase();
-
   if(language === "english") {
-    return "Hello World"; 
-} else if(language === "spanish") {
-  return "Hola Mundo";
-} else if(language === "german") {
-  return "Hallo Welt";
-} else 
-  return "english";
-}
+      return "Hello World"; 
+    } else if(language === "spanish") {
+      return "Hola Mundo";
+    } else if(language === "german") {
+        return "Hallo Welt";
+    } else if(language === "undefined"){
+        return "english";
+    } else if((language === "undefined") || (language === "")){
+      return "Hello World";
+    }
+  }
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -93,7 +95,9 @@ function aroundTheWorldGreeting(language) {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+function aroundTheWorldGreetingWithSwitch(language) {
+
+}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -106,7 +110,20 @@ function aroundTheWorldGreetingWithSwitch() {}
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+function calculateLetterGrade(grade) {
+  if(grade >= 90) {
+    return "A";
+  } else if((grade >= 80) && (grade < 90)) {
+    return "B";
+  } else if((grade >= 70) && (grade < 80)) {
+    return "C";
+  } else if((grade >= 60) && (grade < 70)) {
+    return "D";
+  } else if((grade < 60)) {
+    return "F";
+  }
+}
+
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -118,7 +135,9 @@ function calculateLetterGrade() {}
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+function animalCounts(animal, numberOfAnimals) {
+
+}
 
 
 /**
@@ -126,7 +145,13 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+function evenOrOdd(a) {
+  if(a % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -134,7 +159,10 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+//function evenOrOddWithTernary() {}
+const evenOrOddWithTernary = (a)=> {
+  return (a % 2 === 0) ? "Even" : "Odd"
+}
 
 /**
  * Takes in two numbers and returns the larger number
