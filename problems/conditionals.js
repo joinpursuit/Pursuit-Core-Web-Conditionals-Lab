@@ -97,7 +97,19 @@ function aroundTheWorldGreeting(language) {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+function aroundTheWorldGreetingWithSwitch(language) {
+  switch (language){
+    case 'english':
+      return 'Hello World'
+    case 'spanish':
+      return 'Hola Mundo'
+    case 'german':
+        return 'Hallo Welt'
+    default:
+      return 'Hello World'
+    }
+
+}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -176,7 +188,9 @@ function evenOrOddWithTernary(a) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+function findLargerTernary(a,b) {
+  return a > b ? a : b 
+}
 
 
 
