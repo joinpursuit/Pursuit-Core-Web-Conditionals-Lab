@@ -76,8 +76,23 @@ console.log(positiveNegativeOrZero(-1))
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+//function aroundTheWorldGreeting() {}
 
+const aroundTheWorldGreeting = language => {
+  if (language === "english") {
+    return "Hello World"
+  } else if(language === "spanish") {
+    return "Hola Mundo"
+  } else if(language === "german") {
+    return "Hallo Welt"
+  } else {
+    return "Hello World"
+  }
+}
+
+console.log(aroundTheWorldGreeting("english"))
+console.log(aroundTheWorldGreeting("spanish"))
+console.log(aroundTheWorldGreeting("uzbek"))
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
  * Must work for at least english, spanish, and german.
@@ -89,7 +104,26 @@ function aroundTheWorldGreeting() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+//function aroundTheWorldGreetingWithSwitch() {}
+
+const aroundTheWorldGreetingWithSwitch = language => {
+  switch(language) {
+    case "english":
+      return "Hello World";
+      
+    case "spanish":
+      return "Hola Mundo";
+     
+    case "german":
+      return "Hallo Welt";
+     
+    default:
+      return "Hello World";
+  } 
+}
+console.log(aroundTheWorldGreetingWithSwitch("english"))
+console.log(aroundTheWorldGreetingWithSwitch("spanish"))
+console.log(aroundTheWorldGreetingWithSwitch("uzbek"))
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
