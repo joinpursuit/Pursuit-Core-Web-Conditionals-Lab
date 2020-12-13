@@ -17,7 +17,17 @@ const isEqual = (num1, num2) => {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+// function findLarger() {}
+function findLarger(num1, num2) {
+  if(num1 > num2) {
+    return num1
+  } else if (num1 < num2) {
+    return num2
+  } else return false
+}
+// console.log(findLarger(5, 2))
+// console.log(findLarger(2, 5))
+// console.log(findLarger(5, 5))
 
 /**
  * Takes in two numbers and returns the larger number
@@ -26,7 +36,21 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+// function findLargerOrTie() {}
+
+const findLargerOrTie = (num1, num2) => {
+  if (num1 > num2) {
+    return num1
+  } else if (num1 < num2) {
+    return num2
+  } else if (num1 === num2) {
+    return "tie"
+  }
+}
+// console.log(findLargerOrTie(7,7))
+// console.log(findLargerOrTie(2,5))
+// console.log(findLargerOrTie(5,2))
+
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
