@@ -157,7 +157,14 @@ function animalCounts(animal,numberOfAnimals) {
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+const evenOrOdd = (a) => {
+  if (a % 2 === 0) {
+    return "Even";
+  }
+  else if (a % 2 !== 0) {
+    return "Odd";
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -165,7 +172,12 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+const evenOrOddWithTernary = (a) => {
+  let even = (a % 2 === 0) ? "Even":"Odd"
+  return even
+}
+
+// variablename = (condition) ? value1:value2
 
 /**
  * Takes in two numbers and returns the larger number
@@ -175,7 +187,9 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+const findLargerTernary = (a, b) => {
+  return a > b ? a : b; 
+}
 
 
 
