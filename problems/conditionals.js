@@ -4,7 +4,10 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
+function isEqual(a, b) {
+  return a === b 
+}
+  
 
 /**
  * Takes in two numbers and returns the larger number
