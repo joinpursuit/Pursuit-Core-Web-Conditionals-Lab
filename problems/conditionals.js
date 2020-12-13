@@ -110,11 +110,24 @@ function aroundTheWorldGreetingWithSwitch() {}
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+function calculateLetterGrade(grade) {
+    if (grade >= 90){
+      return "A"
+    }else if (grade >= 80){
+      return "B"
+    }else if (grade >= 70){
+      return "C"
+    }else if (grade >= 60){
+      return "D"
+    }else{
+      return "F"
+    }
+
+}
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
- * Use an if - else to statement to return the
+ * Use an if - else statement to return the
  * number and animal (in either single or plural form)
  * Exp: "5 cats" or "1 dog"
  * Bonus: Make it handle a few collecting nouns like "sheep" and "geese"
@@ -122,7 +135,13 @@ function calculateLetterGrade() {}
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+function animalCounts(animal, numberOfAnimals) {
+  if (numberOfAnimals > 1){
+    return numberOfAnimals + " " + animal + "s"
+  } else {
+    return numberOfAnimals + " " + animal 
+  }
+}
 
 
 /**
@@ -130,7 +149,14 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+function evenOrOdd(a) {
+  if (a % 2 === 0){
+    return "Even"
+  }else {
+    return "Odd"
+  }
+
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -138,7 +164,9 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+function evenOrOddWithTernary(a) {
+  return a % 2 === 0 ? "Even" : "Odd"
+}
 
 /**
  * Takes in two numbers and returns the larger number
