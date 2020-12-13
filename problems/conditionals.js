@@ -4,8 +4,12 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
-
+// function isEqual() {}
+const isEqual = (num1, num2) => {
+  if (num1 === num2) {
+    return num1 === num2;
+  } else return false;
+}
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
