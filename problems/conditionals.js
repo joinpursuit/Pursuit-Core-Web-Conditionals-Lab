@@ -21,7 +21,7 @@ console.log()
  */
 const findLarger = (a,b) => {
    if (a > b) {
-  return a 
+    return a 
    } else {
      return b
    }
@@ -38,7 +38,7 @@ console.log(findLarger(45,80))
 const findLargerOrTie = (a,b) => {
   if( a > b) {
     return a 
-  } else if( a = b) {
+  } else if( a === b) {
     return "tie"
   } else {
     return b 
@@ -51,8 +51,21 @@ console.log(findLargerOrTie(10,10))
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+//function positiveNegativeOrZero() {}
 
+const positiveNegativeOrZero = a => {
+  if(a > 0) {
+    return "Positive"
+  } else if(a < 0) {
+    return "Negative"
+  } else {
+    return "Zero"
+  }
+}
+
+console.log(positiveNegativeOrZero(5))
+console.log(positiveNegativeOrZero(0))
+console.log(positiveNegativeOrZero(-1))
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
  * Must work for at least english, spanish, and german.
