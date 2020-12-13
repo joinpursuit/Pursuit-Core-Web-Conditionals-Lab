@@ -71,14 +71,14 @@ function positiveNegativeOrZero(a) {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting(language) {
-  if (english) {
+function aroundTheWorldGreeting(language = "english") {
+  if (language === "english") {
     return "Hello World";
   }
-  else if(spanish) {
+  else if(language === "spanish") {
     return "Hola Mundo";
   }
-  else if(german) {
+  else if(language === "german") {
     return "Hallo Welt";
   }
 }
@@ -94,8 +94,18 @@ function aroundTheWorldGreeting(language) {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch(language = english) {
-  if
+function aroundTheWorldGreetingWithSwitch(language = "english") {
+  switch(language){
+     case "english":
+      return "Hello World"
+      break;
+    case "spanish":
+      return "Hola Mundo"
+      break;
+    case "german":
+      return "Hallo Welt"
+      break;
+  }
 }
 
 /**
@@ -109,7 +119,19 @@ function aroundTheWorldGreetingWithSwitch(language = english) {
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+const calculateLetterGrade = (number) => {
+  if (number >= 90){
+    return "A"
+  } else if (number >= 80){
+    return "B"
+  } else if (number >= 70){
+    return "C"
+  } else if (number >= 60){
+    return "D"
+  } else if (number < 60){
+    return "F"
+  }
+}
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -121,7 +143,13 @@ function calculateLetterGrade() {}
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+function animalCounts(animal,numberOfAnimals) {
+  if(numberOfAnimals === 1){
+    return `${numberOfAnimals} ${animal}`
+  } else if(numberOfAnimals > 1){
+    return `${numberOfAnimals} ${animal}s`
+  }
+}
 
 
 /**
