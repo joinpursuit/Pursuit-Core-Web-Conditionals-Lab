@@ -4,13 +4,11 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */ const isEqual = (a,b) => {
-      if (a === b){
-        return true;
-      } else {
-        return false;
-      }
-
-
+    if (a === b){
+      return true;
+   } else {
+      return false;
+   }
  }
 
 
@@ -21,7 +19,19 @@
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+
+ const findLarger = (a,b) => {
+   if (a > b) {
+     return a;
+   } 
+   else if (a === b) {
+    return "this numbers are equal"
+   } else {
+      return b;
+   }
+ }
+
+ 
 
 /**
  * Takes in two numbers and returns the larger number
@@ -30,7 +40,17 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+const findLargerOrTie = (a,b) => {
+  if (a > b) {
+    return a;
+  } 
+  else if (a === b) {
+   return "tie";
+  } else {
+     return b;
+  }
+}
+
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
