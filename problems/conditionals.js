@@ -17,10 +17,11 @@ const isEqual = (a,b) => {
  * @returns {number} - The larger number.
  */
 //function findLarger() {}
-const findLarger (a,b) {
-if findLarger = ( a >= b )
-  return a}
+const findLarger = (a,b) => {
+if ( a > b )
+{ return a }
 else 
+{ return b}
 }
 
 /**
