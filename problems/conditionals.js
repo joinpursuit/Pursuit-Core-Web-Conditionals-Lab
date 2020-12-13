@@ -4,7 +4,10 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
+//function isEqual() {}
+const isEqual = (a,b) => {
+  return a === b
+}
 
 /**
  * Takes in two numbers and returns the larger number
@@ -13,7 +16,12 @@ function isEqual() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+//function findLarger() {}
+const findLarger (a,b) {
+if findLarger = ( a >= b )
+  return a}
+else 
+}
 
 /**
  * Takes in two numbers and returns the larger number
