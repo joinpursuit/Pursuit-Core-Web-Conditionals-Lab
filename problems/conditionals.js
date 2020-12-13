@@ -4,8 +4,14 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
-
+const isEqual = (a,b) => {
+  if (a === b) {
+    return true }
+     else {
+      return false
+     }
+  }
+console.log()
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
@@ -13,8 +19,15 @@ function isEqual() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
-
+const findLarger = (a,b) => {
+   if (a > b) {
+  return a 
+   } else {
+     return b
+   }
+  
+}
+console.log(findLarger(45,80))
 /**
  * Takes in two numbers and returns the larger number
  * Returns the string "tie" if both numbers are the same
@@ -22,8 +35,17 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
-
+const findLargerOrTie = (a,b) => {
+  if( a > b) {
+    return a 
+  } else if( a = b) {
+    return "tie"
+  } else {
+    return b 
+  }
+}
+console.log(findLargerOrTie(9,5))
+console.log(findLargerOrTie(10,10))
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
