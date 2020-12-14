@@ -169,6 +169,7 @@ const aroundTheWorldGreetingWithSwitch = (language) => { // ES6+ switch
 // console.log(aroundTheWorldGreetingWithSwitch("german"))
 // console.log(aroundTheWorldGreetingWithSwitch())
 // console.log(aroundTheWorldGreetingWithSwitch("cat"))
+
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
  * Letter grades consist of "A", "B", "C", "D", or "F"
@@ -180,7 +181,49 @@ const aroundTheWorldGreetingWithSwitch = (language) => { // ES6+ switch
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+// function calculateLetterGrade() {} ES5
+
+// const calculateLetterGrade = (grade) => { //ES6+ switch
+//   switch (true) {
+//     case grade >= 90:
+//       return "A";
+//     case grade >= 80:
+//       return "B";
+//     case grade >= 70:
+//       return "C";
+//     case grade >= 60:
+//       return "D";
+//     case grade < 60:
+//       return "F"
+//   }
+// }
+
+// console.log(calculateLetterGrade(99))
+// console.log(calculateLetterGrade(82))
+// console.log(calculateLetterGrade(76))
+// console.log(calculateLetterGrade(66))
+// console.log(calculateLetterGrade(59))
+// console.log(calculateLetterGrade())
+
+
+const calculateLetterGrade = (grade) => { //ES6+
+  if(grade >= 90) {
+    return "A";
+  } else if(grade >= 80) {
+    return "B";
+  } else if(grade >= 70) {
+    return "C";
+  } else if(grade >= 60) {
+    return "D";
+  } else return "F";
+}
+
+// console.log(calculateLetterGrade(99))
+// console.log(calculateLetterGrade(82))
+// console.log(calculateLetterGrade(76))
+// console.log(calculateLetterGrade(66))
+// console.log(calculateLetterGrade(59))
+// console.log(calculateLetterGrade())
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
