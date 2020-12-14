@@ -16,7 +16,13 @@ function isEqual(a, b) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+function findLarger(a, b) {
+  if (a > b) {
+    return a
+  }else {
+    return b
+  }
+}
 
 /**
  * Takes in two numbers and returns the larger number
@@ -25,14 +31,31 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+function findLargerOrTie(a, b){
+  if (a > b) {
+    return a 
+  } else if (a < b) {
+    return b  
+  } else if (a === b) {
+    return "tie"
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+function positiveNegativeOrZero(a) {
+  if (a > 0) {
+    return "Positive"
+  } else if (a < 0){
+    return "Negative"
+  } else if (a === 0) {
+    return "Zero"
+  }
+}
+
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -44,7 +67,12 @@ function positiveNegativeOrZero() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+const aroundTheWorldGreeting = (language = 'english') => {
+  return language === 'english' ? 'Hello World'
+  : language === 'spanish' ? 'Hola Mundo' 
+  : language === 'german' ? 'Hallo Welt'
+  : 'Hello World';
+}
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -57,8 +85,12 @@ function aroundTheWorldGreeting() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
-
+const aroundTheWorldGreeting = (language = 'english') => {
+  return language === 'english' ? 'Hello World'
+  : language === 'spanish' ? 'Hola Mundo' 
+  : language === 'german' ? 'Hallo Welt'
+  : 'Hello World';
+}
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
  * Letter grades consist of "A", "B", "C", "D", or "F"
