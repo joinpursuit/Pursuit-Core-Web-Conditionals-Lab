@@ -4,7 +4,11 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
+function isEqual(a, b) {
+  return a === b
+}
+
+
 
 /**
  * Takes in two numbers and returns the larger number
@@ -13,7 +17,17 @@ function isEqual() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+
+function findLarger(a, b) {
+  if (a > b) {
+    return a
+  }
+  else {
+    return b
+  }
+}
+
+console.log(findLarger(5, 7))
 
 /**
  * Takes in two numbers and returns the larger number
@@ -22,14 +36,38 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+function findLargerOrTie(a, b) {
+  if (a > b) {
+    return a
+  }
+  else if (b > a) {
+    return b
+  }
+  else if (a === b) {
+    return "tie"
+  }
+}
+
+console.log(findLargerOrTie(8, 5))
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+function positiveNegativeOrZero(a) {
+  if (a > 0) {
+    return "Positive"
+  }
+  else if (a < 0) {
+    return "Negative"
+  }
+  else {
+    return "Zero"
+  }
+}
+
+console.log(positiveNegativeOrZero(0))
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -41,7 +79,19 @@ function positiveNegativeOrZero() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+function aroundTheWorldGreeting(language) {
+  if (language === "german") {
+    return "Hallo Welt"
+  }
+  else if (language === "spanish") {
+    return "Hola Mundo"
+  }
+  else {
+    return "Hello World"
+  }
+}
+
+console.log(aroundTheWorldGreeting())
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -54,7 +104,20 @@ function aroundTheWorldGreeting() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+function aroundTheWorldGreetingWithSwitch(language) {
+  switch (language) {
+    case "spanish":
+      return "Hola Mundo"
+      break;
+    case "german":
+      return "Hallo Welt"
+      break;
+    default:
+      return "Hello World"
+  }
+}
+
+console.log(aroundTheWorldGreetingWithSwitch("german"))
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -67,7 +130,25 @@ function aroundTheWorldGreetingWithSwitch() {}
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+function calculateLetterGrade(grade) {
+  if (grade >= 90) {
+    return "A"
+  }
+  else if (grade >= 80 && grade < 90) {
+    return "B"
+  }
+  else if (grade >= 70 && grade < 80) {
+    return "C"
+  }
+  else if (grade >= 60 && grade < 70) {
+    return "D"
+  }
+  else {
+    return "F"
+  }
+}
+
+console.log(calculateLetterGrade(71))
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -79,15 +160,37 @@ function calculateLetterGrade() {}
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+function animalCounts(animal, numberOfAnimals) {
+  if (numberOfAnimals === 1) {
+    return ('1 ' + animal)
+  }
+  else if (numberOfAnimals > 1) {
+    return (numberOfAnimals + ' ' + animal + 's')
+  }
+}
 
+console.log(animalCounts('dog', 2))
+
+//the proper order of output comes out as undefined because the parameters are 
+//different in the order in which we have to declare them in the function.
+//numberOfAnimals should theoreticaly be stated before animals.
+//This seem pretty counter-intuitive, even for the coder writing it :/
 
 /**
  * Takes in a number and returns whether that number is even or odd
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+function evenOrOdd(a) {
+  if (a % 2 === 0) {
+    return "Even"
+  }
+  else {
+    return "Odd"
+  }
+}
+
+console.log(evenOrOdd(6))
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -95,7 +198,11 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+function evenOrOddWithTernary(a) {
+  return a % 2 === 0 ? "Even" : "Odd"
+}
+
+console.log(evenOrOddWithTernary(3))
 
 /**
  * Takes in two numbers and returns the larger number
@@ -105,8 +212,11 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+function findLargerTernary(a, b) {
+  return a > b ? a : b;
+}
 
+console.log(findLargerTernary(5, 2))
 
 
 module.exports = {
