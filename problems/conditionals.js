@@ -4,7 +4,9 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
+function isEqual(a , b) {
+   return a === b    
+}
 
 /**
  * Takes in two numbers and returns the larger number
@@ -13,7 +15,11 @@ function isEqual() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+function findLarger(a,b) {
+
+  if ( b > a  ) {return b; } 
+   else {return a;}
+}
 
 /**
  * Takes in two numbers and returns the larger number
@@ -22,14 +28,38 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+function findLargerOrTie(a,b) {
+if ( a > b) {
+  return a}
+  else if ( a == b ) {
+    return "tie"
+  }
+  else {
+    return b
+  }
+  }
+
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+function positiveNegativeOrZero(a) {
+  if ( a > 0 ) {
+
+    return "Positive"
+   }
+    else if ( a < 0 ) {
+
+      return "Negative"
+    }
+    else {
+      return "Zero"
+    }
+
+}
+
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
