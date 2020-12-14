@@ -5,11 +5,18 @@
  * @returns {boolean} - Is a equal to b.
  */
 // function isEqual() {}
-const isEqual = (num1, num2) => {
-  if (num1 === num2) {
-    return num1 === num2;
-  } else return false;
+// const isEqual = (num1, num2) => {
+//   if (num1 === num2) {
+//     return num1 === num2;
+//   } else return false;
+// }
+
+const isEqual =(num1, num2) => {
+ return num1 === num2 ? true : false
 }
+
+console.log(isEqual(2,3))
+console.log(isEqual(3,3))
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
