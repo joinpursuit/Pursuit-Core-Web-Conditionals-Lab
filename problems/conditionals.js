@@ -235,8 +235,28 @@ const calculateLetterGrade = (grade) => { //ES6+
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+// function animalCounts() {} // ES5
 
+const animalCounts = (animal, numberOfAnimals) => {
+  if(numberOfAnimals > 1) {
+    if(animal === "geese") {
+      return "Gaggle";
+    } else if(animal === "sheep") {
+        return "flock";
+    }
+    return `${numberOfAnimals} ${animal}s`
+  }
+  if(numberOfAnimals === 1) {
+    return `${numberOfAnimals} ${animal}`
+  }
+}
+
+// console.log(animalCounts("cat", 3))
+// console.log(animalCounts("cat", 1))
+// console.log(animalCounts("sheep", 3))
+// console.log(animalCounts("geese", 3))
+// console.log(animalCounts("geese", 1))
+// console.log(animalCounts("sheep", 1))
 
 /**
  * Takes in a number and returns whether that number is even or odd
