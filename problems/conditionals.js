@@ -60,7 +60,7 @@ console.log(findLarger(5, 5))
 //   }
 // }
 
-const findLargerOrTie = (num1, num2) => { // ternary
+const findLargerOrTie = (num1, num2) => { // switch
   switch (true) { 
     case num1 > num2:
       return num1;
@@ -84,19 +84,32 @@ console.log(findLargerOrTie(5,2))
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-// function positiveNegativeOrZero() {}
-const positiveNegativeOrZero = (num) => {
-  if (num === 0) {
-    return "Zero"
-  } else if (num < 0) {
-      return "Negative"
-  } else if (num > 0) {
+// function positiveNegativeOrZero() {} // ES5
+
+// const positiveNegativeOrZero = (num) => { // ES6+
+//   if (num === 0) {
+//     return "Zero"
+//   } else if (num < 0) {
+//       return "Negative"
+//   } else if (num > 0) {
+//       return "Positive"
+//   }
+// }
+
+const positiveNegativeOrZero = (num) => { // switch
+  switch (true) {
+    case num === 0:
+      return "Zero";
+    case num > 0:
       return "Positive"
+    case num < 0:
+      return "Negative"
   }
 }
-// console.log(positiveNegativeOrZero(3))
-// console.log(positiveNegativeOrZero(-3))
-// console.log(positiveNegativeOrZero(0))
+
+console.log(positiveNegativeOrZero(3))
+console.log(positiveNegativeOrZero(-3))
+console.log(positiveNegativeOrZero(0))
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
