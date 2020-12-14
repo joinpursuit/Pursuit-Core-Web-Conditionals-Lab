@@ -50,29 +50,29 @@ const findLarger = (num1, num2) => { // ES6+ ternary operator
  */
 // function findLargerOrTie() {} // ES5
 
-// const findLargerOrTie = (num1, num2) => { // ES6+
-//   if (num1 > num2) {
-//     return num1
-//   } else if (num1 < num2) {
-//     return num2
-//   } else if (num1 === num2) {
-//     return "tie"
-//   }
-// }
-
-const findLargerOrTie = (num1, num2) => { // ES6+ switch
-  switch (true) { 
-    case num1 > num2:
-      return num1;
-      break;
-    case num1 < num2:
-      return num2;
-      break;
-    case num1 === num2:
-      return "tie";
-      break;
-      }
+const findLargerOrTie = (num1, num2) => { // ES6+
+  if (num1 > num2) {
+    return num1
+  } else if (num1 < num2) {
+    return num2
+  } else if (num1 === num2) {
+    return "tie"
+  }
 }
+
+// const findLargerOrTie = (num1, num2) => { // ES6+ switch - revisit ???????????????????????????
+//   switch (true) { 
+//     case num1 > num2:
+//       return num1;
+//       break;
+//     case num1 < num2:
+//       return num2;
+//       break;
+//     case num1 === num2:
+//       return "tie";
+//       break;
+//       }
+// }
 
 // console.log(findLargerOrTie(7,7))
 // console.log(findLargerOrTie(2,5))
@@ -86,26 +86,26 @@ const findLargerOrTie = (num1, num2) => { // ES6+ switch
  */
 // function positiveNegativeOrZero() {} // ES5
 
-// const positiveNegativeOrZero = (num) => { // ES6+
-//   if (num === 0) {
-//     return "Zero"
-//   } else if (num < 0) {
-//       return "Negative"
-//   } else if (num > 0) {
-//       return "Positive"
-//   }
-// }
-
-const positiveNegativeOrZero = (num) => { // ES6+ switch
-  switch (true) {
-    case num === 0:
-      return "Zero";
-    case num > 0:
-      return "Positive";
-    case num < 0:
-      return "Negative";
+const positiveNegativeOrZero = (num) => { // ES6+
+  if (num === 0) {
+    return "Zero"
+  } else if (num < 0) {
+      return "Negative"
+  } else if (num > 0) {
+      return "Positive"
   }
 }
+
+// const positiveNegativeOrZero = (num) => { // ES6+ switch - revisit ???????????????????????????????
+//   switch (true) {
+//     case num === 0:
+//       return "Zero";
+//     case num > 0:
+//       return "Positive";
+//     case num < 0:
+//       return "Negative";
+//   }
+// }
 
 // console.log(positiveNegativeOrZero(3))
 // console.log(positiveNegativeOrZero(-3))
@@ -250,19 +250,35 @@ const animalCounts = (animal, numberOfAnimals) => { // ES6+
   }
 }
 
-console.log(animalCounts("cat", 3))
-console.log(animalCounts("cat", 1))
-console.log(animalCounts("sheep", 3))
-console.log(animalCounts("geese", 3))
-console.log(animalCounts("geese", 1))
-console.log(animalCounts("sheep", 1))
+// console.log(animalCounts("cat", 3))
+// console.log(animalCounts("cat", 1))
+// console.log(animalCounts("sheep", 3))
+// console.log(animalCounts("geese", 3))
+// console.log(animalCounts("geese", 1))
+// console.log(animalCounts("sheep", 1))
 
 /**
  * Takes in a number and returns whether that number is even or odd
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+// function evenOrOdd() {} // ES5
+
+// const evenOrOdd = (num) => { // ES6+ ternary
+//   return num % 2 === 0 ? "Even" : "Odd";
+// }
+
+const evenOrOdd = (num) => { // ES6+
+  if(num % 2 === 0) {
+    return "Even";
+  } else return "Odd"
+}
+
+// console.log(evenOrOdd(13))
+// console.log(evenOrOdd(10))
+// console.log(evenOrOdd(0))
+// console.log(evenOrOdd(-1))
+
 
 /**
  * Takes in a number and returns whether that number is even or odd
