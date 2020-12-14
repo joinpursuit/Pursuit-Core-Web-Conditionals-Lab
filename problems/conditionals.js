@@ -12,11 +12,11 @@
 //   } else return false;
 // }
 
-const isEqual =(num1, num2) => { // ternary operator
+const isEqual =(num1, num2) => { // ES6+ ternary operator
  return num1 === num2 ? true : false
 }
-console.log(isEqual(2,3))
-console.log(isEqual(3,3))
+// console.log(isEqual(2,3))
+// console.log(isEqual(3,3))
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
@@ -33,13 +33,13 @@ console.log(isEqual(3,3))
 //   } else return false
 // }
 
-const findLarger = (num1, num2) => { // ES6+ / ternary operator
+const findLarger = (num1, num2) => { // ES6+ ternary operator
   return num1 > num2 ? num1 : num2
 }
 
-console.log(findLarger(5, 2))
-console.log(findLarger(2, 5))
-console.log(findLarger(5, 5))
+// console.log(findLarger(5, 2))
+// console.log(findLarger(2, 5))
+// console.log(findLarger(5, 5))
 
 /**
  * Takes in two numbers and returns the larger number
@@ -60,7 +60,7 @@ console.log(findLarger(5, 5))
 //   }
 // }
 
-const findLargerOrTie = (num1, num2) => { // switch
+const findLargerOrTie = (num1, num2) => { // ES6+ switch
   switch (true) { 
     case num1 > num2:
       return num1;
@@ -74,9 +74,9 @@ const findLargerOrTie = (num1, num2) => { // switch
       }
 }
 
-console.log(findLargerOrTie(7,7))
-console.log(findLargerOrTie(2,5))
-console.log(findLargerOrTie(5,2))
+// console.log(findLargerOrTie(7,7))
+// console.log(findLargerOrTie(2,5))
+// console.log(findLargerOrTie(5,2))
 
 
 /**
@@ -96,20 +96,20 @@ console.log(findLargerOrTie(5,2))
 //   }
 // }
 
-const positiveNegativeOrZero = (num) => { // switch
+const positiveNegativeOrZero = (num) => { // ES6+ switch
   switch (true) {
     case num === 0:
       return "Zero";
     case num > 0:
-      return "Positive"
+      return "Positive";
     case num < 0:
-      return "Negative"
+      return "Negative";
   }
 }
 
-console.log(positiveNegativeOrZero(3))
-console.log(positiveNegativeOrZero(-3))
-console.log(positiveNegativeOrZero(0))
+// console.log(positiveNegativeOrZero(3))
+// console.log(positiveNegativeOrZero(-3))
+// console.log(positiveNegativeOrZero(0))
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -121,7 +121,24 @@ console.log(positiveNegativeOrZero(0))
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+// function aroundTheWorldGreeting() {} // ES5
+
+const aroundTheWorldGreeting = (language) => { //ES6+
+  if(language === "english") {
+    return "Hello World";
+  } else if (language === "spanish") {
+    return "Hola Mundo"
+  } else if (language === "german") {
+    return "Hallo Welt"; 
+  } else return "Hello World";
+}
+
+// console.log(aroundTheWorldGreeting("english"))
+// console.log(aroundTheWorldGreeting("spanish"))
+// console.log(aroundTheWorldGreeting("german"))
+// console.log(aroundTheWorldGreeting())
+// console.log(aroundTheWorldGreeting("cat"))
+
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -134,8 +151,24 @@ function aroundTheWorldGreeting() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+// function aroundTheWorldGreetingWithSwitch() {} ES5
 
+const aroundTheWorldGreetingWithSwitch = (language) => { // ES6+ switch
+  switch (language) {
+    case "spanish":
+      return "Hola Mundo";
+    case "german":
+      return "Hallo Welt";
+    default:
+      return "Hello World"
+  }
+}
+
+// console.log(aroundTheWorldGreetingWithSwitch("english"))
+// console.log(aroundTheWorldGreetingWithSwitch("spanish"))
+// console.log(aroundTheWorldGreetingWithSwitch("german"))
+// console.log(aroundTheWorldGreetingWithSwitch())
+// console.log(aroundTheWorldGreetingWithSwitch("cat"))
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
  * Letter grades consist of "A", "B", "C", "D", or "F"
