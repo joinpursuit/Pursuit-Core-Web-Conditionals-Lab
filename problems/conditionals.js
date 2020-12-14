@@ -136,7 +136,11 @@ function calculateLetterGrade(grade) {
  * @returns {string} - the number and animal (in either single or plural form)
  */
 function animalCounts(animal, numberOfAnimals) {
-
+  if(numberOfAnimals > 1) {
+      return `${numberOfAnimals} ${animal}s`;
+  } else {
+      return `${numberOfAnimals} ${animal}`;
+  }
 }
 
 
