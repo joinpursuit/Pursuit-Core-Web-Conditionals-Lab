@@ -237,7 +237,7 @@ const calculateLetterGrade = (grade) => { //ES6+
  */
 // function animalCounts() {} // ES5
 
-const animalCounts = (animal, numberOfAnimals) => {
+const animalCounts = (animal, numberOfAnimals) => { // ES6+
   if(numberOfAnimals > 1) {
     if(animal === "geese") {
       return "Gaggle";
@@ -245,18 +245,17 @@ const animalCounts = (animal, numberOfAnimals) => {
         return "flock";
     }
     return `${numberOfAnimals} ${animal}s`
-  }
-  if(numberOfAnimals === 1) {
-    return `${numberOfAnimals} ${animal}`
+  } else if(numberOfAnimals === 1) {
+      return `${numberOfAnimals} ${animal}`
   }
 }
 
-// console.log(animalCounts("cat", 3))
-// console.log(animalCounts("cat", 1))
-// console.log(animalCounts("sheep", 3))
-// console.log(animalCounts("geese", 3))
-// console.log(animalCounts("geese", 1))
-// console.log(animalCounts("sheep", 1))
+console.log(animalCounts("cat", 3))
+console.log(animalCounts("cat", 1))
+console.log(animalCounts("sheep", 3))
+console.log(animalCounts("geese", 3))
+console.log(animalCounts("geese", 1))
+console.log(animalCounts("sheep", 1))
 
 /**
  * Takes in a number and returns whether that number is even or odd
