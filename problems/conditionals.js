@@ -110,7 +110,17 @@ function aroundTheWorldGreetingWithSwitch(language) {
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
 function calculateLetterGrade(grade) {
-  
+  if(grade >= 90) {
+      return "A"
+  } else if(grade >= 80) {
+      return "B"
+  } else if(grade >= 70) {
+      return "C"
+  } else if(grade >= 60) {
+      return "D"
+  } else {
+      return "F"
+  }
 }
 
 /**
@@ -123,7 +133,13 @@ function calculateLetterGrade(grade) {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+function animalCounts(animal, numberOfAnimals) {
+  if(typeof animal === "string" && numberOfAnimals === 1) {
+    return numberOfAnimals + " " + animal 
+    } else {
+      return numberOfAnimals + " " + animal + "s"
+    }
+  }
 
 
 /**
@@ -131,7 +147,14 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+
+function evenOrOdd(a) {
+  if(a % 2 === 0) {
+    return "Even"
+  } else if(a % 2 !== 0) {
+    return "Odd"
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -139,7 +162,10 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+
+function evenOrOddWithTernary(a) {
+  return a % 2 === 0 ? "Even" : "Odd"
+}
 
 /**
  * Takes in two numbers and returns the larger number
@@ -149,7 +175,9 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+function findLargerTernary(a,b) {
+  return a > b ? a : b
+}
 
 
 
