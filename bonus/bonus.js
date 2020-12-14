@@ -4,7 +4,12 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
-function isPrimaryColor() {}
+function isPrimaryColor(color) {
+  if (color === "Red" , "Yellow" , "Blue")
+  return true
+  if (color !== "Red" , "Yellow" , "Blue")
+  return false
+} 
 
 /**
  * Takes in color and returns whether or not the color is a primary color.
