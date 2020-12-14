@@ -4,10 +4,14 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual(a, b) {
-  let first = a;
-  let second = b;
-  return (a === b);
+// function isEqual(a, b) {
+//   let first = a;
+//   let second = b;
+//   return (a === b);
+// }
+
+const isEqual = (a, b) => {
+  return (a === b) ? true : false
 }
 
 /**
@@ -17,15 +21,18 @@ function isEqual(a, b) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger(a, b) {
-  let first = a;
-  let second = b;
-   if (a > b) {
-     return a;
-   } else
-  return b;
-}
+// function findLarger(a, b) {
+//   let first = a;
+//   let second = b;
+//    if (a > b) {
+//      return a;
+//    } else
+//   return b;
+// }
 
+const findLarger = (a, b) => {
+  return (a > b ) ? a : b
+}
 /**
  * Takes in two numbers and returns the larger number
  * Returns the string "tie" if both numbers are the same
@@ -70,19 +77,21 @@ function positiveNegativeOrZero(a) {
  */
 
 function aroundTheWorldGreeting(language) {
-  //language = language.toLowerCase();
+  if((typeof language === "undefined")){
+       language = "english";
+     } 
+ 
+  language = language.toLowerCase();
   if(language === "english") {
-      return "Hello World"; 
+          return "Hello World"; 
     } else if(language === "spanish") {
-      return "Hola Mundo";
+          return "Hola Mundo";
     } else if(language === "german") {
         return "Hallo Welt";
-    } else if(language === "undefined"){
-        return "english";
-    } else if((language === "undefined") || (language === "")){
-      return "Hello World";
-    }
+    } else if((typeof language === "false")) {
+    return "Hello World";
   }
+   }
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -95,8 +104,18 @@ function aroundTheWorldGreeting(language) {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch(language) {
-
+//function aroundTheWorldGreetingWithSwitch(language) {}
+const aroundTheWorldGreetingWithSwitch = (language) => {
+  switch(language) {
+    case "english":
+      return "Hello World";
+    case "spanish":
+      return "Hola Mundo";
+    case "german":
+      return "Hallo Welt";
+    default:
+      return "Hello World";
+  }
 }
 
 /**
@@ -164,7 +183,7 @@ function evenOrOdd(a) {
  * @returns {string} - "Even or Odd"
  */
 //function evenOrOddWithTernary() {}
-const evenOrOddWithTernary = (a)=> {
+const evenOrOddWithTernary = (a) => {
   return (a % 2 === 0) ? "Even" : "Odd"
 }
 
@@ -178,7 +197,7 @@ const evenOrOddWithTernary = (a)=> {
  */
 //function findLargerTernary() {}
 const findLargerTernary = (a, b) => {
-  return (a > b) ? a : b
+  return (a > b) ? a : b;
 }
 
 
