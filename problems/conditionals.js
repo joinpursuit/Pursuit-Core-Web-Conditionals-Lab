@@ -25,16 +25,12 @@ const isEqual =(num1, num2) => { // ES6+ ternary operator
  * @returns {number} - The larger number.
  */
 
-// function findLarger(num1, num2) { // ES5
-//   if(num1 > num2) {
-//     return num1
-//   } else if (num1 < num2) {
-//     return num2
-//   } else return false
-// }
-
-const findLarger = (num1, num2) => { // ES6+ ternary operator
-  return num1 > num2 ? num1 : num2
+function findLarger(num1, num2) { // ES5
+  if(num1 > num2) {
+    return num1
+  } else if (num1 < num2) {
+    return num2
+  } else return false
 }
 
 // console.log(findLarger(5, 2))
@@ -288,10 +284,10 @@ const evenOrOddWithTernary = (num) => { // ES6+ ternary
   return num % 2 === 0 ? "Even" : "Odd";
 }
 
-console.log(evenOrOdd(13))
-console.log(evenOrOdd(10))
-console.log(evenOrOdd(0))
-console.log(evenOrOdd(-1))
+// console.log(evenOrOdd(13))
+// console.log(evenOrOdd(10))
+// console.log(evenOrOdd(0))
+// console.log(evenOrOdd(-1))
 
 /**
  * Takes in two numbers and returns the larger number
@@ -301,8 +297,15 @@ console.log(evenOrOdd(-1))
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+// function findLargerTernary() {}
 
+const findLargerTernary = (num1, num2) => { // ES6+ ternary operator
+  return num1 > num2 ? num1 : num2
+}
+
+// console.log(findLarger(5, 2))
+// console.log(findLarger(2, 5))
+// console.log(findLarger(5, 5))
 
 
 module.exports = {
