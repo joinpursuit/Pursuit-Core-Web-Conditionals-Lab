@@ -4,17 +4,17 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-// function isEqual() {}
-// const isEqual = (num1, num2) => {
+// function isEqual() {} // ES5
+
+// const isEqual = (num1, num2) => { // ES6+
 //   if (num1 === num2) {
 //     return num1 === num2;
 //   } else return false;
 // }
 
-const isEqual =(num1, num2) => {
+const isEqual =(num1, num2) => { // ternary operator
  return num1 === num2 ? true : false
 }
-
 console.log(isEqual(2,3))
 console.log(isEqual(3,3))
 /**
@@ -24,17 +24,22 @@ console.log(isEqual(3,3))
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-// function findLarger() {}
-function findLarger(num1, num2) {
-  if(num1 > num2) {
-    return num1
-  } else if (num1 < num2) {
-    return num2
-  } else return false
+
+// function findLarger(num1, num2) { // ES5
+//   if(num1 > num2) {
+//     return num1
+//   } else if (num1 < num2) {
+//     return num2
+//   } else return false
+// }
+
+const findLarger = (num1, num2) => { // ES6+ / ternary operator
+  return num1 > num2 ? num1 : num2
 }
-// console.log(findLarger(5, 2))
-// console.log(findLarger(2, 5))
-// console.log(findLarger(5, 5))
+
+console.log(findLarger(5, 2))
+console.log(findLarger(2, 5))
+console.log(findLarger(5, 5))
 
 /**
  * Takes in two numbers and returns the larger number
