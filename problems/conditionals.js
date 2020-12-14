@@ -264,10 +264,6 @@ const animalCounts = (animal, numberOfAnimals) => { // ES6+
  */
 // function evenOrOdd() {} // ES5
 
-// const evenOrOdd = (num) => { // ES6+ ternary
-//   return num % 2 === 0 ? "Even" : "Odd";
-// }
-
 const evenOrOdd = (num) => { // ES6+
   if(num % 2 === 0) {
     return "Even";
@@ -286,7 +282,16 @@ const evenOrOdd = (num) => { // ES6+
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+// function evenOrOddWithTernary() {}
+
+const evenOrOddWithTernary = (num) => { // ES6+ ternary
+  return num % 2 === 0 ? "Even" : "Odd";
+}
+
+console.log(evenOrOdd(13))
+console.log(evenOrOdd(10))
+console.log(evenOrOdd(0))
+console.log(evenOrOdd(-1))
 
 /**
  * Takes in two numbers and returns the larger number
