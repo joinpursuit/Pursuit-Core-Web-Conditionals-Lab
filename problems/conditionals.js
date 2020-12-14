@@ -48,20 +48,35 @@ console.log(findLarger(5, 5))
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-// function findLargerOrTie() {}
+// function findLargerOrTie() {} // ES5
 
-const findLargerOrTie = (num1, num2) => {
-  if (num1 > num2) {
-    return num1
-  } else if (num1 < num2) {
-    return num2
-  } else if (num1 === num2) {
-    return "tie"
-  }
+// const findLargerOrTie = (num1, num2) => { // ES6+
+//   if (num1 > num2) {
+//     return num1
+//   } else if (num1 < num2) {
+//     return num2
+//   } else if (num1 === num2) {
+//     return "tie"
+//   }
+// }
+
+const findLargerOrTie = (num1, num2) => { // ternary
+  switch (true) { 
+    case num1 > num2:
+      return num1;
+      break;
+    case num1 < num2:
+      return num2;
+      break;
+    case num1 === num2:
+      return "tie";
+      break;
+      }
 }
-// console.log(findLargerOrTie(7,7))
-// console.log(findLargerOrTie(2,5))
-// console.log(findLargerOrTie(5,2))
+
+console.log(findLargerOrTie(7,7))
+console.log(findLargerOrTie(2,5))
+console.log(findLargerOrTie(5,2))
 
 
 /**
