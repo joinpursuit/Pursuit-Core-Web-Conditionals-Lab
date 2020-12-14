@@ -63,7 +63,7 @@ function positiveNegativeOrZero(a) {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting(language = 'english') {
+function aroundTheWorldGreeting(language) {
   if (language === 'english'){
     return 'Hello World'
   } else if(language === 'spanish'){
@@ -87,18 +87,18 @@ function aroundTheWorldGreeting(language = 'english') {
  * @returns {string} - "Hello World" in the desired language
  */
 function aroundTheWorldGreetingWithSwitch(language) {
-  switch(language ){
-    case language = 'english':
+  switch(language){
+    case 'english':
       return 'Hello World'
       break;
-    case language = 'spanish':
+    case 'spanish':
       return 'Hola Mundo'
       break;
-    case language = 'german':
+    case 'german':
       return 'Hallo Welt'
       break;
     default:
-      return 'Hello World'
+       return 'Hello World'
       break;
   }
 }
@@ -141,12 +141,12 @@ function calculateLetterGrade(grade) {
  */
 function animalCounts(animal , numberOfAnimals) {
   if(numberOfAnimals > 1 ){
-    return animal + 's'
+    return  numberOfAnimals + ' ' + animal + 's'
   } else {
-    return animal
+    return numberOfAnimals + ' ' + animal
   }
 }
-console.log(animalCounts('cat', 5))
+
 
 /**
  * Takes in a number and returns whether that number is even or odd
