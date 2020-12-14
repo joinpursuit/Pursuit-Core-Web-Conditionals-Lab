@@ -95,7 +95,7 @@ aroundTheWorldGreeting()
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch(language, str) {
+function aroundTheWorldGreetingWithSwitch(language) {
   switch (language) {
     case "english":
       return "Hello World"
@@ -107,7 +107,7 @@ function aroundTheWorldGreetingWithSwitch(language, str) {
       return "Hello World"
   }
 }
-
+aroundTheWorldGreetingWithSwitch()
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
  * Letter grades consist of "A", "B", "C", "D", or "F"

@@ -4,40 +4,70 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
-function isPrimaryColor() {}
-
+function isPrimaryColor(color) {
+  if (color === "red" || color === "yellow" || color === "blue") {
+    return true
+  } else {
+    return false
+  }
+}
+isPrimaryColor()
 /**
  * Takes in color and returns whether or not the color is a primary color.
  * Uses exactly one if statement in its definition
  * @param {string} color - The color.
  * @returns {boolean} - If primary color or not
  */
-function isPrimaryColorOneIf() {}
-
+function isPrimaryColorOneIf(color) {
+  if(color === "red" || color === "yellow" || color === "blue"){
+    return true
+  } else {
+    return false
+  }
+}
+isPrimaryColorOneIf()
 /**
  * Takes in two words and returns the word that comes first in lexicographical order.
  * @param {string} word1 - The first word.
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-function lexicographicalOrder() {}
-
+function lexicographicalOrder(word1, word2) {
+  if(word1 < word2){
+    return word1
+  } else {
+    return word2
+  }
+}
+lexicographicalOrder()
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
  * Otherwise returns "small"
  * @param {string} word
  * @returns {string} - "large" or "small"
  */
-function largeOrSmall() {}
-
+function largeOrSmall(word) {
+  if(word.length >= 5) {
+    return 'large'
+  } else {
+    return 'small'
+  }
+}
+largeOrSmall("hi")
 /**
  * Takes in two words and returns the longer word.
  * @param {string} word1 - The first word.
  * @param {string} word2 - The second word.
  * @returns {string} - The longer word
  */
-function longerWord() {}
-
+function longerWord(word1, word2) {
+  if(word1.length > word2.length) {
+    return word1
+  } else {
+    return word2
+  }
+}
+longerWord("hi", "hello")
 /**
  * Takes in three words and returns the shortest word.
  * @param {string} word1 - The first word.
@@ -45,8 +75,16 @@ function longerWord() {}
  * @param {string} word3 - The second word.
  * @returns {string} - The shortest word
  */
-function shortestWord() {}
-
+function shortestWord(word1, word2, word3) {
+  if(word1.length < word2.length && word1.length < word3.length) {
+    return word1
+  } else if (word2.length < word1.length && word2.length < word3.length) {
+    return word2
+  } else if (word3.length < word1.length && word3.length < word2.length) {
+    return word3
+  }
+}
+shortestWord('hi', 'hello', 'bye')
 module.exports = {
   isPrimaryColor,
   isPrimaryColorOneIf,
