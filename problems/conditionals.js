@@ -4,7 +4,17 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
+function isEqual(a, b) {
+
+  if (a === b) {
+
+    return true 
+  } else {
+    return false
+  }
+
+}
+console.log(isEqual(5,5))
 
 /**
  * Takes in two numbers and returns the larger number
@@ -13,7 +23,18 @@ function isEqual() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+function findLarger(a, b) {
+
+  if (a > b){
+    return a
+  }
+  else {
+      return b
+  }
+
+}
+
+console.log(findLarger(-3,-3))
 
 /**
  * Takes in two numbers and returns the larger number
@@ -22,14 +43,40 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+function findLargerOrTie(a ,b) {
+
+  if (a < b ){
+      return b
+  } else if (a > b){
+      return a
+
+  }else {
+    return 'tie'
+  }
+
+}
+
+console.log(findLargerOrTie(3,5))
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+function positiveNegativeOrZero(a) {
+
+  if (a > 0 && a != 0 ){
+      return 'Positive'
+  }else if (a < 0 ) {
+    return 'Negative'
+
+  }else {
+    return 'Zero'
+  }
+
+}
+
+console.log(positiveNegativeOrZero(0))
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -41,7 +88,25 @@ function positiveNegativeOrZero() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+function aroundTheWorldGreeting(lang ) {
+
+  if (lang === 'german' ) {
+
+    return 'Hallo Welt'
+
+  }else if (lang === 'spanish'){
+    return "Hola Mundo"
+
+  }else {
+
+    return 'Hello World'
+  
+  }
+
+}
+
+console.log(aroundTheWorldGreeting('spanish'))
+
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -54,7 +119,24 @@ function aroundTheWorldGreeting() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+function aroundTheWorldGreetingWithSwitch(lang) {
+
+switch (lang)
+  {
+    case 'german' : return 'Hallo Welt' 
+    break;
+
+    case 'spanish' : return 'Hola Mundo'
+    break;
+
+    default: return "Hello World"
+    break;
+
+  }
+
+}
+
+console.log(aroundTheWorldGreetingWithSwitch('german'))
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -67,7 +149,34 @@ function aroundTheWorldGreetingWithSwitch() {}
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+function calculateLetterGrade(grade) 
+
+{
+
+if (grade >= 90) 
+  {
+      return "A"
+  }else if (grade >= 80 )
+  
+    {
+      return "B"
+    }else if (grade >= 70) 
+      {
+        return "C"
+      }else if (grade >= 60)
+        {
+          return  "D"
+        }else 
+          {
+              return "F"
+            }
+ }
+ 
+
+
+console.log(calculateLetterGrade(95))
+
+
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -79,7 +188,34 @@ function calculateLetterGrade() {}
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+function animalCounts(animal, numberofAnimals) 
+{
+  if (numberofAnimals > 1 ) 
+    {
+    switch (animal)
+    {
+      case 'sheep' : return numberofAnimals + ' sheep'
+      break;
+
+      case 'goose' : return numberofAnimals + ' geese'
+      break;
+
+      default : return numberofAnimals + ' ' + animal + 's'
+      break;
+
+    }
+
+  }else if (numberofAnimals < 1 )
+  {
+    return 'No negative animals'
+  }else 
+  {
+    return numberofAnimals + ' ' + animal
+  }
+
+}
+
+console.log(animalCounts('goose', 7))
 
 
 /**
@@ -87,7 +223,20 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+function evenOrOdd(a) 
+{
+  if ( a % 2 === 0 )
+  {
+    return 'Even'
+  }else
+  {
+    return 'Odd'    
+  }
+}
+
+console.log(evenOrOdd(41))
+
+
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -95,7 +244,13 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+function evenOrOddWithTernary(a) 
+{
+ return (a % 2 === 0) ? 'Even' : 'Odd';
+
+}
+
+console.log(evenOrOddWithTernary(2))
 
 /**
  * Takes in two numbers and returns the larger number
@@ -105,8 +260,12 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+function findLargerTernary(a, b) 
+{
+  return ((a > b ) && (a != b)) ? a : b;
+}
 
+console.log(findLargerTernary(447,44))
 
 
 module.exports = {
