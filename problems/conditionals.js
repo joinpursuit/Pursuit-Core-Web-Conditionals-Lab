@@ -4,16 +4,36 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
+
+function isEqual(a, b) {
+  
+  if (a === b){
+   return(true)
+  }
+  else {
+    return(false)
+  }
+  
+}
+
 
 /**
  * Takes in two numbers and returns the larger number
- * The numbers are guaranteed to be unique
+` * The numbers are guaranteed to be unique
  * @param {number} a - The first number.
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+function findLarger(a, b) {
+if (a > b) {
+  return(a)
+}
+else {
+ return(b ) 
+}
+
+}
+ 
 
 /**
  * Takes in two numbers and returns the larger number
@@ -22,15 +42,38 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+function findLargerOrTie(a, b) {
+  if (a ===b) {
+    return("tie")
+  }
+  else if(a >= b){
+    return(a)
+  }
+  else {
+   return(b) 
+  }
+  
+}
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+function positiveNegativeOrZero(a) {
+  if (Math.sign(a)>0){
+    return ("Positive")
+  }
+  else if (Math.sign(a)<0){
+    return ("Negative")
+  }
+  else (Math.sign(a)===0)
+    return ("Zero")
 
+}
+
+
+ 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
  * Must work for at least english, spanish, and german.
@@ -41,7 +84,18 @@ function positiveNegativeOrZero() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+function aroundTheWorldGreeting(language) {
+  if (language === "english"){
+    return "Hello World"
+  }else if (language === "spanish"){
+    return "Hola Mundo"
+  }else if (language === "german"){
+    return "Hallo Welt"
+  }else {
+    return "Hello World"
+  }
+  
+}
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -54,7 +108,22 @@ function aroundTheWorldGreeting() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+function aroundTheWorldGreetingWithSwitch(language) {
+  switch (language){
+    case 'english':
+      return "Hello World"
+      break
+    case 'spanish':
+      return "Hola Mundo"
+      break
+    case 'german':
+      return "Hallo Welt"
+      break
+    default:
+      return "Hello World"
+      break
+    }
+}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -67,8 +136,19 @@ function aroundTheWorldGreetingWithSwitch() {}
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
-
+function calculateLetterGrade(grade) {
+  if (90 >= A){
+    return A
+  }else if (80 >= B){
+    return B 
+  }else if (70){
+    return C
+  }else if (60){
+    return D
+  }else {
+    return F
+  }
+}
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
  * Use an if - else to statement to return the
@@ -121,4 +201,4 @@ module.exports = {
   evenOrOdd,
   evenOrOddWithTernary,
   findLargerTernary,
-};
+}
