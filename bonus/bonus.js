@@ -4,8 +4,11 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
-function isPrimaryColor() {}
+let color = "Red" || "Yellow" || "Blue"  
+function isPrimaryColor(color) {
 
+  color ? "Primary" : "Not primary"
+}
 /**
  * Takes in color and returns whether or not the color is a primary color.
  * Uses exactly one if statement in its definition
