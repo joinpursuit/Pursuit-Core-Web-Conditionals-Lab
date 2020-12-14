@@ -193,7 +193,7 @@ const aroundTheWorldGreetingWithSwitch = (language = "english") => {
    * @param {number} b - The second number.
    * @returns {number} - The larger number.
    */
-  function findLargerTernary(a, b) { 
+  const findLargerTernary = (a, b) => { 
     return a > b ? a : b
   }
 
