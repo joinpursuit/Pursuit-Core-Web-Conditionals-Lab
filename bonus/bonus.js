@@ -4,6 +4,7 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
+const isPrimary
 function isPrimaryColor() {}
 
 /**
