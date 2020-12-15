@@ -46,8 +46,9 @@ function findLargerOrTie(a, b) {
    if (a > b) {
      return a;
    } else if (a < b) {
-  return b;
-} else return "tie";
+      return b;
+    } else {
+      return "tie";}
 }
 
 
@@ -88,9 +89,9 @@ function aroundTheWorldGreeting(language) {
           return "Hola Mundo";
     } else if(language === "german") {
         return "Hallo Welt";
-    } else if((typeof language === "false")) {
-    return "Hello World";
-  }
+     } //else {
+  //   return "Hello World";
+  // }
    }
 
 /**
@@ -154,14 +155,17 @@ function calculateLetterGrade(grade) {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts(animal, numberOfAnimals) {
-  if(numberOfAnimals > 1) {
-      return `${numberOfAnimals} ${animal}s`;
-  } else {
-      return `${numberOfAnimals} ${animal}`;
-  }
-}
+// function animalCounts(animal, numberOfAnimals) {
+//   if(numberOfAnimals > 1) {
+//       return `${numberOfAnimals} ${animal}s`;
+//   } else {
+//       return `${numberOfAnimals} ${animal}`;
+//   }
+// }
 
+const animalCounts = (animal, numberOfAnimals) => {
+  return (numberOfAnimals > 1) ? `${numberOfAnimals} ${animal}s` : `${numberOfAnimals} ${animal}`;
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -175,7 +179,7 @@ function evenOrOdd(a) {
     return "Odd";
   }
 }
-
+ 
 /**
  * Takes in a number and returns whether that number is even or odd
  * Uses a ternary in its implementation
