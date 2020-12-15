@@ -24,10 +24,10 @@ function isEqual(a,b) {
  */
 function findLarger(num1,num2) {
   if (num1 > num2) {
-    return num1
+    return num1;
   }
   else if (num1 < num2) {
-  return num2 
+  return num2;
   }
 }
 
@@ -42,13 +42,13 @@ function findLarger(num1,num2) {
  */
 function findLargerOrTie(num1,num2) {
   if (num1 > num2 ) {
-    return num1 
+    return num1;
   }
     else if (num1 < num2) {
-      return num2
+      return num2;
     }
       else if (num1 === num2) {
-        return "tie"
+        return "tie";
       }
 }
 
@@ -60,13 +60,13 @@ function findLargerOrTie(num1,num2) {
  */
 function positiveNegativeOrZero(num) {
   if (num > 0) {
-    return "Positive"
+    return "Positive";
   }
    else if (num < 0) {
-     return "Negative"
+     return "Negative";
    }
    else if (num === 0){
-     return "Zero"
+     return "Zero";
    }
 }
 
@@ -82,13 +82,13 @@ function positiveNegativeOrZero(num) {
  */
 function aroundTheWorldGreeting(language = "english") {
   if(language === "english") {
-    return "Hello World"
+    return "Hello World";
   }
     else if (language === "spanish") {
-      return "Hola Mundo"
+      return "Hola Mundo";
     }
       else if (language === "german") {
-        return "Hallo Welt"
+        return "Hallo Welt";
       }
 }
 
@@ -106,17 +106,16 @@ function aroundTheWorldGreeting(language = "english") {
 function aroundTheWorldGreetingWithSwitch(languages) {
   switch(languages) {
     case "english": 
-    return "Hello World"
+    return "Hello World";
     
-
     case "spanish": 
-    return "Hola Mundo"
+    return "Hola Mundo";
 
     case "german": 
-    return "Hallo Welt"
+    return "Hallo Welt";
 
     default: 
-    return "Hello World"
+    return "Hello World";
     
   }
 }
@@ -134,20 +133,19 @@ function aroundTheWorldGreetingWithSwitch(languages) {
  */
 function calculateLetterGrade(grade) {
   if(grade >= 90){
-    return "A"
-    
+    return "A";
   }
   else if (grade >= 80) {
-    return "B" 
+    return "B"; 
   }
   else if (grade >= 70) {
-    return "C"
+    return "C";
   }
   else if (grade >= 60) {
-    return "D"
+    return "D";
   }
   else if (grade < 60) {
-    return "F"
+    return "F";
   }
 }
 
@@ -163,10 +161,10 @@ function calculateLetterGrade(grade) {
  */
 function animalCounts(animal, numberOfAnimals) {
   if (numberOfAnimals > 1) {
-    return  `${numberOfAnimals} ${animal}s`   
+    return  `${numberOfAnimals} ${animal}s`;  
   }
   else if (numberOfAnimals === 1) {
-    return  `${numberOfAnimals} ${animal}` 
+    return  `${numberOfAnimals} ${animal}`;
 }
  
 
@@ -179,10 +177,10 @@ function animalCounts(animal, numberOfAnimals) {
  */
 function evenOrOdd(num) {
   if( num % 2 === 0) {
-    return "Even"
+    return "Even";
   }
   else  {
-    return "Odd"
+    return "Odd";
   }
 }
 
@@ -208,9 +206,8 @@ function evenOrOddWithTernary(num) {
  * @returns {number} - The larger number.
  */
 function findLargerTernary(num1,num2) {
-  return num1 > num2 ? num1 : num2 
+  return num1 > num2 ? num1 : num2;
 }
-
 
 
 module.exports = {
