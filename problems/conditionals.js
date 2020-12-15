@@ -6,11 +6,9 @@
  */
 function isEqual(a,b) {
   if (a === b ){
-
-  return true
-
+    return true;
   }else if (a !== b){
-   return false
+    return false;
   }
   
 }
@@ -24,9 +22,9 @@ function isEqual(a,b) {
  */
 function findLarger(a,b) {
   if (a > b){
-    return a
+    return a;
   }else {
-    return b
+    return b;
   }
 
 }
@@ -41,10 +39,9 @@ function findLarger(a,b) {
 function findLargerOrTie(a,b) {
   if (a > b){
     return a;
-  }else if( a === b){
+  }else if( a === b ){
     return 'tie';
-  }
-  else {
+  }else {
     return b;
   }
 }
@@ -124,15 +121,15 @@ function aroundTheWorldGreetingWithSwitch(language) {
  */
 function calculateLetterGrade(grade) {
     if (grade >= 90){
-      return "A"
+      return "A";
     }else if (grade >= 80){
-      return "B"
+      return "B";
     }else if (grade >= 70){
-      return "C"
+      return "C";
     }else if (grade >= 60){
-      return "D"
+      return "D";
     }else{
-      return "F"
+      return "F";
     }
 
 }
@@ -149,9 +146,9 @@ function calculateLetterGrade(grade) {
  */
 function animalCounts(animal, numberOfAnimals) {
   if (numberOfAnimals > 1){
-    return numberOfAnimals + " " + animal + "s"
+    return numberOfAnimals + " " + animal + "s";
   } else {
-    return numberOfAnimals + " " + animal 
+    return numberOfAnimals + " " + animal;
   }
 }
 
@@ -163,11 +160,11 @@ function animalCounts(animal, numberOfAnimals) {
  */
 function evenOrOdd(a) {
   if (a % 2 === 0){
-    return "Even"
+    return "Even";
   }else {
-    return "Odd"
+    return "Odd";
   }
-
+  
 }
 
 /**
