@@ -53,7 +53,17 @@ const lexicographicalOrder = (word1, word2) => {
  * @param {string} word
  * @returns {string} - "large" or "small"
  */
-function largeOrSmall() {}
+
+const largeOrSmall = word => {
+   
+  if ((word.length) >= 5){
+    return "large";
+  } else {
+    return "small"
+  }  
+  
+}
+
 
 /**
  * Takes in two words and returns the longer word.
