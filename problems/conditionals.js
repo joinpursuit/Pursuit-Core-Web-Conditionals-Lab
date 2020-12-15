@@ -4,7 +4,10 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
+function isEqual(a,b) {
+return (a === b)
+}
+
 
 /**
  * Takes in two numbers and returns the larger number
@@ -13,7 +16,10 @@ function isEqual() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+function findLarger(a,b) { 
+return Math.max (a, b)
+}
+
 
 /**
  * Takes in two numbers and returns the larger number
@@ -22,7 +28,16 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+function findLargerOrTie(a,b)
+  if (Math.max (a,b)) {
+  return Math.max (a,b)  
+  }
+
+  if else (a === b) {
+  return console.log("tie")
+  }
+  
+
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
