@@ -38,7 +38,14 @@ const isPrimaryColorOneIf = color => {
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-function lexicographicalOrder() {}
+
+const lexicographicalOrder = (word1, word2) => {
+  if (word1 < word2) {
+    return word1;
+  } else {
+    return word2;
+  }
+}
 
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
