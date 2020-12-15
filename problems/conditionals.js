@@ -4,8 +4,15 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
-
+function isEqual(a,b) {
+  return a === b; {
+    if (a !== b) {
+      return "Not Equal";
+    } 
+    else { 
+      return "They are equal" 
+  } console.log(isEqual())
+    
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
