@@ -5,11 +5,8 @@
  * @returns {boolean} - Whether the color is a primary color
  */
 function isPrimaryColor(color) {
-  if (color === "Red" , "Yellow" , "Blue")
-  return true
-  if (color !== "Red" , "Yellow" , "Blue")
-  return false
-} 
+    return color === "red" || color === "yellow" ||  color === "blue"
+  }
 
 /**
  * Takes in color and returns whether or not the color is a primary color.
@@ -17,7 +14,15 @@ function isPrimaryColor(color) {
  * @param {string} color - The color.
  * @returns {boolean} - If primary color or not
  */
-function isPrimaryColorOneIf() {}
+function isPrimaryColorOneIf(color) {
+  if (color === "red" || color === "yellow" ||  color === "blue") {
+    return true
+  } 
+  
+  else {
+    return false
+  }
+}
 
 /**
  * Takes in two words and returns the word that comes first in lexicographical order.
@@ -25,7 +30,10 @@ function isPrimaryColorOneIf() {}
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-function lexicographicalOrder() {}
+function lexicographicalOrder(word1, word2) {
+  return word1 < word2 ? word1 : word2
+}
+
 
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
@@ -33,7 +41,9 @@ function lexicographicalOrder() {}
  * @param {string} word
  * @returns {string} - "large" or "small"
  */
-function largeOrSmall() {}
+function largeOrSmall(word) {
+  return word.length >= 5 ? "large" : "small"
+}
 
 /**
  * Takes in two words and returns the longer word.
@@ -41,7 +51,9 @@ function largeOrSmall() {}
  * @param {string} word2 - The second word.
  * @returns {string} - The longer word
  */
-function longerWord() {}
+function longerWord(word1 , word2) {
+  return word1.length > word2.length ? word1 : word2
+}
 
 /**
  * Takes in three words and returns the shortest word.
@@ -50,7 +62,16 @@ function longerWord() {}
  * @param {string} word3 - The second word.
  * @returns {string} - The shortest word
  */
-function shortestWord() {}
+function shortestWord( word1 , word2 , word3 ) {
+let minWord = word1
+if (word2.length < minWord.length){
+  minWord = word2
+}
+if (word3.length < minWord.length){
+  minWord = word3
+}
+return minWord
+}
 
 module.exports = {
   isPrimaryColor,
