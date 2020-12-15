@@ -13,7 +13,7 @@ function isEqual() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+function findLarger() {sdflaskfjlaskfjdsl;} 
 
 /**
  * Takes in two numbers and returns the larger number
