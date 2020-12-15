@@ -30,8 +30,11 @@ function isPrimaryColorOneIf(color) {
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-function lexicographicalOrder(word1, word2) {
+//function lexicographicalOrder(word1, word2) {}
+const lexicographicalOrder = (word1, word2) => {
+  return (word1 < word2) ? word1 : word2
 }
+
 
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
@@ -49,7 +52,7 @@ function largeOrSmall(word) {
  * @param {string} word2 - The second word.
  * @returns {string} - The longer word
  */
-function longerWord(word1, word2) {
+const longerWord = (word1, word2) => {
   return (word1.length > word2.length) ? word1 : word2
 }
 
