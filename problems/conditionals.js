@@ -5,9 +5,9 @@
  * @returns {boolean} - Is a equal to b.
  */
 //function isEqual() {}
-const isEqual = (a,b) => {
-  return a === b
-}
+const isEqual = (a, b) => {
+  return a === b;
+};
 
 /**
  * Takes in two numbers and returns the larger number
@@ -17,12 +17,13 @@ const isEqual = (a,b) => {
  * @returns {number} - The larger number.
  */
 //function findLarger() {}
-const findLarger = (a,b) => {
-if ( a > b )
-{ return a }
-else 
-{ return b}
-}
+const findLarger = (a, b) => {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
+};
 
 /**
  * Takes in two numbers and returns the larger number
@@ -32,15 +33,37 @@ else
  * @returns {number|string } - The larger number or string "tie"
  */
 // function findLargerOrTie() {}
-const 
-
+const findLargerOrTie = (a, b) => {
+  if (a > b) {
+    return a;
+  } else if (b > a) {
+    return b;
+  } else if (a === b) {
+    return "tie";
+  }
+};
+console.log(findLargerOrTie(3, 3));
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+//function positiveNegativeOrZero() {}
+
+const positiveNegativeOrZero = (a) => {
+  if (a > 0) {
+    return "Positive";
+  } else if (a < 0) {
+    return "Negative";
+  } else if (a === 0) {
+    return "Zero";
+  }
+}
+
+console.log(positiveNegativeOrZero(5));
+console.log(positiveNegativeOrZero(-1));
+console.log(positiveNegativeOrZero(0));
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -52,7 +75,19 @@ function positiveNegativeOrZero() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+//function aroundTheWorldGreeting() {}
+
+const aroundTheWorldGreeting = (language) => {
+  if (language === "english") {
+    return "Hello World";
+  } else if (language === "spanish") {
+    return "Hola Mundo";
+  } else if (language === "german") {
+    return "Hallo Welt";
+  } else {
+    return "Hello World";
+  }
+}
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -66,6 +101,22 @@ function aroundTheWorldGreeting() {}
  * @returns {string} - "Hello World" in the desired language
  */
 function aroundTheWorldGreetingWithSwitch() {}
+
+const aroundTheWorldGreetingWithSwitch = 'language';
+  switch (aroundTheWorldGreetingWithSwitch) {
+    case 'english':
+      console.log('Hello World');
+      break;
+    case 'german':
+      console.log('Hallo Welt');
+      break;
+    case 'spanish':
+      console.log('Hola Mundo');
+      break;
+    default:
+    console.log('Hello World');
+  }
+    
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -92,7 +143,6 @@ function calculateLetterGrade() {}
  */
 function animalCounts() {}
 
-
 /**
  * Takes in a number and returns whether that number is even or odd
  * @param {number} a - The number.
@@ -117,8 +167,6 @@ function evenOrOddWithTernary() {}
  * @returns {number} - The larger number.
  */
 function findLargerTernary() {}
-
-
 
 module.exports = {
   isEqual,
