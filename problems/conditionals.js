@@ -163,7 +163,15 @@ console.log(calculateLetterGrade(98))
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+const animalCounts = (animal, numberofAnimals) => {
+ if (numberofAnimals === 1 ) {
+      return numberofAnimals + " "+ animal 
+  } else if (numberofAnimals >1 ) {
+      return numberofAnimals + " " + animal + "s"
+  }
+}
+console.log(animalCounts("cat", 1))
+console.log(animalCounts("dog", 7))
 
 
 /**
@@ -220,5 +228,5 @@ module.exports = {
   animalCounts,
   evenOrOdd,
   evenOrOddWithTernary,
-  findLargerTernary,
+  findLargerTernary
 };

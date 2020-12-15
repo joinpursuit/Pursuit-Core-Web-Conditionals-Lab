@@ -5,29 +5,47 @@
  * @returns {boolean} - Whether the color is a primary color
  */
  const isPrimaryColor = color => {
-   if (color === "red" || color === "blue" || color === "yellow") {
-     return "true"
+   if(color === "red") {
+     return true;
+   } else if (color === "yellow") {
+     return true; 
+   } else if (color === "blue") {
+      return true;
    } else {
-     return "false"
-   }
+     return false;
+    }
  }
-console.log(isPrimaryColor(blue))
-console.log(isPrimaryColor(orange))
+   
+ 
+
+
 /**
  * Takes in color and returns whether or not the color is a primary color.
  * Uses exactly one if statement in its definition
  * @param {string} color - The color.
  * @returns {boolean} - If primary color or not
  */
-function isPrimaryColorOneIf() {}
+const isPrimaryColorOneIf = (color) => {
+if(color === "red" || color === "yellow" || color === "blue") {
+  return true; 
+ } else {
+   return false;
+ }
 
+}
 /**
  * Takes in two words and returns the word that comes first in lexicographical order.
  * @param {string} word1 - The first word.
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-function lexicographicalOrder() {}
+const lexicographicalOrder = (word1, word2) => {
+  if (word1 < word2) {
+    return word1;
+  } else { 
+    return word2;
+  }
+}
 
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
@@ -35,7 +53,9 @@ function lexicographicalOrder() {}
  * @param {string} word
  * @returns {string} - "large" or "small"
  */
-function largeOrSmall() {}
+const largeOrSmall = (word) => {}
+  if(str.length)
+
 
 /**
  * Takes in two words and returns the longer word.
