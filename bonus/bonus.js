@@ -4,7 +4,9 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
-function isPrimaryColor() {}
+function isPrimaryColor(color) {
+  return (color === "red" || color === "yellow" || color === "blue")
+}
 
 /**
  * Takes in color and returns whether or not the color is a primary color.
@@ -12,7 +14,11 @@ function isPrimaryColor() {}
  * @param {string} color - The color.
  * @returns {boolean} - If primary color or not
  */
-function isPrimaryColorOneIf() {}
+function isPrimaryColorOneIf(color) {
+  if (color === "red" || color === "yellow" || color === "blue")
+  return true
+  else return false
+}
 
 /**
  * Takes in two words and returns the word that comes first in lexicographical order.
