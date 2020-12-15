@@ -4,7 +4,12 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
-function isPrimaryColor() {}
+function isPrimaryColor(color) {
+  if(color==="red" || color==="yellow"||color==="blue")
+    return true;
+  else return false;
+
+}
 
 /**
  * Takes in color and returns whether or not the color is a primary color.
@@ -12,7 +17,13 @@ function isPrimaryColor() {}
  * @param {string} color - The color.
  * @returns {boolean} - If primary color or not
  */
-function isPrimaryColorOneIf() {}
+function isPrimaryColorOneIf(color) {
+  if(color==="red" || color==="yellow"||color==="blue")
+      return true;
+
+  return false;
+
+}
 
 /**
  * Takes in two words and returns the word that comes first in lexicographical order.
@@ -20,7 +31,9 @@ function isPrimaryColorOneIf() {}
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-function lexicographicalOrder() {}
+function lexicographicalOrder(word1,word2) {
+  return word1 < word2 ? word1 : word2
+}
 
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
@@ -28,7 +41,9 @@ function lexicographicalOrder() {}
  * @param {string} word
  * @returns {string} - "large" or "small"
  */
-function largeOrSmall() {}
+function largeOrSmall(word) {
+
+}
 
 /**
  * Takes in two words and returns the longer word.
