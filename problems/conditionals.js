@@ -136,7 +136,22 @@ console.log(aroundTheWorldGreetingWithSwitch("uzbek"))
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+const calculateLetterGrade = grade => {
+  if (grade >= 90){
+    return "A"
+  } else if ( grade >= 80) {
+    return "B"
+  } else if ( grade >= 70) {
+      return "C"
+    } else if ( grade >= 60) {
+        return "D"
+    } else {
+       return "F"
+    }
+  }
+console.log(calculateLetterGrade(69))
+console.log(calculateLetterGrade(23))
+console.log(calculateLetterGrade(98))
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -156,7 +171,15 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+const evenOrOdd = a => {
+  if ( a % 2 == 0) {
+    return "Even"
+  } else {
+    return "Odd"
+  }
+}
+console.log(evenOrOdd(4))
+console.log(evenOrOdd(3))
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -164,8 +187,12 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+const evenOrOddWithTernary = a => {
+  return a % 2 == 0 ? "Even" : "Odd" 
+}
 
+console.log(evenOrOddWithTernary(4))
+console.log(evenOrOddWithTernary(23))
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
@@ -174,8 +201,12 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+const findLargerTernary = (a,b) =>{
+  return a > b ? a : b
+}
 
+console.log(findLargerTernary(456,395))
+console.log(findLargerTernary(567,904))
 
 
 module.exports = {
