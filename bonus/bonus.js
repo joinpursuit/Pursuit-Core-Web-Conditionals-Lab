@@ -31,6 +31,13 @@ function isPrimaryColorOneIf(color) {
  * @returns {string} - The word that is smaller in lexicographical order
  */
 function lexicographicalOrder(word1, word2) {
+    if(word1 < word2) {
+      return word1; 
+    } else if( word1 > word2){
+      return word2;
+    } else if(word1 === word2) { 
+      return word1;
+    }
 }
 
 /**
