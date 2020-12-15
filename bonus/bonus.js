@@ -4,7 +4,13 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
-function isPrimaryColor() {}
+const isPrimaryColor = (color) => {
+// color = color.toLowerCase() * We tried to use this 
+// toLowerCase method once we realized we were not passing test due 
+// to first letter being capitalized but it did not work, so we 
+// manually corrected. How would we make this method work in the future?
+return (color === "red" || color === "yellow" || color === "blue")
+}
 
 /**
  * Takes in color and returns whether or not the color is a primary color.
@@ -12,7 +18,13 @@ function isPrimaryColor() {}
  * @param {string} color - The color.
  * @returns {boolean} - If primary color or not
  */
-function isPrimaryColorOneIf() {}
+const isPrimaryColorOneIf = (color) => {
+  if(color === "red" || color === "yellow" || color === "blue"){
+    return true
+  }else{
+    return false
+  }
+}
 
 /**
  * Takes in two words and returns the word that comes first in lexicographical order.
@@ -20,7 +32,13 @@ function isPrimaryColorOneIf() {}
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-function lexicographicalOrder() {}
+function lexicographicalOrder(word1,word2) {
+if(word1 < word2){
+  return word1
+}else{
+  return word2
+}
+}
 
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
