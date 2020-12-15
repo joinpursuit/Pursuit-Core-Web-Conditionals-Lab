@@ -31,18 +31,28 @@
 // }
 // console.log(day("monday"))
 
-const isLeapYear = (year) => {
-    if(year % 4 === 0){
-        if(year % 100 !== 0) {
-            return true;
-        }else {
-            if(year % 400 ===0) {
-                return true;
-            }else {
-                return false;
-            }
-        }
-    }else {
-        return false;
+// const isLeapYear = (year) => {
+//     if(year % 4 === 0){
+//         if(year % 100 !== 0) {
+//             return true;
+//         }else {
+//             if(year % 400 ===0) {
+//                 return true;
+//             }else {
+//                 return false;
+//             }
+//         }
+//     }else {
+//         return false;
+//     }
+// }
+
+function isPrimaryColor(color) {
+    if (color === "Red" ||color === "Yellow" || color === "Blue" ){
+      return "true"
+    } else{
+      return "false"
     }
 }
+    console.log(isPrimaryColor("Red"))
+    console.log(isPrimaryColor("purple"))
