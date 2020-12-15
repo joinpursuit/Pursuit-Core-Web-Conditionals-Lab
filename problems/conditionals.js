@@ -175,6 +175,26 @@ function animalCounts(animal, numberOfAnimals) {
       return(numberOfAnimals + " " + animal +"s")
   }
 
+/*function animalCounts(animal, numberOfAnimals) {
+  if (animal[animal.length - 1] === 's') {
+    animal = animal.slice(0, animal.length - 1)
+  }
+}
+
+if (animal === ' sheep') {
+  return `${animal === 'goose'}` {
+    if (numberOfAnimals > 1) {
+      return `${numberOfAnimals} geese`
+    }
+  }
+}
+
+
+if (numberOfAnimals > 1) {
+  retrun `${numberOfAnimals} ${animal}s`
+} else {
+  return `${numberOfAnimals} ${animal}`
+}*/
 
 
 
@@ -213,13 +233,19 @@ function animalCounts(animal, numberOfAnimals) {
  */
 
  function findLargerTernary(a, b) {
+        
+    return a > b ? a : b
+  }
+
+
   
-  if (a > b) {
+  /*if (a > b) {
   return (a)
   }
   else {
     return (b)
-  }
+  }*/
+
 
 
 
