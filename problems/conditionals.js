@@ -4,8 +4,14 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
-
+function isEqual(a, b) {
+  if (a === b) {
+    return true
+  } else {
+    return false
+  }
+}
+isEqual(4, 4)
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
@@ -13,8 +19,14 @@ function isEqual() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
-
+function findLarger(a, b) {
+  if ( a > b) {
+    return a
+  } else {
+    return b
+  }
+}
+findLarger(8, 12)
 /**
  * Takes in two numbers and returns the larger number
  * Returns the string "tie" if both numbers are the same
@@ -22,14 +34,31 @@ function findLarger() {}
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+function findLargerOrTie(a, b) {
+  if (a > b) {
+    return a
+  } else if (a === b) {
+    return 'tie'
+  } else  
+    return b
+}
+findLargerOrTie(8, 8)
+
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+function positiveNegativeOrZero(a) {
+  if (a > 0) {
+    return 'Positive'
+  } else if ( a < 0) {
+  return 'Negative'
+  } else 
+  return 'Zero'
+}
+  positiveNegativeOrZero(1)
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -41,7 +70,22 @@ function positiveNegativeOrZero() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+function aroundTheWorldGreeting(language) {
+  switch (language) {
+  case 'English':
+    return 'Hello World'
+    break;
+  case 'Spanish':
+    return 'Hola Mundo'
+    break;
+  case 'German':
+    return 'Hallo Welt'
+    break;    
+  default:
+    return 'Hello World'
+  }
+}
+aroundTheWorldGreeting('Sapnish')
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
