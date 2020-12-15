@@ -15,13 +15,15 @@ function isEqual(a,b) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger(a, b) {
-  if (a > b) {
-    return a
-  }else {
-    return b
-  }
-}
+// function findLarger(a, b) {
+//   if (a > b) {
+//     return a
+//   }else {
+//     return b
+//   }
+// }
+
+const findLarger = (a,b) => { return (a > b) ? a : b }
 
 /**
  * Takes in two numbers and returns the larger number
@@ -30,15 +32,17 @@ function findLarger(a, b) {
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie(a,b) {
-  if (a > b){
-    return a
-  }else if (a === b){
-    return "tie"
-  }else {
-    return b
-  }
-}
+// function findLargerOrTie(a,b) {
+//   if (a > b){
+//     return a
+//   }else if (a === b){
+//     return "tie"
+//   }else {
+//     return b
+//   }
+// }
+
+const findLargerOrTie = (a,b) => { return (a > b) ? a : (a === b) ? "tie" : b }
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
