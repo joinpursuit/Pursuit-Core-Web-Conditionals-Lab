@@ -209,14 +209,14 @@ const calculateLetterGrade = grade => {
 // }
 const animalCounts =(animal, numberOfAnimals)=>{
   if(numberOfAnimals === 1){
-    return numberOfAnimals + ' ' + animal;
+    return `${numberOfAnimals} ${animal}`;
   }else if(numberOfAnimals > 1){
     if(animal === 'sheep'){
-      return numberOfAnimals + ' sheep';
+      return `${numberOfAnimals} sheep`;
     }else if(animal === 'goose'){
-      return numberOfAnimals + ' geese';
+      return `${numberOfAnimals} geese`;
     }else{
-      return numberOfAnimals + ' ' + animal + 's';
+      return `${numberOfAnimals} ${animal}s`;
     }
   }
 }
