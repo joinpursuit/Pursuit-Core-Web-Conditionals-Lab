@@ -71,7 +71,14 @@ const largeOrSmall = word => {
  * @param {string} word2 - The second word.
  * @returns {string} - The longer word
  */
-function longerWord() {}
+
+const longerWord = (word1, word2) => {
+  if (word1.length > word2.length) {
+    return word1;
+  } else {
+    return word2;
+  }
+}
 
 /**
  * Takes in three words and returns the shortest word.
