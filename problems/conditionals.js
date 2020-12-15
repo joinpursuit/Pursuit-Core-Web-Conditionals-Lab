@@ -164,7 +164,7 @@ function evenOrOdd(a) {
  * @returns {string} - "Even or Odd"
  */
 function evenOrOddWithTernary(a) {
-   a % 2 === 0 ? "Even" : "Odd"
+   return a % 2 === 0 ? "Even" : "Odd"
  }
 
 /**
@@ -175,9 +175,9 @@ function evenOrOddWithTernary(a) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() { }
-
-
+function findLargerTernary(a,b) { 
+     return a > b ? a : b 
+}
 
 module.exports = {
   isEqual,
