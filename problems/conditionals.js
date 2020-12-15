@@ -163,9 +163,13 @@ console.log(calculateLetterGrade(98))
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
-
-
+const animalCounts = (animal, numberOfAnimals) => {
+  if (typeof animal === "string" && numberOfAnimals === 1) {
+    return numberOfAnimals + " " + animal;
+  } else {
+      return numberOfAnimals + " " + animal + "s"
+  }
+}
 /**
  * Takes in a number and returns whether that number is even or odd
  * @param {number} a - The number.
