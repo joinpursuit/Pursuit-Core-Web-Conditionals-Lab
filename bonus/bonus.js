@@ -53,8 +53,15 @@ const lexicographicalOrder = (word1, word2) => {
  * @param {string} word
  * @returns {string} - "large" or "small"
  */
-const largeOrSmall = (word) => {}
-  if(str.length)
+const largeOrSmall = (word) => {
+
+  if(word.length >= 5) {
+    return "large"
+  } else {
+    return "small"
+  }
+}
+
 
 
 /**
@@ -63,7 +70,13 @@ const largeOrSmall = (word) => {}
  * @param {string} word2 - The second word.
  * @returns {string} - The longer word
  */
-function longerWord() {}
+const longerWord = (word1, word2) => {
+  if (word1.length > word2.length) {
+    return word1
+  } else { 
+    return word2
+  }
+}
 
 /**
  * Takes in three words and returns the shortest word.
@@ -72,7 +85,15 @@ function longerWord() {}
  * @param {string} word3 - The second word.
  * @returns {string} - The shortest word
  */
-function shortestWord() {}
+const shortestWord = (word1, word2, word3) => {
+  if(word1.length < word2.length && word1.length < word3.length) {
+    return word1;
+  } else if (word2.length < word1.length && word2.length < word3.length) {
+    return word2;
+  } else {
+    return word3;
+  }
+}
 
 module.exports = {
   isPrimaryColor,
