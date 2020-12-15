@@ -5,7 +5,8 @@
  * @returns {boolean} - Is a equal to b.
  */
 
-function isEqual(a, b) {
+
+ function isEqual(a, b) {
   
   if (a === b){
    return(true)
@@ -17,7 +18,7 @@ function isEqual(a, b) {
 }
 
 
-/**
+/*
  * Takes in two numbers and returns the larger number
 ` * The numbers are guaranteed to be unique
  * @param {number} a - The first number.
@@ -159,15 +160,15 @@ function calculateLetterGrade(grade) {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts(animal, num =5) {
-  if ( cat +5 ) {
-    return "5 cats"
+function animalCounts(animal, numberOfAnimals) {
+  if ( numberOfAnimals > 1 ) {
+    return `${numberOfAnimals} ${animal}s` 
   } else {
-    return "1 cat"
+    return `${numberOfAnimals} ${animal}`
   }
   
 }
-
+console.log(animalCounts( 'cat', 5))
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -189,12 +190,11 @@ function evenOrOdd(a) {
  * @returns {string} - "Even or Odd"
  */
 function evenOrOddWithTernary(a) {
-  if (a%2 ==0 || a%2 == 1 ? 0 : 1) {
-    return "Even"
-  }else {
-    return "Odd"
-  }
+  a%2 ==0 ?"Even" : "Odd"
+ return a%2 ==0 ?"Even" : "Odd"
+
 }
+ 
 
 /**
  * Takes in two numbers and returns the larger number
@@ -205,9 +205,7 @@ function evenOrOddWithTernary(a) {
  * @returns {number} - The larger number.
  */
 function findLargerTernary(a, b) {
-  if (a=4 || b=3 ? a : b); {
-    return a
-  }
+  return a > b ? a :b
 }
 
 
