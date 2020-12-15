@@ -172,8 +172,8 @@ if (a % 2 === 0){
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
- function evenOrOddWithTernary() {}
-
+ function evenOrOddWithTernary(a) {}
+  a % 2 === 0 ? "Even" : "Odd"
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
@@ -182,8 +182,10 @@ if (a % 2 === 0){
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
-
+function findLargerTernary(a, b) {}
+let a = 10
+let b = 20
+newNumber = a > b ? a : b
 
 
 module.exports = {
@@ -199,3 +201,4 @@ module.exports = {
   evenOrOddWithTernary,
   findLargerTernary,
 
+}
