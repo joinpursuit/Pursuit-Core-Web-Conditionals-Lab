@@ -113,6 +113,8 @@ describe("animalCounts", () => {
   test("works for multiple animals", () => {
     expect(animalCounts("cat", 3)).toBe("3 cats");
     expect(animalCounts("dolphin", 6)).toBe("6 dolphins");
+    //I edited the file to have a test for geese
+    expect(animalCounts("goose", 3)).toBe("3 geese");
   });
 });
 

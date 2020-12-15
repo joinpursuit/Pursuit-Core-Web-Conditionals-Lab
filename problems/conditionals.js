@@ -4,15 +4,31 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual(a, b) {
-  if(a === b){
-    return true;
-  }else{
-    return false;
-  }
+// function isEqual(a, b) {
+  // if(a === b){
+  //   return true;
+  // }else{
+  //   return false;
+  // }
+  // if(a === b){
+  //   return a === b;
+  // }else{
+  //   // return !(a !== b);
+  //   return !!(a === b);
+  // }
   //this code below also works. tested successfully
   //return a === b ? true : false;
-}
+// }
+// Below also works
+// const isEqual = (a, b) => {
+//   if(a === b){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+
+const isEqual = (a, b) => a === b ? true : false;
 
 /**
  * Takes in two numbers and returns the larger number
@@ -21,15 +37,25 @@ function isEqual(a, b) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger(a, b) {
-  if(a > b){
-    return a;
-  }else{
-    return b;
-  }
-  //this code below also works. tested successfully
-  //return a > b ? a : b;
-}
+// function findLarger(a, b) {
+//   if(a > b){
+//     return a;
+//   }else{
+//     return b;
+//   }
+//   //this code below also works. tested successfully
+//   //return a > b ? a : b;
+// };
+
+// const findLarger = (a, b) => {
+//   if(a > b){
+//     return a;
+//   }else{
+//     return b;
+//   }
+// };
+
+const findLarger = (a, b) => a > b ? a : b;
 
 /**
  * Takes in two numbers and returns the larger number
@@ -38,31 +64,38 @@ function findLarger(a, b) {
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie(a, b) {
-  if (a > b){
-    return a;
-  }else if (a<b){
-    return b;
-  }else{
-    return 'tie';
-  }
-  
-}
+// function findLargerOrTie(a, b) {
+//   if (a > b){
+//     return a;
+//   }else if (a<b){
+//     return b;
+//   }else if (a === b){
+//     return 'tie';
+//   }
+// }
+
+// function findLargerOrTie(a,b) {
+//   return a > b ? a : a < b ? b : 'tie';
+// }
+
+const findLargerOrTie = (a, b) => a > b ? a : a < b ? b : 'tie';
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero(a) {
-  if(a > 0){
-    return 'Positive';
-  }else if(a < 0){
-    return 'Negative';
-  }else if(a == 0){
-    return 'Zero';
-  }
-}
+// function positiveNegativeOrZero(a) {
+//   if(a > 0){
+//     return 'Positive';
+//   }else if(a < 0){
+//     return 'Negative';
+//   }else if(a === 0){
+//     return 'Zero';
+//   }
+// }
+
+const positiveNegativeOrZero = a => a > 0 ? 'Positive' : a < 0 ? 'Negative' : 'Zero';
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -74,17 +107,23 @@ function positiveNegativeOrZero(a) {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting(language) {
+function aroundTheWorldGreeting(language = 'english') {
   if(language === 'english'){
     return 'Hello World';
   }else if(language === 'spanish'){
     return 'Hola Mundo';
   }else if(language === 'german'){
     return 'Hallo Welt';
-  }else{
-    return 'Hello World';
   }
 }
+
+//code works below also
+// const aroundTheWorldGreeting = (language = 'english') => {
+//   return language === 'english' ? 'Hello World'
+//   : language === 'spanish' ? 'Hola Mundo' 
+//   : language === 'german' ? 'Hallo Welt'
+//   : 'Hello World';
+// }
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -124,14 +163,27 @@ function aroundTheWorldGreetingWithSwitch(language) {
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade(grade) {
+// function calculateLetterGrade(grade) {
+//   if(grade >= 90){
+//     return 'A';
+//   }else if(grade >= 80){
+//     return 'B';
+//   }else if(grade >= 70){
+//     return 'C';
+//   }else if(grade >= 60){
+//     return 'D';
+//   }else if(grade < 60){
+//     return 'F';
+//   }
+// }
+const calculateLetterGrade = grade => {
   if(grade >= 90){
     return 'A';
-  }else if(grade >= 80){
+  }else if(grade >= 80 && grade < 90){
     return 'B';
-  }else if(grade >= 70){
+  }else if(grade >= 70 && grade < 80){
     return 'C';
-  }else if(grade >= 60){
+  }else if(grade >= 60 && grade < 70){
     return 'D';
   }else if(grade < 60){
     return 'F';
@@ -148,14 +200,26 @@ function calculateLetterGrade(grade) {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts(animal, numberOfAnimals) {
-  if(numberOfAnimals == 1){
+// function animalCounts(animal, numberOfAnimals) {
+//   if(numberOfAnimals == 1){
+//     return numberOfAnimals + ' ' + animal;
+//   }else if(numberOfAnimals > 1){
+//     return numberOfAnimals + ' ' + animal + 's';
+//   }
+// }
+const animalCounts =(animal, numberOfAnimals)=>{
+  if(numberOfAnimals === 1){
     return numberOfAnimals + ' ' + animal;
   }else if(numberOfAnimals > 1){
-    return numberOfAnimals + ' ' + animal + 's';
+    if(animal === 'sheep'){
+      return numberOfAnimals + ' sheep';
+    }else if(animal === 'goose'){
+      return numberOfAnimals + ' geese';
+    }else{
+      return numberOfAnimals + ' ' + animal + 's';
+    }
   }
 }
-
 
 
 /**
@@ -163,13 +227,20 @@ function animalCounts(animal, numberOfAnimals) {
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd(a) {
+// function evenOrOdd(a) {
+//   if(a % 2){
+//     return 'Odd';
+//   }else{
+//     return 'Even';
+//   }
+//   // return a % 2 ? 'Odd' : 'Even';
+// }
+const evenOrOdd = a => {
   if(a % 2){
     return 'Odd';
   }else{
     return 'Even';
   }
-  // return a % 2 ? 'Odd' : 'Even';
 }
 
 /**
@@ -178,9 +249,10 @@ function evenOrOdd(a) {
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary(a) {
-  return a % 2 ? 'Odd' : 'Even';
-}
+// function evenOrOddWithTernary(a) {
+//   return a % 2 ? 'Odd' : 'Even';
+// }
+const evenOrOddWithTernary = a => a % 2 ? 'Odd' : 'Even';
 
 /**
  * Takes in two numbers and returns the larger number
@@ -190,9 +262,10 @@ function evenOrOddWithTernary(a) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary(a, b) {
-  return a > b ? a : b;
-}
+// function findLargerTernary(a, b) {
+//   return a > b ? a : b;
+// }
+const findLargerTernary = (a, b) => a > b ? a : b;
 
 
 
