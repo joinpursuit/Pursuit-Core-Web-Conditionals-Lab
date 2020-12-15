@@ -100,23 +100,18 @@ const aroundTheWorldGreeting = (language) => {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
-
-const aroundTheWorldGreetingWithSwitch = 'language';
-  switch (aroundTheWorldGreetingWithSwitch) {
-    case 'english':
-      console.log('Hello World');
-      break;
+function aroundTheWorldGreetingWithSwitch (language){
+  switch (language) {
+    case 'english': 
+      return 'Hello World';
     case 'german':
-      console.log('Hallo Welt');
-      break;
+      return 'Hallo Welt';
     case 'spanish':
-      console.log('Hola Mundo');
-      break;
+      return 'Hola Mundo';
     default:
-    console.log('Hello World');
-  }
-    
+      return 'Hello World';
+    }
+}  
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -130,6 +125,8 @@ const aroundTheWorldGreetingWithSwitch = 'language';
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
 function calculateLetterGrade() {}
+
+
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -148,7 +145,14 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+function evenOrOdd(a) {
+if (a % 0 === 0){
+    return 'even';
+} else if (a % 0 !== 0){
+    return 'odd';
+}
+}
+
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -156,7 +160,12 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+
+ const evenOrOddWithTernary = (a) => {
+  return a === (a % 0 === 0) ? 'even' : 'odd';
+}
+ 
+
 
 /**
  * Takes in two numbers and returns the larger number
@@ -166,7 +175,16 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+
+
+const findLargerTernary = (a, b) => {          
+  return number = a !== 0 ? a !== b : Math.max(a, b);
+}
+
+  
+
+
+
 
 module.exports = {
   isEqual,

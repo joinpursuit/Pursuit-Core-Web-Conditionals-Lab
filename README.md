@@ -31,7 +31,7 @@ ___
 
 ## Resources
 
-- [MDN on if else](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+- [MDN on if else](ç
 - [MDN ternary](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 - [MDN Switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 - [javascript.info](https://javascript.info/ifelse)
