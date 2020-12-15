@@ -137,18 +137,18 @@ function aroundTheWorldGreetingWithSwitch(language) {
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
 function calculateLetterGrade(grade) {
-  if (90 >= A){
-    return A
-  }else if (80 >= B){
-    return B 
-  }else if (70){
-    return C
-  }else if (60){
-    return D
-  }else {
-    return F
+  if (grade === 90){
+   return "A"
+  }else if (grade === 80){
+    return "B"
+  }else if (grade ===70){
+    return "C"
+  }else if (grade ===60){
+    return "D"
+  }else (grade >50)
+    return "F"
+  
   }
-}
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
  * Use an if - else to statement to return the
@@ -159,7 +159,14 @@ function calculateLetterGrade(grade) {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+function animalCounts(animal, num =5) {
+  if ( cat +5 ) {
+    return "5 cats"
+  } else {
+    return "1 cat"
+  }
+  
+}
 
 
 /**
@@ -167,7 +174,13 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+function evenOrOdd(a) {
+  if ((a%2) ==0){
+    return "Even"
+  }else {
+    return "Odd"
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -175,7 +188,13 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+function evenOrOddWithTernary(a) {
+  if (a%2 ==0 || a%2 == 1 ? 0 : 1) {
+    return "Even"
+  }else {
+    return "Odd"
+  }
+}
 
 /**
  * Takes in two numbers and returns the larger number
@@ -185,7 +204,11 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+function findLargerTernary(a, b) {
+  if (a=4 || b=3 ? a : b); {
+    return a
+  }
+}
 
 
 
