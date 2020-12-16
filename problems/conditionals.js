@@ -71,18 +71,15 @@ function positiveNegativeOrZero(a) {
  * @returns {string} - "Hello World" in the desired language
  */
 function aroundTheWorldGreeting(language) {
-  if (language === 'English') {
+  if (language === 'english') {
     return 'Hello World'
-  } else if (language === 'Spanish') {
+  } else if (language === 'spanish') {
     return 'Hola Mundo'
-  } else if (language === 'German') {
+  } else if (language === 'german') {
     return 'Hallo Welt'
   } else
     return 'Hello World'
 }
-aroundTheWorldGreeting()
-aroundTheWorldGreeting('Spanish')
-aroundTheWorldGreeting('German')
 
 
 
@@ -99,20 +96,20 @@ aroundTheWorldGreeting('German')
  */
 function aroundTheWorldGreetingWithSwitch(language) {
     switch (language) {
-    case 'English':
+    case 'english':
       return 'Hello World'
       break;
-    case 'Spanish':
+    case 'spanish':
       return 'Hola Mundo'
       break;
-    case 'German':
+    case 'german':
       return 'Hallo Welt'
       break;    
     default:
       return 'Hello World'
     }
   }
-  aroundTheWorldGreeting()
+  
 
 
 /**
@@ -170,7 +167,6 @@ function animalCounts(animal, numberOfAnimals) {
   }
 }
 
-animalCounts()
 
 /**
  * Takes in a number and returns whether that number is even or odd
