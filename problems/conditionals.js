@@ -74,7 +74,22 @@ function aroundTheWorldGreeting(language = "english") {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+function aroundTheWorldGreetingWithSwitch(language = "english") {
+
+    let greeting = ""
+    switch (language) {
+        case "german":
+            greeting = "Hallo Welt"
+            break;
+        case "spanish":
+            greeting = "Hola Mundo"
+            break;
+        default:
+            greeting = "Hello World"
+    }
+    return greeting
+
+}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -87,7 +102,26 @@ function aroundTheWorldGreetingWithSwitch() {}
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+function calculateLetterGrade(grade) {
+    let letterGrade = ""
+    switch (true) {
+        case grade >= 90 && grade <= 100:
+            letterGrade = "A"
+            break;
+        case grade >= 80 && grade < 90:
+            letterGrade = "B"
+            break;
+        case grade >= 70 && grade <= 80:
+            letterGrade = "C"
+            break;
+        case grade >= 60 && grade <= 70:
+            letterGrade = "D"
+            break;
+        default:
+            letterGrade = "F"
+    }
+    return letterGrade
+}
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -99,7 +133,14 @@ function calculateLetterGrade() {}
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+function animalCounts(animal, numberOfAnimals) {
+    if (numberOfAnimals > 1) {
+        if (animal.toLowerCase() == "dog") {
+            animal = "dogs"
+        } else if (animal.toLowerCase() === "cat") { animal = "cats" } else if (animal.toLowerCase() === "cow") { animal = "cows" } else if (animal.toLocaleLowerCase() === "goose") { animal = "geese" } else if (animal.toLocaleLowerCase() === "dolphin") { animal = "dolphins" }
+    }
+    return numberOfAnimals + " " + animal
+}
 
 
 /**
@@ -107,7 +148,9 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+function evenOrOdd(a) {
+    if (a % 2 === 0) { return "Even" } else { return "Odd" }
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -115,7 +158,7 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+function evenOrOddWithTernary(a) { return a % 2 === 0 ? "Even" : "Odd" }
 
 /**
  * Takes in two numbers and returns the larger number
@@ -125,7 +168,9 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+function findLargerTernary(a, b) {
+    return a > b ? a : b
+}
 
 
 
