@@ -69,18 +69,18 @@ let englishLanguage = "english"
 let spanishLanguage = "spanish"
 let germanLanguage = "german"
 
- function aroundTheWorldGreeting(language) {
-  if (language === englishLanguage) {
+function aroundTheWorldGreeting(language = "english") {
+  if(language === "english") {
     return "Hello World"
+  } else if(language === "spanish") {
+      return "Hola Mundo"
+  } else if(language === "german") {
+      return "Hallo Welt"
   }
-  else if (language === spanishLanguage) {
-    return "Hola Mundo"
-  }
-  else if (language === germanLanguage) {
-    return "Hallo Welt"
-  }
-  return "Hello World"
 }
+  
+
+
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -95,17 +95,17 @@ let germanLanguage = "german"
  */
 
 function aroundTheWorldGreetingWithSwitch(language) {
-  switch (language){
-    case "English":
+  switch (language) {
+    case "english":
+      return "Hello World";
+    case "spanish":
+      return "Hola Mundo";
+    case "german":
+      return "Hallo Welt";
+    default:
       return "Hello World"
-      case "Spanish":
-        return "Hola Mundo"
-        case "German":
-          return "Hallo Welt"
   }
-  return "Hello World"
 }
-
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
  * Letter grades consist of "A", "B", "C", "D", or "F"
