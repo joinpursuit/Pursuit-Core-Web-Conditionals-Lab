@@ -5,7 +5,12 @@
  * @returns {boolean} - Is a equal to b.
  */
 function isEqual(a, b) {
-  return a === b
+  if (a === b) {
+    return "Even"
+  }
+    else {
+      return "Odd"
+    }
 }
 
 /**
@@ -37,7 +42,7 @@ if (a > b) {
 } else if (b > a) {
   return b
 } else (a === b) 
-  return "tie";
+  return "tie"
 }
 
 
@@ -94,13 +99,13 @@ if (greeting === english) {
  */
 function aroundTheWorldGreetingWithSwitch(greeting) {
 switch (greeting) {
-  case "english":
+  case "English":
     return "Hello World"
     break;
-  case "spanish":
+  case "Spanish":
     return "Hola Mundo"
     break;
-  case "german":
+  case "German":
     return "Hallo Welt"
     break;
   default :
@@ -124,11 +129,11 @@ switch (greeting) {
 function calculateLetterGrade(grade) {
 if (grade >= 90) {
   return "A"
-} else if (grade <= 89 && grade >= 80) {
+} else if (grade >= 80) {
   return "B"
-} else if (grade <= 79 && grade >= 70 ) {
+} else if (grade >=70 ) {
   return "C"
-}else if (grade <= 69 && grade >= 60) {
+}else if (grade >= 60) {
   return "D"
 }else {
   return "F"
@@ -148,7 +153,7 @@ if (grade >= 90) {
  */
 
 function animalCounts(animal, numberOfAnimals) {
-  if (animal, numberOfAnimals === 1) {
+  if (numberOfAnimals > 1) {
     return numberOfAnimals + " " + animal
   } else {
     return numberOfAnimals + " " + animal + "s"
@@ -161,10 +166,15 @@ function animalCounts(animal, numberOfAnimals) {
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {a}
-if (a % 2 === 0){
-  return "Even"
-} else 
+function evenOrOdd(a) {
+  if (a % 2 === 0){
+    return "Even"
+  } 
+  else {
+    return "Odd"
+  } 
+}
+
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -172,8 +182,10 @@ if (a % 2 === 0){
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
- function evenOrOddWithTernary(a) {}
+ function evenOrOddWithTernary(a) {
   a % 2 === 0 ? "Even" : "Odd"
+ }
+  
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
@@ -182,10 +194,9 @@ if (a % 2 === 0){
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary(a, b) {}
-let a = 10
-let b = 20
-newNumber = a > b ? a : b
+function findLargerTernary(a, b) {
+  let num = a > b ? a : b
+}
 
 
 module.exports = {
