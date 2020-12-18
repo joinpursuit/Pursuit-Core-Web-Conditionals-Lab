@@ -161,17 +161,34 @@ console.log(calculateLetterGrade())
  * @returns {string} - the number and animal (in either single or plural form)
  */
 function animalCounts(animal,numberOfAnimals) {
-  if (numberOfAnimals === 1)  {
-    return numberOfAnimals + animal
-  }
-  if (numberOfAnimals > 1 || numberOfAnimals === 0) {
-    return numberOfAnimals + animal + "s"
+  if(animal[animal.length - 1] === 's') {
+     animal = animal.slice(0, animal.length -1)
   }
   
-  }
-  console.log(animalCounts("frog",0))
-  
- 
+if(animal === 'sheep') {
+  return `${numberOfAnimals} ${animal}`
+} else if (animal === "goose") {
+     if(numberOfAnimals > 1) {
+       return `${numberOfAnimals} geese`
+     } else {
+        return `${numberOfAnimals} ${animal}`
+     }
+     
+} else if(animal === 'geese') {
+      if (numberOfAnimals !== 1) {
+        return `${numberOfAnimals} ${animal}`
+      } else {
+        return `${numberOfAnimals} goose`
+      }
+}
+
+  if(numberOfAnimals > 1) {
+        return `${numberOfAnimals} ${animal}s`
+     } else {
+          return `${numberOfAnimals} ${animal}`
+     }
+    }
+ console.log(animalCounts('geese', 1))
 
 
 
