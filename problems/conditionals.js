@@ -101,6 +101,7 @@ function aroundTheWorldGreetingWithSwitch(language) {
       return 'Hola Mundo'
     default:
       return 'Hello World'
+  }
 }
 
 /**
@@ -200,4 +201,4 @@ module.exports = {
   evenOrOdd,
   evenOrOddWithTernary,
   findLargerTernary,
-};
+}
