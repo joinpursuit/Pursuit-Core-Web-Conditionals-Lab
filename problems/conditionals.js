@@ -4,8 +4,8 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual(a,b) {
-return (a === b)
+function isEqual(a, b){
+  return a === b
 }
 
 
@@ -16,8 +16,8 @@ return (a === b)
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger(a,b) { 
-return Math.max (a, b)
+function findLarger(a, b){
+  return a > b ? a : b
 }
 
 
@@ -28,23 +28,23 @@ return Math.max (a, b)
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie(a,b)
-  if (Math.max (a,b)) {
-  return Math.max (a,b)  
-  }
-
-  if else (a === b) {
-  return console.log("tie")
-  }
+function findLargerOrTie(a, b){
+  return a === b? 'tie' : a > b ? a : b
+}
   
-
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+function positiveNegativeOrZero(a) {
+  if(a > 0){
+    return 'Positive'
+  }else if(a < 0){
+    return 'Negative'
+  }else{ return 'Zero'}
+}
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -56,7 +56,17 @@ function positiveNegativeOrZero() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+function aroundTheWorldGreeting(language = 'English'){
+if(language === "English"){
+  return "Hello World"
+}else if(language === "Spanish"){
+  return "Hola Mundo"
+}else if(language === "German"){
+  return "Hallo Welt"
+}else{return language}
+}
+
+
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
