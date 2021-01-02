@@ -74,21 +74,19 @@ function positiveNegativeOrZero(a) {
  * @returns {string} - "Hello World" in the desired language
  */
 
-let englishLanguage = "english"
-let spanishLanguage = "spanish"
-let germanLanguage = "german"
 
  function aroundTheWorldGreeting(language) {
-  if (language === englishLanguage) {
+   
+  if (language === "english") {
     return "Hello World"
   }
-  else if (language === spanishLanguage) {
+  else if (language === "spanish") {
     return "Hola Mundo"
   }
-  else if (language === germanLanguage) {
+  else if (language === "german") {
     return "Hallo Welt"
   }
-  return "Hello World"
+    return "Hello World"
 }
 
 
@@ -105,13 +103,13 @@ let germanLanguage = "german"
  * @returns {string} - "Hello World" in the desired language
  */
 
-function aroundTheWorldGreetingWithSwitch(language) {
-  switch (language){
-    case "English":
+function aroundTheWorldGreetingWithSwitch(lan) {
+  switch (lan){
+    case "english":
       return "Hello World"
-      case "Spanish":
+      case "spanish":
         return "Hola Mundo"
-        case "German":
+        case "german":
           return "Hallo Welt"
   }
   return "Hello World"
@@ -131,16 +129,16 @@ function aroundTheWorldGreetingWithSwitch(language) {
  */
 function calculateLetterGrade(grade) {
   if (grade >= 90) 
-  return A
+  return "A" 
   
   if (grade >= 80)
-  return B 
+  return "B" 
   if (grade >= 70)
-  return C 
+  return "C" 
   if (grade >= 60)
-  return D
+  return "D"
   if (grade < 60)
- return F
+ return "F"
 }
 
 /**
@@ -194,12 +192,12 @@ function evenOrOddWithTernary(a) {
  * @returns {number} - The larger number.
  */
 function findLargerTernary(a, b) {
-  return a > b 
-  else if {a < b }
+ return (a > b) ? a : b
+ 
+}
 
 
-
-module.exports = {
+  module.exports = {
   isEqual,
   findLarger,
   findLargerOrTie,
@@ -210,5 +208,5 @@ module.exports = {
   animalCounts,
   evenOrOdd,
   evenOrOddWithTernary,
-  findLargerTernary,
+  findLargerTernary, 
 };
