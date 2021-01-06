@@ -6,7 +6,7 @@
  */
 //function isEqual() {}
 const isEqual = (a, b) => {
-  return a === b;
+  return a === b
 };
 
 /**
@@ -42,7 +42,7 @@ const findLargerOrTie = (a, b) => {
     return "tie";
   }
 };
-console.log(findLargerOrTie(3, 3));
+
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
@@ -61,9 +61,9 @@ const positiveNegativeOrZero = (a) => {
   }
 }
 
-console.log(positiveNegativeOrZero(5));
-console.log(positiveNegativeOrZero(-1));
-console.log(positiveNegativeOrZero(0));
+//console.log(positiveNegativeOrZero(5));
+//console.log(positiveNegativeOrZero(-1));
+//console.log(positiveNegativeOrZero(0));
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -100,23 +100,20 @@ const aroundTheWorldGreeting = (language) => {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
 
-const aroundTheWorldGreetingWithSwitch = 'language';
-  switch (aroundTheWorldGreetingWithSwitch) {
-    case 'english':
-      console.log('Hello World');
-      break;
-    case 'german':
-      console.log('Hallo Welt');
-      break;
-    case 'spanish':
-      console.log('Hola Mundo');
-      break;
+ 
+const aroundTheWorldGreetingWithSwitch = (language) => {
+  switch (language) {
+    case "english":
+      return "Hello World"
+    case "german":
+      return "Hallo Welt"
+    case "spanish":
+      return "Hola Mundo"
     default:
-    console.log('Hello World');
+    return "Hello World"
   }
-    
+}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -129,7 +126,24 @@ const aroundTheWorldGreetingWithSwitch = 'language';
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+//function calculateLetterGrade() {}
+
+const calculateLetterGrade = (grade) => {
+  switch (grade) {
+    case 90:
+      return "A"
+    case 80:
+      return "B"
+    case 70:
+      return "C"
+    case 60:
+      return "D"
+    default:
+      return "F"
+  }
+}
+
+
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -141,14 +155,35 @@ function calculateLetterGrade() {}
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+//function animalCounts() {}
+
+const animalCounts =(animal, numberOfAnimals) => {
+    if(numberOfAnimals > 1){
+      return numberOfAnimals + " " + animal + "s";
+    }else {
+      return numberOfAnimals + " " + animal
+    }
+
+}
+
+
+
+
 
 /**
  * Takes in a number and returns whether that number is even or odd
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+//function evenOrOdd() {}
+
+const evenOrOdd = (a) =>{
+  if( a % 2 === 0){
+    return "Even"
+  } else{
+    return "Odd"
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -156,7 +191,13 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+//function evenOrOddWithTernary() {}
+
+const evenOrOddWithTernary = (a) => {
+  return a % 2 === 0? "Even" : "Odd"
+}
+
+
 
 /**
  * Takes in two numbers and returns the larger number
@@ -166,7 +207,12 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+//function findLargerTernary() {}
+
+const findLargerTernary = (a, b) => {
+  return a > b? a : b
+}
+
 
 module.exports = {
   isEqual,
