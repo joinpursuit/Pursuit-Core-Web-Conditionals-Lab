@@ -71,22 +71,17 @@ function positiveNegativeOrZero(a) {
  * @returns {string} - "Hello World" in the desired language
  */
 
-let eLanguage = "English"
-let sLanguage = "Spanish"
-let glanguage = "German"
-
 
  function aroundTheWorldGreeting(language) {
-   if (language == eLanguage) {
+   if (language === 'english') {
      return "Hello World"
-   } else if (language == sLanguage) {
+   } else if (language === 'spanish') {
      return "Hola Mundo"
-   } else if (language == gLanguage) {
-     return "Hello Welt"
+   } else if (language === 'german') {
+     return "Hallo Welt"
    } else {
      return "Hello World"
    }
-   
   }
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -99,7 +94,21 @@ let glanguage = "German"
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+function aroundTheWorldGreetingWithSwitch(language) {
+  switch (language) {
+    case 'english':
+      return 'Hello World';
+      break;
+    case 'spanish':
+      return 'Hola Mundo';
+      break;
+    case 'german':
+      return 'Hallo Welt'
+      break;
+    default:
+      return 'Hello World'    
+  }
+}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -136,9 +145,12 @@ function calculateLetterGrade(grade) {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts(a, numOfA) {
-  if (a == 'dogs', numOfA == 2)
-  return '2 dogs'
+function animalCounts(animal, numberOfAnimals) {
+  if (numberOfAnimals > 1) {
+    return  numberOfAnimals + ' ' + animal + 's'
+  } else {
+    return numberOfAnimals + ' ' + animal
+  }
 }
 
 
