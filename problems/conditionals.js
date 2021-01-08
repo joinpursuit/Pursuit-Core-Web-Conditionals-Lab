@@ -5,12 +5,7 @@
  * @returns {boolean} - Is a equal to b.
  */
 function isEqual(a, b) {
-  if (a === b) {
-    return "Even"
-  }
-    else {
-      return "Odd"
-    }
+  return a === b
 }
 
 /**
@@ -42,7 +37,7 @@ if (a > b) {
 } else if (b > a) {
   return b
 } else (a === b) 
-  return "tie"
+  return "tie";
 }
 
 
@@ -59,6 +54,7 @@ if (a > 0) {
   return "Negative"
 } else {
   return "Zero";
+}
 }
 
 
@@ -99,13 +95,13 @@ if (greeting === english) {
  */
 function aroundTheWorldGreetingWithSwitch(greeting) {
 switch (greeting) {
-  case "English":
+  case "english":
     return "Hello World"
     break;
-  case "Spanish":
+  case "spanish":
     return "Hola Mundo"
     break;
-  case "German":
+  case "german":
     return "Hallo Welt"
     break;
   default :
@@ -129,11 +125,11 @@ switch (greeting) {
 function calculateLetterGrade(grade) {
 if (grade >= 90) {
   return "A"
-} else if (grade >= 80) {
+} else if (grade <= 89 && grade >= 80) {
   return "B"
-} else if (grade >=70 ) {
+} else if (grade <= 79 && grade >= 70 ) {
   return "C"
-}else if (grade >= 60) {
+}else if (grade <= 69 && grade >= 60) {
   return "D"
 }else {
   return "F"
@@ -167,14 +163,12 @@ function animalCounts(animal, numberOfAnimals) {
  * @returns {string} - "Even or Odd"
  */
 function evenOrOdd(a) {
-  if (a % 2 === 0){
-    return "Even"
-  } 
-  else {
-    return "Odd"
-  } 
+if (a % 2 === 0){
+  return "Even"
+} else {
+  return "Odd"
 }
-
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -195,7 +189,7 @@ function evenOrOdd(a) {
  * @returns {number} - The larger number.
  */
 function findLargerTernary(a, b) {
-  let num = a > b ? a : b
+  return a > b ? a : b
 }
 
 
@@ -211,5 +205,4 @@ module.exports = {
   evenOrOdd,
   evenOrOddWithTernary,
   findLargerTernary,
-
 }
