@@ -4,24 +4,9 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
-// function isPrimaryColor() {}
 
-const isPrimaryColor = (color) => { // ES6+ ternary
-  return color === "red" || color === "blue" || color === "yellow" ? true : false;
-}
-
-// const isPrimaryColor = (color) => { ES6+
-//   if (color === "red" || color === "blue" || color === "yellow") {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };
-
-// console.log(isPrimaryColor("red"))
-// console.log(isPrimaryColor("blue"))
-// console.log(isPrimaryColor("black"))
-// console.log(isPrimaryColor("yellow"))
+const isPrimaryColor = (color) =>
+  color === "red" || color === "yellow" || color === "blue" ? true : false;
 
 /**
  * Takes in color and returns whether or not the color is a primary color.
@@ -29,22 +14,14 @@ const isPrimaryColor = (color) => { // ES6+ ternary
  * @param {string} color - The color.
  * @returns {boolean} - If primary color or not
  */
-// function isPrimaryColorOneIf() {} // ES5
-
-// const isPrimaryColorOneIf = (color) => { // ES6+
-//   if (color === "red" || "blue" || "yellow") {
-//     return true;
-//   } else return false;
-// };
 
 const isPrimaryColorOneIf = (color) => {
-  return (color === "red" || "blue" || "yellow") ? true : false;
-}
-
-// console.log(isPrimaryColor("red"))
-// console.log(isPrimaryColor("blue"))
-// console.log(isPrimaryColor("black"))
-// console.log(isPrimaryColor("yellow"))
+  if (color === "red" || color === "yellow" || color === "blue") {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /**
  * Takes in two words and returns the word that comes first in lexicographical order.
@@ -52,22 +29,8 @@ const isPrimaryColorOneIf = (color) => {
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-// function lexicographicalOrder() {} ES5
 
-// const lexicographicalOrder = (word1, word2) => { // ES6+
-//   if (word1 < word2) {
-//     return word1;
-//   } else {
-//     return word2;
-//   }
-// };
-
-const lexicographicalOrder = (word1, word2) => {
-  return word1 < word2 ? word1 : word2;
-}
-
-// console.log(lexicographicalOrder("Coreen", "Thompson"));
-// console.log(lexicographicalOrder("Zaria", "Miguel"));
+const lexicographicalOrder = (word1, word2) => (word1 < word2 ? word1 : word2);
 
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
@@ -75,7 +38,8 @@ const lexicographicalOrder = (word1, word2) => {
  * @param {string} word
  * @returns {string} - "large" or "small"
  */
-function largeOrSmall() {}
+
+const largeOrSmall = (word) => (word.length >= 5 ? "large" : "small");
 
 /**
  * Takes in two words and returns the longer word.
@@ -83,20 +47,33 @@ function largeOrSmall() {}
  * @param {string} word2 - The second word.
  * @returns {string} - The longer word
  */
-function longerWord() {}
+
+const longerWord = (word1, word2) =>
+  word1.length > word2.length ? word1 : word2;
 
 /**
  * Takes in three words and returns the shortest word.
  * @param {string} word1 - The first word.
  * @param {string} word2 - The second word.
- * @param {string} word3 - The second word.
+ * @param {string} word3 - The third word.
  * @returns {string} - The shortest word
  */
-function shortestWord() {}
 
-// const shortestWord = () => {
-
-// }
+function shortestWord(word1, word2, word3) {
+  if (word1.length < word2.length) {
+    if (word1.length < word3.length) {
+      return word1;
+    }
+  } else if (word2.length < word3.length) {
+    if (word2.length < word1.length) {
+      return word2;
+    }
+  } else if (word3.length < word1.length) {
+    if (word3.length < word2.length) {
+      return word3;
+    }
+  }
+}
 
 module.exports = {
   isPrimaryColor,
