@@ -4,12 +4,12 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
-const isPrimaryColor = (color) => {
+ const isPrimaryColor = (color) => {
 // color = color.toLowerCase() * We tried to use this 
 // toLowerCase method once we realized we were not passing test due 
 // to first letter being capitalized but it did not work, so we 
 // manually corrected. How would we make this method work in the future?
-return (color === "red" || color === "yellow" || color === "blue")
+  return color === "red" || color === "blue" || color === "yellow" 
 }
 
 /**
@@ -32,13 +32,7 @@ const isPrimaryColorOneIf = (color) => {
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-function lexicographicalOrder(word1,word2) {
-if(word1 < word2){
-  return word1
-}else{
-  return word2
-}
-}
+const lexicographicalOrder = (word1,word2) => (word1 < word2) ? word1 : word2;
 
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
@@ -46,13 +40,7 @@ if(word1 < word2){
  * @param {string} word
  * @returns {string} - "large" or "small"
  */
-const largeOrSmall = (word) => {
-  if (word.length >= 5) {
-    return "large"
-  } else {
-    return "small"
-  }
-}
+const largeOrSmall = (word) => (word.length >= 5) ? "large" : "small"
 
 /**
  * Takes in two words and returns the longer word.
@@ -60,9 +48,7 @@ const largeOrSmall = (word) => {
  * @param {string} word2 - The second word.
  * @returns {string} - The longer word
  */
-const longerWord = (word1, word2) => {
-  return word1.length > word2.length ? word1 : word2
-}
+const longerWord = (word1, word2) => (word1.length > word2.length) ? word1 : word2;
 
 /**
  * Takes in three words and returns the shortest word.
@@ -72,17 +58,14 @@ const longerWord = (word1, word2) => {
  * @returns {string} - The shortest word
  */
 const shortestWord = (word1, word2, word3) => {
-  let shortestWord = Math.min(word1.length, word2.length, word3.length); 
-    if (word1.length === shortestWord) {
-      return word1
-      }
-      else if (word2.length === shortestWord) {
-        return word2
-      }
-      else if (word3.length === shortestWord) {
-        return word3
-      }
+  if (word1.length < word2.length && word1.length < word3.length) {
+    return word1
+  } else if (word2.length < word1.length && word2.length < word3.length) {
+    return word2
+  } else if (word3.length < word1.length && word3.length < word2.length) {
+    return word3
   }
+}
 
   
 module.exports = {
