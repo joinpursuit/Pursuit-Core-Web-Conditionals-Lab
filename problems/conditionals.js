@@ -4,14 +4,7 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual(a, b) {
-  // if a === b {
-    return a === b;
-}
-
-
-
-
+const isEqual = (a, b) => a === b;
 
 
 /**
@@ -21,14 +14,8 @@ function isEqual(a, b) {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger(a, b) {
-  if (a > b) {
-    return  a;
-  }
-  else if (b > a) {
-    return b;
-  }
-}
+const findLarger = (a, b) => (a > b) ? a : b;
+
 
 /**
  * Takes in two numbers and returns the larger number
@@ -37,15 +24,13 @@ function findLarger(a, b) {
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie(a, b) {
-  if (a > b) {
-    return a;
-  }
-  else if (b > a) {
-    return b;
-  }
-  else if (a === b) {
+const findLargerOrTie = (a, b) =>  {
+  if (a === b) {
     return "tie"
+  }  else if (a > b) {
+    return a;
+  } else {
+    return b
   }
 }
 
@@ -54,15 +39,14 @@ function findLargerOrTie(a, b) {
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
+
 function positiveNegativeOrZero(a) {
-  if (a === 0) {
-    return "Zero";
-  }
-  else if(a > 0) {
-    return "Positive";
-  }
-  else if(a < 0) {
+  if (a < 0) {
     return "Negative"
+  } else if (a > 0) {
+    return "Positive"
+  } else if (a === 0) {
+    return "Zero"
   }
 }
 
@@ -78,15 +62,14 @@ function positiveNegativeOrZero(a) {
  */
 function aroundTheWorldGreeting(language = "english") {
   if (language === "english") {
-    return "Hello World";
-  }
-  else if(language === "spanish") {
-    return "Hola Mundo";
-  }
-  else if(language === "german") {
-    return "Hallo Welt";
+    return `Hello World`
+  }  else if (language === "spanish") {
+    return `Hola Mundo`
+  } else if (language === "german") {
+    return `Hallo Welt`
   }
 }
+
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -100,18 +83,19 @@ function aroundTheWorldGreeting(language = "english") {
  * @returns {string} - "Hello World" in the desired language
  */
 function aroundTheWorldGreetingWithSwitch(language = "english") {
-  switch(language){
-     case "english":
+  switch (language) {
+    case "english":
       return "Hello World"
-      break;
-    case "spanish":
-      return "Hola Mundo"
-      break;
-    case "german":
-      return "Hallo Welt"
-      break;
+        break;
+      case "spanish":
+        return "Hola Mundo"
+        break;
+      case "german":
+        return "Hallo Welt"
+        break;
   }
-}
+  } 
+
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -124,16 +108,16 @@ function aroundTheWorldGreetingWithSwitch(language = "english") {
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-const calculateLetterGrade = (number) => {
-  if (number >= 90){
+const calculateLetterGrade = (grade) => {
+  if (grade >= 90) {
     return "A"
-  } else if (number >= 80){
+  } else if (grade >= 80) {
     return "B"
-  } else if (number >= 70){
+  } else if (grade >= 70) {
     return "C"
-  } else if (number >= 60){
+  } else if (grade >= 60) {
     return "D"
-  } else if (number < 60){
+  } else {
     return "F"
   }
 }
@@ -148,27 +132,15 @@ const calculateLetterGrade = (number) => {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts(animal,numberOfAnimals) {
-  if(numberOfAnimals === 1){
-    return `${numberOfAnimals} ${animal}`
-  } else if(numberOfAnimals > 1){
-    return `${numberOfAnimals} ${animal}s`
-  }
-}
+const animalCounts = (animal,numberOfAnimals) => (numberOfAnimals > 1) ? `${numberOfAnimals} ${animal}s` : `${numberOfAnimals} ${animal}`
 
 
 /**gir is even or odd
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-const evenOrOdd = (a) => {
-  if (a % 2 === 0) {
-    return "Even";
-  }
-  else if (a % 2 !== 0) {
-    return "Odd";
-  }
-}
+const evenOrOdd = (a) => (a % 2 === 0) ? "Even" : "Odd"
+
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -176,10 +148,8 @@ const evenOrOdd = (a) => {
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-const evenOrOddWithTernary = (a) => {
-  let even = (a % 2 === 0) ? "Even":"Odd"
-  return even
-}
+const evenOrOddWithTernary = (a) => (a % 2 === 0) ? "Even" : "Odd"
+
 
 // variablename = (condition) ? value1:value2
 
@@ -191,9 +161,7 @@ const evenOrOddWithTernary = (a) => {
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-const findLargerTernary = (a, b) => {
-  return a > b ? a : b; 
-}
+const findLargerTernary = (a, b) => (a > b) ? a : b;
 
 
 
