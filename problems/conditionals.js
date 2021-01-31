@@ -5,9 +5,18 @@
  * @returns {boolean} - Is a equal to b.
  */
 function isEqual(a , b) {
-  return a === b 
+if ( a === b ){
+  return true;
+} else {
+  return false;
 }
-
+}
+console.log(isEqual(-1,-1));
+console.log(isEqual(0,0));
+console.log(isEqual(5,5));
+console.log(isEqual(-1,0));
+console.log(isEqual(3,0));
+console.log(isEqual(5,7));
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
@@ -17,14 +26,14 @@ function isEqual(a , b) {
  */
 function findLarger(a , b) {
  
-  if (a > b) {
-    return a
-  }
-  else {
-    return b
+  if (Math.max(a,b)){
+    return Math.max(a,b)
   }
 }
-console.log(findLarger)
+console.log(findLarger(-1 , 5))
+console.log(findLarger(8 , 2))
+console.log(findLarger(1 , 0))
+console.log(findLarger(-2 , -1))
 
 /**
  * Takes in two numbers and returns the larger number
@@ -34,16 +43,13 @@ console.log(findLarger)
  * @returns {number|string } - The larger number or string "tie"
  */
 function findLargerOrTie(a, b) {
-if (a > b) {
-  return a
+
+if (a == b){
+return "tie"
+} else if (Math.max(a, b)){
+  return Math.max(a,b)}
 }
-else if ( b > a) {
-  return b
-}
-else if ( a === b) {
-  return "tie"
-}
-console.log(findLargerOrTie (8,5))
+console.log(findLargerOrTie(15,15))
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
@@ -59,7 +65,7 @@ else if (a < 0){
 else if (a === 0)
   return 'Zero'
   }
-}
+
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
  * Must work for at least english, spanish, and german.
@@ -71,14 +77,14 @@ else if (a === 0)
  * @returns {string} - "Hello World" in the desired language
  */
 function aroundTheWorldGreeting(language) {
-  if (language === 'Spanish')
-  return 'Hola Mundo'
-}
- else if (language === 'german') {
-  return 'Hallo Welt'
-  }
-else {
-  return 'Hello World'
+//   if (language === 'Spanish')
+//   return 'Hola Mundo'
+// }
+//  else if (language === 'german') {
+//   return 'Hallo Welt'
+//   }
+// else {
+//   return 'Hello World'
 }
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.

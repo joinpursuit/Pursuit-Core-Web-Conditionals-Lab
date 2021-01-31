@@ -12,7 +12,7 @@ const {
   findLargerTernary,
 } = require("../problems/conditionals");
 
-describe("isEqual", () => {
+describe.only("isEqual", () => {
   test("returns true when numbers are equal", () => {
     expect(isEqual(-1, -1)).toBe(true);
     expect(isEqual(0, 0)).toBe(true);
