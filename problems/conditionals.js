@@ -153,11 +153,9 @@ function animalCounts(animal, numberOfAnimals) {
     if (animal === 'sheep') {
       return numberOfAnimals + ' sheep'
     }
-    else if (animal === 'goose') {
-      return numberOfAnimals + ' geese'
-    }
   }
 }
+console.log(animalCounts('sheep', 5))
 /**
  * Takes in a number and returns whether that number is even or odd
  * @param {number} a - The number.
