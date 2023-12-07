@@ -4,32 +4,62 @@
  * @param {*} b - The second element.
  * @returns {boolean} - Is a equal to b.
  */
-function isEqual() {}
+
+const isEqual = (a, b) => a === b;
 
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
- * @param {number} a - The first number.
- * @param {number} b - The second number.
+ * @param {number} num1 - The first number.
+ * @param {number} num2 - The second number.
  * @returns {number} - The larger number.
  */
-function findLarger() {}
+
+const findLarger = (num1, num2) => (num1 > num2 ? num1 : num2);
 
 /**
  * Takes in two numbers and returns the larger number
  * Returns the string "tie" if both numbers are the same
- * @param {number} a - The first number.
- * @param {number} b - The second number.
+ * @param {number} num1 - The first number.
+ * @param {number} num2 - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+function findLargerOrTie(num1, num2) {
+  if (num1 === num2) {
+    return "tie";
+  } else if (num1 < num2) {
+    return num2;
+  } else {
+    return num1;
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
- * @param {number} a - The number.
+ * @param {number} num - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+
+// which is the preferred way of writing this code?
+function positiveNegativeOrZero(num) {
+  if (num === 0) {
+    return "Zero";
+  } else if (Math.sign(num) === -1) {
+    return "Negative";
+  } else if (Math.sign(num) === 1) {
+    return "Positive";
+  }
+}
+
+// function positiveNegativeOrZero (num) {
+//   if (num === 0) {
+//     return "Zero";
+//   } else if (num < 0) {
+//     return "Negative";
+//   } else if (num > 0) {
+//     return "Positive";
+//   }
+// };
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -41,7 +71,15 @@ function positiveNegativeOrZero() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+function aroundTheWorldGreeting(language = "english") {
+  if (language === "english") {
+    return "Hello World";
+  } else if (language === "spanish") {
+    return "Hola Mundo";
+  } else if (language === "german") {
+    return "Hallo Welt";
+  }
+}
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -54,7 +92,16 @@ function aroundTheWorldGreeting() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+function aroundTheWorldGreetingWithSwitch(language) { ////////////////// practice more switches
+  switch (language) {
+    case "german":
+      return "Hallo Welt";
+    case "spanish":
+      return "Hola Mundo";
+    default:
+      return "Hello World";
+  }
+}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -67,7 +114,19 @@ function aroundTheWorldGreetingWithSwitch() {}
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+function calculateLetterGrade(grade) {
+  if (grade >= 90) {
+    return "A";
+  } else if (grade >= 80) {
+    return "B";
+  } else if (grade >= 70) {
+    return "C";
+  } else if (grade >= 60) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -79,35 +138,51 @@ function calculateLetterGrade() {}
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
 
+const animalCounts = (animal, numberOfAnimals) =>
+  numberOfAnimals === 1
+    ? `${numberOfAnimals} ${animal}`
+    : `${numberOfAnimals} ${animal}s`;
+
+// const animalCounts = (animal, numberOfAnimals) => {
+//   if (numberOfAnimals > 1) {
+//     if (animal === "geese") {
+//       return `${numberOfAnimals} ${animal}s is a gaggle`;
+//     } else if (animal === "sheep") {
+//       return `${numberOfAnimals} ${animal}s is a flock`;
+//     }
+//     return `${numberOfAnimals} ${animal}s`;
+//   } else if (numberOfAnimals === 1) {
+//     return `${numberOfAnimals} ${animal}`;
+//   }
+// };
 
 /**
  * Takes in a number and returns whether that number is even or odd
- * @param {number} a - The number.
+ * @param {number} num - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+
+const evenOrOdd = (num) => (num % 2 === 0 ? "Even" : "Odd");
 
 /**
  * Takes in a number and returns whether that number is even or odd
  * Uses a ternary in its implementation
- * @param {number} a - The number.
+ * @param {number} num - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+
+const evenOrOddWithTernary = (num) => (num % 2 === 0 ? "Even" : "Odd");
 
 /**
  * Takes in two numbers and returns the larger number
  * The numbers are guaranteed to be unique
  * Uses a ternary in its implementation
- * @param {number} a - The first number.
- * @param {number} b - The second number.
+ * @param {number} num1 - The first number.
+ * @param {number} num2 - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
-
-
+const findLargerTernary = (num1, num2) => (num1 > num2 ? num1 : num2);
 
 module.exports = {
   isEqual,
